@@ -1,4 +1,4 @@
-const WEBHOOK_URL = '';
+const WEBHOOK_URL = 'https://padalko.app.n8n.cloud/webhook-test/expres-polish-lead';
 const CHAT_WEBHOOK_URL = '';
 
 const burger = document.getElementById('burger');
