@@ -1,5 +1,5 @@
 const WEBHOOK_URL = 'https://padalko.app.n8n.cloud/webhook/expres-polish-lead';
-const CHAT_WEBHOOK_URL = 'https://padalko.app.n8n.cloud/webhook/expres-polish-chat';
+const CHAT_WEBHOOK_URL = 'https://webhook.site/8c4a29b0-236e-4f82-963f-147af3a5e4c9';
 
 const burger = document.getElementById('burger');
 const mobileNav = document.getElementById('mobileNav');
