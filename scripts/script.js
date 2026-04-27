@@ -1,5 +1,6 @@
 const WEBHOOK_URL = 'https://padalko.app.n8n.cloud/webhook/expres-polish-lead';
-const CHAT_WEBHOOK_URL = 'https://padalko.app.n8n.cloud/webhook/expres-polish-chat';
+
+const CHAT_URL = 'https://padalko.app.n8n.cloud/webhook/ef75a354-3a90-4862-84ee-c3b708d8446f/chat';
 
 const burger = document.getElementById('burger');
 const mobileNav = document.getElementById('mobileNav');
@@ -114,31 +115,6 @@ function getFormData(form) {
   return Object.fromEntries(formData.entries());
 }
 
-async function sendLeadToWebhook(data) {
-  if (!WEBHOOK_URL) {
-    console.log('Webhook форми ще не підключений. Дані форми:', data);
-
-    return {
-      success: true,
-      localMode: true
-    };
-  }
-
-  const response = await fetch(WEBHOOK_URL, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(data)
-  });
-
-  if (!response.ok) {
-    throw new Error('Помилка відправки форми');
-  }
-
-  return response.json();
-}
-
 function setFormStatus(element, message) {
   if (element) {
     element.textContent = message;
@@ -152,6 +128,55 @@ function escapeHTML(text) {
     .replaceAll('>', '&gt;')
     .replaceAll('"', '&quot;')
     .replaceAll("'", '&#039;');
+}
+
+function getSessionId() {
+  let sessionId = localStorage.getItem('expres_polish_session_id');
+
+  if (!sessionId) {
+    sessionId = crypto.randomUUID();
+    localStorage.setItem('expres_polish_session_id', sessionId);
+  }
+
+  return sessionId;
+}
+
+/* LEAD WEBHOOK */
+
+async function sendLeadToWebhook(data) {
+  const response = await fetch(WEBHOOK_URL, {
+    method: 'POST',
+    mode: 'cors',
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json'
+    },
+    body: JSON.stringify(data)
+  });
+
+  const rawText = await response.text();
+
+  console.log('Lead n8n status:', response.status);
+  console.log('Lead n8n raw response:', rawText);
+
+  if (!response.ok) {
+    throw new Error(`Помилка відправки форми ${response.status}: ${rawText}`);
+  }
+
+  if (!rawText) {
+    return {
+      success: true
+    };
+  }
+
+  try {
+    return JSON.parse(rawText);
+  } catch (error) {
+    return {
+      success: true,
+      reply: rawText
+    };
+  }
 }
 
 /* MODAL FORM */
@@ -249,11 +274,11 @@ function startChat() {
 }
 
 function addMessage(text, type) {
-  if (!aiChatMessages) return;
+  if (!aiChatMessages) return null;
 
   const message = document.createElement('div');
   message.className = `ai-message ai-message--${type}`;
-  message.innerHTML = escapeHTML(text);
+  message.innerHTML = escapeHTML(text).replaceAll('\n', '<br>');
 
   aiChatMessages.appendChild(message);
   aiChatMessages.scrollTop = aiChatMessages.scrollHeight;
@@ -283,68 +308,27 @@ function showTyping() {
   return addMessage('Агнешка друкує...', 'bot ai-message--typing');
 }
 
-function getLocalDemoReply(message) {
-  const text = message.toLowerCase();
-
-  if (text.includes('ціна') || text.includes('ціни') || text.includes('скільки')) {
-    return 'У нас є кілька форматів навчання:\n\n— групові заняття: від 499 zł / місяць\n— індивідуальні заняття: від 89 zł / урок\n— парні заняття: від 69 zł / людина\n\nЩоб точніше підібрати формат, напишіть ваш рівень польської та ціль навчання.';
-  }
-
-  if (text.includes('проб') || text.includes('урок') || text.includes('запис')) {
-    return 'Так, перший пробний урок безкоштовний. На ньому ми знайомимося, визначаємо ваш рівень і підбираємо формат навчання.\n\nНапишіть, будь ласка, ваше ім’я та контакт для зв’язку.';
-  }
-
-  if (text.includes('курс') || text.includes('підібрати') || text.includes('рівень')) {
-    return 'Я допоможу підібрати курс. Напишіть, будь ласка:\n\n— ваш рівень польської: A0, A1, A2, B1, B2 або “не знаю”\n— ваша ціль: життя в Польщі, робота, іспит або інше\n— який формат зручніший: група, індивідуально чи парно.';
-  }
-
-  if (text.includes('онлайн') || text.includes('офлайн') || text.includes('вроцлав')) {
-    return 'Навчання можливе онлайн, а також офлайн у Вроцлаві. Формат підбираємо залежно від вашої цілі, рівня та графіка.';
-  }
-
-  return 'Дякую, я зрозуміла ваш запит. Щоб краще підібрати курс, напишіть, будь ласка, ваш рівень польської, ціль навчання та зручний формат: група, індивідуально або парно.';
-}
-
 async function sendMessageToAgent(message) {
-  if (!CHAT_WEBHOOK_URL) {
-    console.log('Chat webhook ще не підключений. Повідомлення:', {
-      message,
-      history: chatHistory,
-      page: window.location.href
-    });
-
-    return new Promise(resolve => {
-      setTimeout(() => {
-        resolve({
-          reply: getLocalDemoReply(message),
-          localMode: true
-        });
-      }, 700);
-    });
-  }
-
   const payload = {
-    message,
-    history: chatHistory,
-    page: window.location.href,
-    source: 'ai_chat',
-    createdAt: new Date().toISOString()
+    action: 'sendMessage',
+    chatInput: message,
+    sessionId: getSessionId()
   };
 
-  const response = await fetch(CHAT_WEBHOOK_URL, {
+  const response = await fetch(CHAT_URL, {
     method: 'POST',
     mode: 'cors',
     headers: {
       'Content-Type': 'application/json',
-      'Accept': 'application/json'
+      Accept: 'application/json'
     },
     body: JSON.stringify(payload)
   });
 
   const rawText = await response.text();
 
-  console.log('n8n status:', response.status);
-  console.log('n8n raw response:', rawText);
+  console.log('Chat n8n status:', response.status);
+  console.log('Chat n8n raw response:', rawText);
 
   if (!response.ok) {
     throw new Error(`Помилка n8n ${response.status}: ${rawText}`);
@@ -358,9 +342,24 @@ async function sendMessageToAgent(message) {
     return JSON.parse(rawText);
   } catch (error) {
     return {
-      reply: rawText
+      output: rawText
     };
   }
+}
+
+function getAgentReply(data) {
+  if (typeof data === 'string') {
+    return data;
+  }
+
+  return (
+    data.output ||
+    data.reply ||
+    data.text ||
+    data.message ||
+    data.response ||
+    'Дякую! Я передала ваш запит менеджеру Expres Polish.'
+  );
 }
 
 async function handleChatMessage(message) {
@@ -383,7 +382,7 @@ async function handleChatMessage(message) {
       typingMessage.remove();
     }
 
-    addBotMessage(data.reply || 'Дякую! Я передала ваш запит менеджеру Expres Polish.');
+    addBotMessage(getAgentReply(data));
   } catch (error) {
     if (typingMessage) {
       typingMessage.remove();
