@@ -323,25 +323,44 @@ async function sendMessageToAgent(message) {
     });
   }
 
+  const payload = {
+    message,
+    history: chatHistory,
+    page: window.location.href,
+    source: 'ai_chat',
+    createdAt: new Date().toISOString()
+  };
+
   const response = await fetch(CHAT_WEBHOOK_URL, {
     method: 'POST',
+    mode: 'cors',
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
     },
-    body: JSON.stringify({
-      message,
-      history: chatHistory,
-      page: window.location.href,
-      source: 'ai_chat',
-      createdAt: new Date().toISOString()
-    })
+    body: JSON.stringify(payload)
   });
 
+  const rawText = await response.text();
+
+  console.log('n8n status:', response.status);
+  console.log('n8n raw response:', rawText);
+
   if (!response.ok) {
-    throw new Error('Помилка відповіді AI-консультанта');
+    throw new Error(`Помилка n8n ${response.status}: ${rawText}`);
   }
 
-  return response.json();
+  if (!rawText) {
+    throw new Error('n8n повернув порожню відповідь');
+  }
+
+  try {
+    return JSON.parse(rawText);
+  } catch (error) {
+    return {
+      reply: rawText
+    };
+  }
 }
 
 async function handleChatMessage(message) {
