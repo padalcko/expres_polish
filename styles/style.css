@@ -140,6 +140,46 @@ textarea {
   color: #00b8c8;
 }
 
+/* LANGUAGE SWITCHER */
+
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 999px;
+  background: #eef8fa;
+  border: 1px solid rgba(0, 184, 200, 0.25);
+}
+
+.language-switcher a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  height: 34px;
+  padding: 0 12px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0a4d8c;
+  transition: 0.2s ease;
+}
+
+.language-switcher a:hover {
+  color: #00b8c8;
+}
+
+.language-switcher a[aria-current="page"] {
+  background: #00b8c8;
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 184, 200, 0.2);
+}
+
+.language-switcher span {
+  display: none;
+}
+
 /* BURGER */
 
 .burger {
