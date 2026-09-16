@@ -2,7 +2,7 @@ const WEBHOOK_URL =
   "https://n8n.raccoon-studio.com.ua/webhook/expres-polish-lead";
 
 const CHAT_URL =
-  "https://padalko.app.n8n.cloud/webhook/ef75a354-3a90-4862-84ee-c3b708d8446f/chat";
+  "https://n8n.raccoon-studio.com.ua/webhook/a0bb7f80-11af-4113-8079-d1d969ba0431/chat";
 
 const burger = document.getElementById("burger");
 const mobileNav = document.getElementById("mobileNav");
