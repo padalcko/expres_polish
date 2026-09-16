@@ -6,17 +6,13 @@
 >
 
   <!-- =====================================================
-       ГОЛОВНА СТОРІНКА — УКРАЇНСЬКА
+       ГОЛОВНА — УКРАЇНСЬКА
   ====================================================== -->
 
   <url>
-
     <loc>https://expres-polish.pl/</loc>
-
-    <lastmod>2026-09-02</lastmod>
-
+    <lastmod>2026-09-16</lastmod>
     <changefreq>weekly</changefreq>
-
     <priority>1.0</priority>
 
     <xhtml:link
@@ -36,22 +32,17 @@
       hreflang="x-default"
       href="https://expres-polish.pl/"
     />
-
   </url>
 
 
   <!-- =====================================================
-       ГОЛОВНА СТОРІНКА — РОСІЙСЬКА
+       ГОЛОВНА — РОСІЙСЬКА
   ====================================================== -->
 
   <url>
-
     <loc>https://expres-polish.pl/ru/</loc>
-
-    <lastmod>2026-09-02</lastmod>
-
+    <lastmod>2026-09-16</lastmod>
     <changefreq>weekly</changefreq>
-
     <priority>0.9</priority>
 
     <xhtml:link
@@ -71,22 +62,77 @@
       hreflang="x-default"
       href="https://expres-polish.pl/"
     />
-
   </url>
 
 
   <!-- =====================================================
-       ДЕРЖАВНИЙ ІСПИТ B1 — УКРАЇНСЬКА
+       ВИКЛАДАЧІ — УКРАЇНСЬКА
   ====================================================== -->
 
   <url>
-
-    <loc>https://expres-polish.pl/derzhavnyi-ispyt-b1.html</loc>
-
-    <lastmod>2026-09-02</lastmod>
-
+    <loc>https://expres-polish.pl/nasha-komanda.html</loc>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
 
+    <xhtml:link
+      rel="alternate"
+      hreflang="uk"
+      href="https://expres-polish.pl/nasha-komanda.html"
+    />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="ru"
+      href="https://expres-polish.pl/ru/nasha-komanda.html"
+    />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://expres-polish.pl/nasha-komanda.html"
+    />
+  </url>
+
+
+  <!-- =====================================================
+       ВИКЛАДАЧІ — РОСІЙСЬКА
+  ====================================================== -->
+
+  <url>
+    <loc>https://expres-polish.pl/ru/nasha-komanda.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="uk"
+      href="https://expres-polish.pl/nasha-komanda.html"
+    />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="ru"
+      href="https://expres-polish.pl/ru/nasha-komanda.html"
+    />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://expres-polish.pl/nasha-komanda.html"
+    />
+  </url>
+
+
+  <!-- =====================================================
+       ІСПИТ B1 — УКРАЇНСЬКА
+  ====================================================== -->
+
+  <url>
+    <loc>https://expres-polish.pl/derzhavnyi-ispyt-b1.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
 
     <xhtml:link
@@ -106,22 +152,17 @@
       hreflang="x-default"
       href="https://expres-polish.pl/derzhavnyi-ispyt-b1.html"
     />
-
   </url>
 
 
   <!-- =====================================================
-       ДЕРЖАВНИЙ ІСПИТ B1 — РОСІЙСЬКА
+       ІСПИТ B1 — РОСІЙСЬКА
   ====================================================== -->
 
   <url>
-
     <loc>https://expres-polish.pl/ru/gosudarstvennyj-ekzamen-b1.html</loc>
-
-    <lastmod>2026-09-02</lastmod>
-
+    <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
-
     <priority>0.8</priority>
 
     <xhtml:link
@@ -141,7 +182,66 @@
       hreflang="x-default"
       href="https://expres-polish.pl/derzhavnyi-ispyt-b1.html"
     />
+  </url>
 
+
+  <!-- =====================================================
+       КОНТАКТИ — УКРАЇНСЬКА
+  ====================================================== -->
+
+  <url>
+    <loc>https://expres-polish.pl/kontakty.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="uk"
+      href="https://expres-polish.pl/kontakty.html"
+    />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="ru"
+      href="https://expres-polish.pl/ru/kontakty.html"
+    />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://expres-polish.pl/kontakty.html"
+    />
+  </url>
+
+
+  <!-- =====================================================
+       КОНТАКТИ — РОСІЙСЬКА
+  ====================================================== -->
+
+  <url>
+    <loc>https://expres-polish.pl/ru/kontakty.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="uk"
+      href="https://expres-polish.pl/kontakty.html"
+    />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="ru"
+      href="https://expres-polish.pl/ru/kontakty.html"
+    />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://expres-polish.pl/kontakty.html"
+    />
   </url>
 
 </urlset>

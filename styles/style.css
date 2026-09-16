@@ -252,6 +252,209 @@ MOBILE NAV
 
 
 /* =====================================================
+RIGHT SOCIAL TAB
+===================================================== */
+
+.social-tab {
+  position: fixed;
+  top: 50%;
+  right: 14px;
+  z-index: 120;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 58px;
+  padding: 6px;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(0, 184, 200, 0.28);
+  border-radius: 29px;
+  box-shadow:
+    0 16px 38px rgba(10, 77, 140, 0.12),
+    0 4px 12px rgba(15, 23, 42, 0.06);
+  backdrop-filter: blur(10px);
+}
+
+.social-tab__item {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #0a4d8c;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.social-tab__item+.social-tab__item {
+  margin-top: 3px;
+}
+
+.social-tab__item:hover,
+.social-tab__item:focus-visible {
+  color: #ffffff;
+  background: #00b8c8;
+  transform: translateX(-2px);
+  box-shadow: 0 8px 20px rgba(0, 184, 200, 0.24);
+  outline: none;
+}
+
+.social-tab__icon {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 46px;
+}
+
+.social-tab__icon svg {
+  display: block;
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* WhatsApp SVG у HTML використовує заливку */
+
+.social-tab__item:nth-child(2) .social-tab__icon svg {
+  width: 23px;
+  height: 23px;
+  fill: currentColor;
+  stroke: none;
+}
+
+/* Підказка */
+
+.social-tab__label {
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 12px);
+  z-index: 2;
+  display: block;
+  min-width: max-content;
+  padding: 8px 12px;
+  transform: translate(8px, -50%);
+  border-radius: 10px;
+  background: #0a4d8c;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 600;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 8px 22px rgba(10, 77, 140, 0.18);
+  transition:
+    opacity 0.18s ease,
+    visibility 0.18s ease,
+    transform 0.18s ease;
+}
+
+.social-tab__label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  width: 10px;
+  height: 10px;
+  background: #0a4d8c;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.social-tab__item:hover .social-tab__label,
+.social-tab__item:focus-visible .social-tab__label {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -50%);
+}
+
+
+/* =====================================================
+AGNIESZKA
+===================================================== */
+
+.social-tab__item--agnieszka {
+  color: #00a4b3;
+}
+
+.social-tab__item--agnieszka::before {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border-radius: 50%;
+  background: #eef8fa;
+  z-index: -1;
+  transition: background 0.2s ease;
+}
+
+.social-tab__item--agnieszka:hover::before,
+.social-tab__item--agnieszka:focus-visible::before {
+  background: transparent;
+}
+
+
+/* =====================================================
+RACCOON STUDIO
+===================================================== */
+
+.social-tab__item--studio {
+  margin-top: 8px !important;
+  color: #0a4d8c;
+}
+
+.social-tab__item--studio::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 8px;
+  right: 8px;
+  height: 1px;
+  background: #dcecf2;
+}
+
+.social-tab__item--studio .social-tab__icon {
+  width: 42px;
+  height: 42px;
+  flex-basis: 42px;
+  border-radius: 50%;
+  background: #eef8fa;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.social-tab__item--studio:hover .social-tab__icon,
+.social-tab__item--studio:focus-visible .social-tab__icon {
+  background: transparent;
+}
+
+.social-tab__item--studio .social-tab__icon svg {
+  width: 28px;
+  height: 28px;
+  stroke-width: 1.7;
+}
+
+
+/* =====================================================
 HERO
 ===================================================== */
 
@@ -529,7 +732,6 @@ FLIP CARDS
   border: 1px solid rgba(0, 184, 200, 0.35);
   padding: 34px;
   backface-visibility: hidden;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1127,9 +1329,6 @@ FOOTER
 .footer__social-link svg {
   width: 20px;
   height: 20px;
-}
-
-.footer__social-link svg {
   fill: none;
   stroke: currentColor;
   stroke-width: 2;
@@ -1363,7 +1562,6 @@ RESPONSIVE — 1100
   .cta {
     grid-template-columns: 1fr;
   }
-
 }
 
 
@@ -1422,7 +1620,6 @@ RESPONSIVE — 900
   .footer__brand-block {
     grid-column: 1 / -1;
   }
-
 }
 
 
@@ -1544,11 +1741,76 @@ RESPONSIVE — 600
     justify-content: center;
   }
 
+  /* =====================================================
+  SOCIAL TAB — MOBILE
+  ===================================================== */
+
+  .social-tab {
+    top: auto;
+    right: 50%;
+    bottom: 14px;
+    width: auto;
+    padding: 5px;
+    flex-direction: row;
+    transform: translateX(50%);
+    border-radius: 999px;
+  }
+
+  .social-tab__item {
+    width: 44px;
+    height: 44px;
+    flex-basis: 44px;
+  }
+
+  .social-tab__item+.social-tab__item {
+    margin-top: 0;
+    margin-left: 2px;
+  }
+
+  .social-tab__icon {
+    width: 44px;
+    height: 44px;
+    flex-basis: 44px;
+  }
+
+  .social-tab__icon svg {
+    width: 21px;
+    height: 21px;
+  }
+
+  .social-tab__item:hover,
+  .social-tab__item:focus-visible {
+    transform: none;
+  }
+
+  .social-tab__label {
+    display: none;
+  }
+
+  .social-tab__item--studio {
+    margin-top: 0 !important;
+    margin-left: 7px !important;
+  }
+
+  .social-tab__item--studio::before {
+    top: 8px;
+    bottom: 8px;
+    left: -5px;
+    right: auto;
+    width: 1px;
+    height: auto;
+  }
+
+  .social-tab__item--studio .social-tab__icon {
+    width: 40px;
+    height: 40px;
+    flex-basis: 40px;
+  }
+
   .ai-chat__panel {
     right: 10px;
     bottom: 10px;
     width: calc(100% - 20px);
     height: calc(100vh - 20px);
   }
-
 }

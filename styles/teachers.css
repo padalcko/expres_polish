@@ -1,0 +1,618 @@
+/* ==========================================================
+   EXPRES POLISH
+   TEACHERS PAGE
+   /styles/teachers.css
+   ========================================================== */
+
+
+/* ==========================================================
+   01. TEAM HERO
+   ========================================================== */
+
+.team-hero {
+    padding: 82px 0 72px;
+    background: linear-gradient(135deg, #f5f9ff, #ffffff);
+}
+
+.team-hero__inner {
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.team-hero__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    min-height: 34px;
+    margin-bottom: 18px;
+    padding: 7px 14px;
+
+    border-radius: 999px;
+
+    background: #eef8fa;
+    color: #00a4b3;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.team-hero__title {
+    margin: 0 0 20px;
+
+    font-family: "Nunito", sans-serif;
+    font-size: 52px;
+    line-height: 1.08;
+    font-weight: 800;
+
+    color: #0a4d8c;
+}
+
+.team-hero__text {
+    max-width: 760px;
+    margin: 0 auto;
+
+    color: #4b5563;
+
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+
+/* ==========================================================
+   02. FOUNDER
+   ========================================================== */
+
+.team-founder {
+    display: grid;
+
+    grid-template-columns:
+        minmax(300px, 0.85fr) minmax(0, 1.15fr);
+
+    gap: 58px;
+
+    align-items: center;
+
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+
+/* PHOTO */
+
+.team-founder__photo-wrap {
+    position: relative;
+}
+
+.team-founder__photo-wrap::before {
+    content: "";
+
+    position: absolute;
+
+    top: 22px;
+    left: -22px;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 32px;
+
+    background: #eef8fa;
+}
+
+.team-founder__photo {
+    position: relative;
+    z-index: 1;
+
+    display: block;
+
+    width: 100%;
+
+    aspect-ratio: 4 / 5;
+
+    object-fit: cover;
+    object-position: center top;
+
+    border-radius: 32px;
+
+    box-shadow:
+        0 24px 55px rgba(10, 77, 140, 0.14);
+}
+
+
+/* FOUNDER CONTENT */
+
+.team-founder__content {
+    min-width: 0;
+}
+
+.team-founder__eyebrow {
+    display: inline-flex;
+
+    margin-bottom: 14px;
+    padding: 7px 13px;
+
+    border-radius: 999px;
+
+    background: #eef8fa;
+    color: #00a4b3;
+
+    font-size: 13px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+.team-founder__name {
+    margin: 0 0 8px;
+
+    font-family: "Nunito", sans-serif;
+    font-size: 42px;
+    line-height: 1.1;
+    font-weight: 800;
+
+    color: #0a4d8c;
+}
+
+.team-founder__role {
+    margin: 0 0 24px;
+
+    color: #00a4b3;
+
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.team-founder__text {
+    margin: 0;
+
+    color: #4b5563;
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* ==========================================================
+   03. TEACHERS GRID
+   ========================================================== */
+
+.team-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 28px;
+}
+
+
+/* ==========================================================
+   04. TEACHER CARD
+   ========================================================== */
+
+.teacher-card {
+    overflow: hidden;
+
+    min-width: 0;
+
+    background: #ffffff;
+
+    border:
+        1px solid rgba(0, 184, 200, 0.3);
+
+    border-radius: 28px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.teacher-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #00b8c8;
+
+    box-shadow:
+        0 22px 50px rgba(10, 77, 140, 0.1);
+}
+
+
+/* TEACHER PHOTO */
+
+.teacher-card__photo-wrap {
+    position: relative;
+
+    overflow: hidden;
+
+    aspect-ratio: 4 / 4.4;
+
+    background: #eef8fa;
+}
+
+.teacher-card__photo {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center top;
+
+    transition:
+        transform 0.4s ease;
+}
+
+.teacher-card:hover .teacher-card__photo {
+    transform: scale(1.025);
+}
+
+
+/* TEACHER CONTENT */
+
+.teacher-card__body {
+    padding: 26px 26px 30px;
+}
+
+.teacher-card__name {
+    margin: 0 0 5px;
+
+    font-family: "Nunito", sans-serif;
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 800;
+
+    color: #0a4d8c;
+}
+
+.teacher-card__role {
+    display: block;
+
+    margin-bottom: 17px;
+
+    color: #00a4b3;
+
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.teacher-card__text {
+    margin: 0;
+
+    color: #4b5563;
+
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+
+/* ==========================================================
+   05. APPROACH
+   ========================================================== */
+
+.team-approach {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 24px;
+}
+
+.team-approach__item {
+    min-width: 0;
+
+    padding: 30px;
+
+    border:
+        1px solid rgba(0, 184, 200, 0.3);
+
+    border-radius: 26px;
+
+    background: #ffffff;
+}
+
+.team-approach__number {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+
+    background: #eef8fa;
+    color: #00a4b3;
+
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+}
+
+.team-approach__title {
+    margin: 0 0 10px;
+
+    color: #0a4d8c;
+
+    font-family: "Nunito", sans-serif;
+    font-size: 21px;
+    line-height: 1.3;
+    font-weight: 800;
+}
+
+.team-approach__text {
+    margin: 0;
+
+    color: #4b5563;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* ==========================================================
+   06. CTA
+   ========================================================== */
+
+.team-cta {
+    max-width: 780px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.team-cta .section__title {
+    color: #ffffff;
+}
+
+.team-cta__actions {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    margin-top: 28px;
+}
+
+.team-cta .btn--ghost {
+    color: #ffffff;
+
+    border-color:
+        rgba(255, 255, 255, 0.55);
+}
+
+.team-cta .btn--ghost:hover {
+    color: #0a4d8c;
+
+    background: #ffffff;
+
+    border-color: #ffffff;
+}
+
+
+/* ==========================================================
+   07. TABLET
+   ========================================================== */
+
+@media (max-width: 900px) {
+
+    /* HERO */
+
+    .team-hero {
+        padding: 68px 0 62px;
+    }
+
+    .team-hero__title {
+        font-size: 46px;
+    }
+
+
+    /* FOUNDER */
+
+    .team-founder {
+        grid-template-columns: 1fr;
+
+        max-width: 650px;
+
+        gap: 45px;
+    }
+
+    .team-founder__photo-wrap {
+        width: 100%;
+        max-width: 440px;
+
+        margin: 0 auto;
+    }
+
+    .team-founder__content {
+        text-align: center;
+    }
+
+
+    /* TEACHERS */
+
+    .team-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    /* APPROACH */
+
+    .team-approach {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ==========================================================
+   08. MOBILE
+   ========================================================== */
+
+@media (max-width: 600px) {
+
+    /* HERO */
+
+    .team-hero {
+        padding: 58px 0 54px;
+    }
+
+    .team-hero__inner {
+        max-width: 100%;
+    }
+
+    .team-hero__eyebrow {
+        margin-bottom: 15px;
+    }
+
+    .team-hero__title {
+        margin-bottom: 16px;
+
+        font-size: 38px;
+        line-height: 1.12;
+    }
+
+    .team-hero__text {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+
+    /* FOUNDER */
+
+    .team-founder {
+        gap: 38px;
+    }
+
+    .team-founder__photo-wrap {
+        max-width: calc(100% - 12px);
+    }
+
+    .team-founder__photo-wrap::before {
+        top: 13px;
+        left: -10px;
+
+        border-radius: 24px;
+    }
+
+    .team-founder__photo {
+        border-radius: 24px;
+    }
+
+    .team-founder__name {
+        font-size: 34px;
+    }
+
+    .team-founder__role {
+        margin-bottom: 18px;
+
+        font-size: 15px;
+    }
+
+    .team-founder__text {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+
+    /* TEACHERS */
+
+    .team-grid {
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+    }
+
+    .teacher-card {
+        border-radius: 24px;
+    }
+
+    .teacher-card__photo-wrap {
+        aspect-ratio: 4 / 4.5;
+    }
+
+    .teacher-card__body {
+        padding: 23px 22px 26px;
+    }
+
+    .teacher-card__name {
+        font-size: 24px;
+    }
+
+
+    /* APPROACH */
+
+    .team-approach {
+        gap: 18px;
+    }
+
+    .team-approach__item {
+        padding: 25px 22px;
+
+        border-radius: 22px;
+    }
+
+
+    /* CTA */
+
+    .team-cta__actions {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .team-cta__actions .btn {
+        width: 100%;
+    }
+}
+
+
+/* ==========================================================
+   09. SMALL MOBILE
+   ========================================================== */
+
+@media (max-width: 390px) {
+
+    .team-hero__title {
+        font-size: 34px;
+    }
+
+    .team-founder__name {
+        font-size: 31px;
+    }
+
+    .teacher-card__body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+/* ==========================================================
+   10. ACCESSIBILITY / REDUCED MOTION
+   ========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .teacher-card,
+    .teacher-card__photo {
+        transition: none;
+    }
+
+    .teacher-card:hover {
+        transform: none;
+    }
+
+    .teacher-card:hover .teacher-card__photo {
+        transform: none;
+    }
+}
