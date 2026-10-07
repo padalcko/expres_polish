@@ -244,4 +244,32 @@
     />
   </url>
 
+  <url>
+    <loc>https://expres-polish.pl/ispyty.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://expres-polish.pl/ispyty.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://expres-polish.pl/ru/ekzameny.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://expres-polish.pl/ispyty.html" />
+  </url>
+  <url>
+    <loc>https://expres-polish.pl/ru/ekzameny.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://expres-polish.pl/ispyty.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://expres-polish.pl/ru/ekzameny.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://expres-polish.pl/ispyty.html" />
+  </url>
+  <url>
+    <loc>https://expres-polish.pl/telc-polskyi.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://expres-polish.pl/telc-polskyi.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://expres-polish.pl/ru/telc-polskij.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://expres-polish.pl/telc-polskyi.html" />
+  </url>
+  <url>
+    <loc>https://expres-polish.pl/ru/telc-polskij.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://expres-polish.pl/telc-polskyi.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://expres-polish.pl/ru/telc-polskij.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://expres-polish.pl/telc-polskyi.html" />
+  </url>
 </urlset>

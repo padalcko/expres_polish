@@ -1,0 +1,29 @@
+/* Exam cluster: shared site components with mobile-first layout additions. */
+.exam-breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 18px 0;
+  font-size: 14px;
+  color: #0a4d8c;
+}
+.exam-breadcrumbs li + li::before { content: "/"; margin-right: 8px; }
+.exam-breadcrumbs a { text-decoration: underline; text-underline-offset: 3px; }
+.exam-page main { overflow-wrap: anywhere; }
+.exam-page .hero__content,
+.exam-page .card,
+.exam-page .form,
+.exam-page .cta__text { min-width: 0; }
+.exam-page .exam-cards { grid-template-columns: minmax(0, 1fr); }
+.exam-page .card .btn { margin-top: 20px; text-align: center; }
+.exam-page .section p a { text-decoration: underline; text-underline-offset: 3px; }
+.exam-page .btn { white-space: normal; text-align: center; }
+.exam-page .form input,
+.exam-page .form select { max-width: 100%; min-width: 0; }
+.exam-page :is(a, button, input, select, summary):focus-visible,
+.exam-breadcrumbs a:focus-visible { outline: 2px solid #0a4d8c; outline-offset: 4px; }
+@media (min-width: 768px) {
+  .exam-page .exam-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

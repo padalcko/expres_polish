@@ -1,0 +1,42 @@
+# Expres Polish
+
+> Polish language school in Wrocław and online. Preparation for State Polish B1 and TELC examinations. Website languages: Ukrainian and Russian.
+
+## Main pages
+
+- [Home — Ukrainian](https://expres-polish.pl/)
+- [Home — Russian](https://expres-polish.pl/ru/)
+- [Teachers — Ukrainian](https://expres-polish.pl/nasha-komanda.html)
+- [Teachers — Russian](https://expres-polish.pl/ru/nasha-komanda.html)
+- [Contact — Ukrainian](https://expres-polish.pl/kontakty.html)
+- [Contact — Russian](https://expres-polish.pl/ru/kontakty.html)
+
+## Exams
+
+- [Exams overview — Ukrainian](https://expres-polish.pl/ispyty.html)
+- [Exams overview — Russian](https://expres-polish.pl/ru/ekzameny.html)
+- [State Polish Language Exam B1 — Ukrainian](https://expres-polish.pl/derzhavnyi-ispyt-b1.html)
+- [State Polish Language Exam B1 — Russian](https://expres-polish.pl/ru/gosudarstvennyj-ekzamen-b1.html)
+- [TELC Polish Language Exam — Ukrainian](https://expres-polish.pl/telc-polskyi.html)
+- [TELC Polish Language Exam — Russian](https://expres-polish.pl/ru/telc-polskij.html)
+
+## AI-readable resources
+
+- [Exams overview](https://expres-polish.pl/ai/exams.md)
+- [State Polish Language Exam B1](https://expres-polish.pl/ai/b1-exam.md)
+- [TELC Polish Language Exam](https://expres-polish.pl/ai/telc-exam.md)
+
+## Languages
+
+- Ukrainian: root pages; language code uk.
+- Russian: /ru/ pages; language code ru.
+- English Markdown summaries provide retrieval context and link to the canonical Ukrainian and Russian HTML pages.
+
+## School contacts
+
+Expres Polish, Psie Budy 18/19, 53-600 Wrocław, Poland.
+Telephone / WhatsApp: +48 881 576 552. Email: expres.polish@gmail.com.
+
+Preparation enquiries are not examination registrations. The receiving institution determines which language certificate it accepts; see the TELC resource for verified distinctions and official sources.
+
+Last updated: 2026-10-07.
