@@ -336,7 +336,7 @@
       }
     </script>
   </head>
-  <body id="top" class="exam-page">
+  <body id="top" class="has-social-menu exam-page telc-page">
     <header class="header">
       <div class="container header__inner">
         <a
@@ -354,13 +354,12 @@
         <!-- DESKTOP NAV -->
 
         <nav class="header__nav" aria-label="Головна навігація">
-          <a href="/"> Головна </a>
-
-          <a href="/nasha-komanda.html"> Викладачі </a>
-
-          <a href="/ispyty.html"> Іспити </a>
-
-          <a href="/kontakty.html"> Контакти </a>
+          <a href="/">Головна</a>
+          <a href="/ispyty.html">Іспити</a>
+          <a href="#exam-structure">Структура</a>
+          <a href="#preparation">Підготовка</a>
+          <a href="#location">Контакти</a>
+          <a href="#faq">FAQ</a>
 
           <div class="language-switcher" aria-label="Вибір мови">
             <a href="/telc-polskyi.html" lang="uk" aria-current="page"> UA </a>
@@ -392,15 +391,14 @@
       <!-- MOBILE NAV -->
 
       <nav class="mobile-nav" id="mobileNav" aria-label="Мобільна навігація">
-        <a href="/"> Головна </a>
+          <a href="/">Головна</a>
+          <a href="/ispyty.html">Іспити</a>
+          <a href="#exam-structure">Структура</a>
+          <a href="#preparation">Підготовка</a>
+          <a href="#location">Контакти</a>
+          <a href="#faq">FAQ</a>
 
-        <a href="/nasha-komanda.html"> Викладачі </a>
-
-        <a href="/ispyty.html"> Іспити </a>
-
-        <a href="/kontakty.html"> Контакти </a>
-
-        <div class="language-switcher" aria-label="Вибір мови">
+          <div class="language-switcher" aria-label="Вибір мови">
           <a href="/telc-polskyi.html" lang="uk" aria-current="page"> UA </a>
 
           <a href="/ru/telc-polskij.html" lang="ru"> RU </a>
@@ -411,20 +409,213 @@
         </button>
       </nav>
     </header>
+
+    <aside class="social-tab" aria-label="Швидкий зв'язок">
+      <!-- INSTAGRAM -->
+
+      <a
+        class="social-tab__item"
+        href="https://www.instagram.com/expres.polish"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram Expres Polish"
+      >
+        <span class="social-tab__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+
+            <circle cx="12" cy="12" r="4"></circle>
+
+            <circle
+              cx="17.4"
+              cy="6.6"
+              r="1"
+              fill="currentColor"
+              stroke="none"
+            ></circle>
+          </svg>
+        </span>
+
+        <span class="social-tab__label"> Instagram </span>
+      </a>
+
+      <!-- WHATSAPP -->
+
+      <a
+        class="social-tab__item"
+        href="https://wa.me/48881576552"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Написати у WhatsApp"
+      >
+        <span class="social-tab__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M20.52 3.48A11.9 11.9 0 0 0 12.05 0C5.46 0 .1 5.36.1 11.95c0 2.1.55 4.15 1.6 5.96L0 24l6.25-1.64a11.96 11.96 0 0 0 5.79 1.48h.01C18.64 23.84 24 18.48 24 11.89c0-3.18-1.24-6.16-3.48-8.41zM12.05 21.82h-.01a9.94 9.94 0 0 1-5.07-1.39l-.36-.21-3.71.98.99-3.62-.24-.37a9.91 9.91 0 1 1 8.4 4.61zm5.44-7.43c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.21 5.09 4.5.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35z"
+            ></path>
+          </svg>
+        </span>
+
+        <span class="social-tab__label"> WhatsApp </span>
+      </a>
+
+      <!-- AGNIESZKA -->
+
+      <button
+        class="social-tab__item social-tab__item--agnieszka js-chat-open"
+        type="button"
+        aria-label="Запитати AI-консультанта Агнешку"
+      >
+        <span class="social-tab__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 5V3"></path>
+
+            <circle cx="12" cy="2.5" r="1"></circle>
+
+            <rect x="5" y="6" width="14" height="12" rx="4"></rect>
+
+            <path d="M5 10H3.5v4H5"></path>
+            <path d="M19 10h1.5v4H19"></path>
+
+            <circle
+              cx="9.5"
+              cy="11.5"
+              r="1"
+              fill="currentColor"
+              stroke="none"
+            ></circle>
+
+            <circle
+              cx="14.5"
+              cy="11.5"
+              r="1"
+              fill="currentColor"
+              stroke="none"
+            ></circle>
+
+            <path d="M9 15c1.7 1.3 4.3 1.3 6 0"></path>
+          </svg>
+        </span>
+
+        <span class="social-tab__label"> Запитати Агнешку </span>
+      </button>
+
+      <!-- RACCOON STUDIO -->
+
+      <a
+        class="social-tab__item social-tab__item--studio"
+        href="https://raccoon-studio.com.ua/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Raccoon Studio"
+      >
+        <span class="social-tab__icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 21 10 9 24 15" fill="#0a4d8c" stroke="none"></path>
+
+            <path d="M49 21 54 9 40 15" fill="#0a4d8c" stroke="none"></path>
+
+            <path
+              d="M12 28C14 17 22 12 32 12C42 12 50 17 52 28C54 39 48 51 32 56C16 51 10 39 12 28Z"
+              fill="#eef8fa"
+              stroke="#0a4d8c"
+              stroke-width="3"
+              stroke-linejoin="round"
+            ></path>
+
+            <path
+              d="M15 29C20 23 26 22 32 27C38 22 44 23 49 29C45 39 39 41 32 36C25 41 19 39 15 29Z"
+              fill="#0a4d8c"
+              stroke="none"
+            ></path>
+
+            <ellipse
+              cx="24"
+              cy="30"
+              rx="3.2"
+              ry="4"
+              fill="#ffffff"
+              stroke="none"
+            ></ellipse>
+
+            <ellipse
+              cx="40"
+              cy="30"
+              rx="3.2"
+              ry="4"
+              fill="#ffffff"
+              stroke="none"
+            ></ellipse>
+
+            <circle
+              cx="24"
+              cy="31"
+              r="1.5"
+              fill="#00b8c8"
+              stroke="none"
+            ></circle>
+
+            <circle
+              cx="40"
+              cy="31"
+              r="1.5"
+              fill="#00b8c8"
+              stroke="none"
+            ></circle>
+
+            <path
+              d="M24 39C26 35 29 34 32 34C35 34 38 35 40 39C39 46 35 49 32 50C29 49 25 46 24 39Z"
+              fill="#ffffff"
+              stroke="none"
+            ></path>
+
+            <path
+              d="M28 39Q32 36 36 39Q35 43 32 44Q29 43 28 39Z"
+              fill="#0a4d8c"
+              stroke="none"
+            ></path>
+
+            <path
+              d="M32 44v2"
+              fill="none"
+              stroke="#0a4d8c"
+              stroke-width="2"
+              stroke-linecap="round"
+            ></path>
+
+            <path
+              d="M27.5 46.5c2.5 2 6.5 2 9 0"
+              fill="none"
+              stroke="#0a4d8c"
+              stroke-width="2"
+              stroke-linecap="round"
+            ></path>
+          </svg>
+        </span>
+
+        <span class="social-tab__label"> Raccoon Studio </span>
+      </a>
+    </aside>
     <main>
       <nav class="container exam-breadcrumbs" aria-label="Навігаційний шлях">
         <ol>
-          <li><a href="/">Головна</a></li>
-          <li><a href="/ispyty.html">Іспити</a></li>
-          <li><span aria-current="page">TELC</span></li>
+          <li>
+            <a href="/">Головна</a>
+          </li>
+          <li>
+            <a href="/ispyty.html">Іспити</a>
+          </li>
+          <li>
+            <span aria-current="page">TELC</span>
+          </li>
         </ol>
       </nav>
       <section class="hero exam-hero">
         <div class="container hero__inner">
           <div class="hero__content">
-            <p class="exam-hero__eyebrow">Expres Polish · Wrocław · Online</p>
+            <p class="exam-hero__eyebrow">Підготовка до іспиту TELC</p>
             <h1 class="hero__title">
-              TELC з польської мови — підготовка у Вроцлаві та онлайн
+              Іспит TELC з польської мови B1·B2
             </h1>
             <p class="hero__subtitle">
               Готуйтеся до TELC B1·B2 з Expres Polish: розбирайте формат
@@ -433,22 +624,14 @@
               пояснення, як обрати підготовку відповідно до вашої мети.
             </p>
             <div class="hero__actions">
-              <a class="btn btn--primary" href="#cta">Підготуватися до TELC</a
-              ><a class="btn btn--ghost" href="/kontakty.html"
-                >Записатися на консультацію</a
-              >
+              <a class="btn btn--primary" href="#cta">Підготуватися до TELC</a>
+              <a class="btn btn--ghost" href="#exam-structure">Як проходить іспит</a>
             </div>
+            <p class="hero__note">Підготовка до TELC онлайн та у Вроцлаві.</p>
           </div>
           <div class="hero__visual">
             <div class="hero__image-wrap">
-              <img
-                src="/img/hero-main.png"
-                width="1448"
-                height="1086"
-                alt="Вивчення польської мови в Expres Polish"
-                class="hero__image"
-                fetchpriority="high"
-              />
+              <img src="/img/hero-main-800.webp" srcset="/img/hero-main-480.webp 480w, /img/hero-main-800.webp 800w, /img/hero-main-1120.webp 1120w" sizes="(max-width: 600px) calc(100vw - 36px), (max-width: 900px) 560px, 560px" width="1120" height="840" class="hero__image" alt="Expres Polish — підготовка до TELC" fetchpriority="high">
             </div>
           </div>
         </div>
@@ -456,50 +639,57 @@
       <section class="section" id="about-exam">
         <div class="container">
           <h2 class="section__title">Що таке TELC?</h2>
-          <p class="section__subtitle">
-            TELC — система мовних іспитів The European Language Certificates. В
-            офіційному каталозі для польської представлено telc Język polski
-            B1·B2 Szkoła — дворівневий іспит за шкалою CEFR. За результатами
-            можна підтвердити B1 або B2, якщо виконано відповідні вимоги
-            оцінювання.
-          </p>
+          <p class="section__subtitle">TELC — система мовних іспитів The European Language Certificates. Для польської мови в офіційному каталозі представлено telc Język polski B1·B2 Szkoła.</p>
+          <div class="cards cards--3">
+            <article class="card">
+              <h3>Два рівні в одному іспиті</h3>
+              <p>Польський B1·B2 Szkoła перевіряє рівні B1 і B2 за шкалою CEFR. Підсумковий рівень залежить від результатів окремих блоків.</p>
+            </article>
+            <article class="card">
+              <h3>Письмова та усна частини</h3>
+              <p>Аудіювання, читання, мовні елементи, письмо та спілкування з іншим учасником — підготовка охоплює всі частини іспиту.</p>
+            </article>
+            <article class="card">
+              <h3>Сертифікат за результатами</h3>
+              <p>Сертифікат підтверджує досягнутий рівень за виконання вимог TELC. Підготовка не гарантує складання або отримання B2.</p>
+            </article>
+          </div>
         </div>
       </section>
-      <section class="section section--soft">
+      <section class="section section--soft" id="for-whom">
         <div class="container">
-          <h2 class="section__title">Для кого підходить TELC?</h2>
-          <p class="section__subtitle">
-            TELC варто розглядати, якщо вам потрібне підтвердження польської B1
-            або B2 і його приймає потрібна вам установа. Формат Szkoła
-            розроблено з орієнтацією на учнів: теми й лексика відповідають їхнім
-            інтересам. Дорослим кандидатам слід уточнити умови участі та точну
-            назву іспиту в обраному центрі.
-          </p>
-          <h3>Де можна використовувати сертифікат?</h3>
-          <p>
-            Для дозволу на перебування довготермінового резидента ЄС у Польщі
+          <h2 class="section__title">Кому підходить іспит TELC?</h2>
+          <p class="section__subtitle">Обирайте іспит за метою та вимогами установи, якій потрібен сертифікат.</p>
+          <div class="cards cards--4">
+            <article class="card">
+              <h3>Для школярів</h3>
+              <p>Формат Szkoła орієнтований на школярів: теми й лексика відповідають їхнім інтересам. Дорослим слід уточнити умови участі та точну назву іспиту в центрі.</p>
+            </article>
+            <article class="card">
+              <h3>Для резидента ЄС</h3>
+              <p>Для дозволу на перебування довготермінового резидента ЄС у Польщі
             офіційний перелік включає сертифікати TELC з польської не нижче B1.
             Це підтвердження мовної вимоги, а не гарантія отримання дозволу.
-            <a
-              href="https://www.gov.pl/web/uw-zachodniopomorski/rezydent-dlugoterminowy-ue"
-              >Вимоги до мовного документа для резидента ЄС</a
-            >.
-          </p>
-          <p>
-            Для процедури визнання громадянином Польщі діють інші вимоги: TELC
+            <a href="https://www.gov.pl/web/uw-zachodniopomorski/rezydent-dlugoterminowy-ue">Вимоги до мовного документа для резидента ЄС</a>.</p>
+            </article>
+            <article class="card">
+              <h3>Для навчання та роботи</h3>
+              <p>Уточніть у конкретної установи, чи приймає вона цей сертифікат, який рівень і вид документа потрібні.</p>
+            </article>
+            <article class="card">
+              <h3>Не заміна державному B1</h3>
+              <p>Для процедури визнання громадянином Польщі діють інші вимоги: TELC
             не є заміною державного сертифіката, зазначеного у відповідних
             правилах. Для навчання чи роботи перевіряйте вимоги конкретної
             установи, рівень і вид документа.
-            <a
-              href="https://www.gov.pl/web/dolnoslaski-uw/uznanie-za-obywatela-polskiego"
-              >Офіційні умови визнання громадянином Польщі</a
-            >.
-          </p>
+            <a href="https://www.gov.pl/web/dolnoslaski-uw/uznanie-za-obywatela-polskiego">Офіційні умови визнання громадянином Польщі</a>.</p>
+            </article>
+          </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section" id="exam-structure">
         <div class="container">
-          <h2 class="section__title">Як проходить іспит TELC?</h2>
+          <h2 class="section__title">Структура TELC B1·B2 Szkoła</h2>
           <p class="section__subtitle">
             Іспит має письмову та усну частини. У письмовій частині перевіряють
             аудіювання, читання, мовні елементи й письмо; усна частина
@@ -508,130 +698,470 @@
             частковий іспит. Онлайн-підготовка не означає складання іспиту
             вдома.
           </p>
-        </div>
-      </section>
-      <section class="section section--soft" id="exam-structure">
-        <div class="container">
-          <h2 class="section__title">Структура TELC B1·B2 Szkoła</h2>
-          <div class="cards exam-cards">
-            <article class="card">
-              <h3>Аудіювання — 25 хвилин</h3>
-              <p>
+          <div class="steps">
+            <article class="step">
+              <div class="step__number">01</div>
+              <h3 class="step__title">Аудіювання — 25 хвилин</h3>
+              <p class="step__text">
                 4 частини. Розуміння повідомлень і розмов, пошук основної думки
                 та деталей.
               </p>
             </article>
-            <article class="card">
-              <h3>Читання — 40 хвилин</h3>
-              <p>4 частини. Розуміння текстів і пошук потрібної інформації.</p>
+            <article class="step">
+              <div class="step__number">02</div>
+              <h3 class="step__title">Читання — 40 хвилин</h3>
+              <p class="step__text">4 частини. Розуміння текстів і пошук потрібної інформації.</p>
             </article>
-            <article class="card">
-              <h3>Мовні елементи — 20 хвилин</h3>
-              <p>2 частини. Використання граматики та лексики в контексті.</p>
+            <article class="step">
+              <div class="step__number">03</div>
+              <h3 class="step__title">Мовні елементи — 20 хвилин</h3>
+              <p class="step__text">2 частини. Використання граматики та лексики в контексті.</p>
             </article>
-            <article class="card">
-              <h3>Письмо — 30 хвилин</h3>
-              <p>
+            <article class="step">
+              <div class="step__number">04</div>
+              <h3 class="step__title">Письмо — 30 хвилин</h3>
+              <p class="step__text">
                 1 частина. Власний текст відповідно до ситуації та пунктів
                 завдання.
               </p>
             </article>
-            <article class="card">
-              <h3>Говоріння — приблизно 16 хвилин</h3>
-              <p>
+            <article class="step">
+              <div class="step__number">05</div>
+              <h3 class="step__title">Говоріння — приблизно 16 хвилин</h3>
+              <p class="step__text">
                 3 частини, зазвичай 2 учасники. Передбачено 20 хвилин
                 підготовки.
               </p>
             </article>
           </div>
-          <p class="section__subtitle">
+          <p class="section__subtitle telc-structure-note">
             Письмова частина триває 115 хвилин без перерви. Розклад дня та
             організаційні деталі підтверджує екзаменаційний центр.
           </p>
         </div>
       </section>
-      <section class="section">
+      <section class="section section--soft" id="certificates">
         <div class="container">
-          <h2 class="section__title">Як оцінюють результат?</h2>
-          <p class="section__subtitle">
-            Оцінюються три блоки: аудіювання/читання/мовні елементи разом,
-            письмо та говоріння. Для сертифіката B1 потрібен щонайменше B1 у
-            говорінні й принаймні одному з двох інших блоків. Для B2 потрібен B2
-            у говорінні й принаймні одному з двох інших блоків. Результат нижче
-            B1 у говорінні не дає сертифіката. Це не правило одного загального
-            відсотка за весь іспит.
-          </p>
-          <p>
-            У письмі оцінюють виконання завдання, композицію, правильність і
+          <h2 class="section__title">Рівні, оцінювання та сертифікати</h2>
+          <p class="section__subtitle">Оцінюються три блоки: аудіювання/читання/мовні елементи разом, письмо та говоріння.</p>
+          <div class="cards cards--3">
+            <article class="card">
+              <h3>Сертифікат B1</h3>
+              <p>Потрібен щонайменше B1 у говорінні й принаймні одному з двох інших блоків: аудіювання/читання/мовні елементи разом або письмо.</p>
+            </article>
+            <article class="card">
+              <h3>Сертифікат B2</h3>
+              <p>Потрібен B2 у говорінні й принаймні одному з двох інших блоків. Одного загального відсотка за весь іспит недостатньо.</p>
+            </article>
+            <article class="card">
+              <h3>Результат нижче B1</h3>
+              <p>Якщо говоріння оцінено нижче B1, сертифікат не видається. Остаточний результат визначається критеріями TELC, а не проходженням курсу.</p>
+            </article>
+          </div>
+          <p class="section__subtitle telc-structure-note">У письмі оцінюють виконання завдання, композицію, правильність і
             словниковий запас. В усній частині також важливі вимова, інтонація
             та плавність мовлення. Детальна схема балів наведена в офіційному
             пробному тесті (друковані сторінки 33–39).
-            <a
-              href="https://www.telc.net/fileadmin/user_upload/mock_exams/Polnisch/Polnisch_B1_B2_Schule.zip"
-              >TELC — пробний тест (ZIP)</a
-            >.
-          </p>
-        </div>
-      </section>
-      <section class="section section--soft">
-        <div class="container">
-          <h2 class="section__title">Які завдання можуть зустрічатися?</h2>
-          <p class="section__subtitle">
-            У пробному тесті є вибір правильної відповіді й встановлення
-            відповідностей, письмове повідомлення за заданою ситуацією, опис
-            зображення, коротка презентація та дискусія. На підготовці вчимося
-            виконувати інструкцію, обґрунтовувати думку й реагувати на
-            співрозмовника. Пробний тест показує формат, але не передбачає теми
-            вашої сесії.
-          </p>
+            <a href="https://www.telc.net/fileadmin/user_upload/mock_exams/Polnisch/Polnisch_B1_B2_Schule.zip">TELC — пробний тест (ZIP)</a>.</p>
         </div>
       </section>
       <section class="section" id="preparation">
         <div class="container">
           <h2 class="section__title">Як підготуватися до TELC?</h2>
-          <p class="section__subtitle">
-            Почніть із пробних завдань, щоб визначити слабкі сторони. Складіть
-            план для кожної навички, тренуйтеся з обмеженням часу та аналізуйте
-            помилки. Письмо й говоріння потребують зворотного зв’язку: важливо
-            не тільки знати правило, а й застосовувати його у власній відповіді.
-          </p>
+          <div class="cards cards--3">
+            <article class="card">
+              <h3>Визначити поточний рівень</h3>
+              <p>
+                Почніть із пробних завдань, щоб визначити слабкі сторони.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Планувати практику</h3>
+              <p>
+                Складіть план для кожної навички, тренуйтеся з обмеженням
+                часу та аналізуйте помилки.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Розбирати відповіді</h3>
+              <p>
+                Письмо й говоріння потребують зворотного зв’язку: важливо не
+                тільки знати правило, а й застосовувати його у власній
+                відповіді.
+              </p>
+            </article>
+          </div>
         </div>
       </section>
-      <section class="section section--soft">
+      <section class="section section--soft" id="school">
         <div class="container">
-          <h2 class="section__title">Підготовка до TELC у Expres Polish</h2>
-          <p class="section__subtitle">
-            Працюємо з форматом іспиту та типовими завданнями. Розвиваємо
-            аудіювання, читання, письмо й говоріння, систематизуємо граматику та
-            розбираємо складні саме для вас теми. Для письмової частини тренуємо
-            логіку тексту й виконання всіх пунктів; для усної — зв’язну
-            відповідь, презентацію та діалог.
-          </p>
-        </div>
-      </section>
-      <section class="section" id="location">
-        <div class="container">
-          <h2 class="section__title">Підготовка до TELC у Вроцлаві</h2>
-          <p class="section__subtitle">
-            Заняття у Вроцлаві дають можливість регулярно практикувати польську
-            з викладачем і працювати над екзаменаційними завданнями. Expres
-            Polish знаходиться за адресою Psie Budy 18/19, 53-600 Wrocław.
-            Уточніть доступний розклад і формат перед записом.
-          </p>
-        </div>
-      </section>
-      <section class="section section--soft">
-        <div class="container">
-          <h2 class="section__title">Підготовка до TELC онлайн</h2>
-          <p class="section__subtitle">
-            Онлайн можна тренувати ті самі навички: слухати польську, читати
+          <h2 class="section__title">Чому варто готуватися з Expres Polish</h2>
+          <p class="section__subtitle">Працюємо з форматом TELC, розвиваємо навички та розбираємо складні саме для вас теми.</p>
+          <div class="for-whom__layout">
+            <div class="for-whom__cards">
+              <article class="card for-whom__card">
+                <h3>Усі мовні навички</h3>
+                <p>
+                Розвиваємо аудіювання, читання, письмо й говоріння,
+                систематизуємо граматику та розбираємо складні саме для вас
+                теми.
+              </p>
+              </article>
+              <article class="card for-whom__card">
+                <h3>Письмова частина</h3>
+                <p>
+                Для письмової частини тренуємо логіку тексту й виконання
+                всіх пунктів.
+              </p>
+              </article>
+              <article class="card for-whom__card">
+                <h3>Усна частина</h3>
+                <p>Тренуємо зв’язну відповідь, презентацію та діалог: вчимося обґрунтовувати думку й реагувати на співрозмовника.</p>
+              </article>
+              <article class="card for-whom__card">
+                <h3>Знайомство із завданнями</h3>
+                <p>Тренуємо вибір відповіді, встановлення відповідностей, письмове повідомлення, опис зображення, презентацію та дискусію. Пробний тест показує формат, але не теми сесії.</p>
+              </article>
+            </div>
+            <div class="for-whom__media">
+              <img src="/img/virtual-class-800.webp" srcset="/img/virtual-class-480.webp 480w, /img/virtual-class-800.webp 800w, /img/virtual-class-1120.webp 1120w" sizes="(max-width: 600px) calc(100vw - 36px), (max-width: 900px) calc(100vw - 32px), 560px" width="1120" height="747" class="for-whom__image" alt="Онлайн-заняття польською мовою" loading="lazy" decoding="async">
+              <div class="for-whom__content">
+                <h3>Онлайн або у Вроцлаві</h3>
+                <p>Онлайн можна тренувати ті самі навички: слухати польську, читати
             тексти, виконувати письмові завдання та практикувати усні відповіді.
             Цей формат підходить, якщо ви живете поза Вроцлавом або хочете
-            навчатися без поїздок до школи.
-          </p>
+            навчатися без поїздок до школи.</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero__actions telc-section-actions">
+            <a class="btn btn--primary" href="#cta">Підготуватися до TELC</a>
+          </div>
         </div>
       </section>
-      <section class="section" id="comparison">
+      <section class="section" id="registration">
+        <div class="container">
+          <h2 class="section__title">Як зареєструватися на TELC?</h2>
+          <p class="section__subtitle">Expres Polish пропонує підготовку. Заявка на заняття у школі не є реєстрацією на іспит TELC.</p>
+          <div class="steps">
+            <article class="step">
+              <div class="step__number">01</div>
+              <h3 class="step__title">Знайдіть центр</h3>
+              <p class="step__text">Оберіть центр TELC, який проводить саме польський B1·B2. Не кожен центр пропонує всі мови.</p>
+            </article>
+            <article class="step">
+              <div class="step__number">02</div>
+              <h3 class="step__title">Уточніть сесію</h3>
+              <p class="step__text">Перевірте дату, адресу, точну назву іспиту, вартість і кінцевий термін запису.</p>
+            </article>
+            <article class="step">
+              <div class="step__number">03</div>
+              <h3 class="step__title">Перевірте умови</h3>
+              <p class="step__text">Уточніть документи для ідентифікації та правила скасування. За потреби спеціальних умов зверніться заздалегідь.</p>
+            </article>
+            <article class="step">
+              <div class="step__number">04</div>
+              <h3 class="step__title">Зареєструйтеся</h3>
+              <p class="step__text">Запис та оплата відбуваються за правилами обраного екзаменаційного центру.</p>
+            </article>
+            <article class="step">
+              <div class="step__number">05</div>
+              <h3 class="step__title">Підготуйтеся до іспиту</h3>
+              <p class="step__text">Тренуйте завдання з обмеженням часу. Розклад дня та допуск до сесії підтверджує центр.</p>
+            </article>
+          </div>
+          <div class="telc-resources">
+            <h3>Офіційні матеріали та правила</h3>
+            <p>
+              <a href="https://www.telc.net/en/language-examinations/certificate-exams/polish/telc-polish-b1b2-school/">telc Język polski B1·B2 Szkoła</a>
+            ·
+            <a href="https://www.telc.net/fileadmin/user_upload/mock_exams/Polnisch/Polnisch_B1_B2_Schule.zip">Пробний тест (ZIP)</a>
+            ·
+            <a href="https://www.telc.net/en/terms-conditions-and-examination-regulations/">TELC — правила іспитів</a>
+            </p>
+            <p>
+            Перевірено 8 жовтня 2026 року. Перед реєстрацією звірте правила
+            вашої сесії.
+          </p>
+            <p>
+              <a href="https://www.telc.net/en/language-examinations/language-examinations-support-faq/">TELC — FAQ</a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section section--location" id="location">
+        <div class="container">
+          <h2 class="section__title">Expres Polish у Вроцлаві</h2>
+          <p class="section__subtitle">Заняття у Вроцлаві дають можливість регулярно практикувати польську
+            з викладачем і працювати над екзаменаційними завданнями. Expres
+            Polish знаходиться за адресою Psie Budy 18/19, 53-600 Wrocław.
+            Уточніть доступний розклад і формат перед записом.</p>
+          <div class="location__grid">
+            <div class="location__info">
+              <span class="location__eyebrow"> Наша адреса </span>
+              <h3>Wrocław</h3>
+              <address>
+                Psie Budy 18/19<br>
+                53-600 Wrocław
+              </address>
+              <div class="location__contacts">
+                <!-- PHONE -->
+                <a href="tel:+48881576552" class="location__contact" aria-label="Зателефонувати в Expres Polish">
+                  <span class="location__contact-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2
+                  19.79 19.79 0 0 1-8.63-3.07
+                  19.5 19.5 0 0 1-6-6
+                  19.79 19.79 0 0 1-3.07-8.67
+                  A2 2 0 0 1 4.11 2h3
+                  a2 2 0 0 1 2 1.72
+                  12.84 12.84 0 0 0 .7 2.81
+                  2 2 0 0 1-.45 2.11L8.09 9.91
+                  a16 16 0 0 0 6 6l1.27-1.27
+                  a2 2 0 0 1 2.11-.45
+                  12.84 12.84 0 0 0 2.81.7
+                  A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                  </span>
+                  <span> 881 576 552 </span>
+                </a>
+                <!-- WHATSAPP -->
+                <a href="https://wa.me/48881576552" class="location__contact" target="_blank" rel="noopener noreferrer" aria-label="Написати Expres Polish у WhatsApp">
+                  <span class="location__contact-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24" width="22" height="22" fill="currentColor">
+                      <path d="M20.52 3.48A11.9 11.9 0 0 0 12.05 0C5.46 0 .1 5.36.1 11.95c0 2.1.55 4.15 1.6 5.96L0 24l6.25-1.64a11.96 11.96 0 0 0 5.79 1.48h.01C18.64 23.84 24 18.48 24 11.89c0-3.18-1.24-6.16-3.48-8.41zM12.05 21.82h-.01a9.94 9.94 0 0 1-5.07-1.39l-.36-.21-3.71.98.99-3.62-.24-.37a9.91 9.91 0 1 1 8.4 4.61zm5.44-7.43c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.21 5.09 4.5.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35z"></path>
+                    </svg>
+                  </span>
+                  <span> WhatsApp </span>
+                </a>
+                <!-- EMAIL -->
+                <a href="mailto:expres.polish@gmail.com" class="location__contact" aria-label="Написати Expres Polish на email">
+                  <span class="location__contact-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                      <path d="m3 7 9 6 9-6"></path>
+                    </svg>
+                  </span>
+                  <span> expres.polish@gmail.com </span>
+                </a>
+                <!-- INSTAGRAM -->
+                <a href="https://www.instagram.com/expres.polish?igsh=MXh5eXdjbnFsZGRpeg==" class="location__contact" target="_blank" rel="noopener noreferrer" aria-label="Instagram Expres Polish">
+                  <span class="location__contact-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+                      <circle cx="12" cy="12" r="4"></circle>
+                      <circle cx="18" cy="6" r="1" fill="currentColor" stroke="none"></circle>
+                    </svg>
+                  </span>
+                  <span> Instagram </span>
+                </a>
+              </div>
+            </div>
+            <!-- MAP -->
+            <div class="location__map">
+              <iframe src="https://www.google.com/maps?q=Psie+Budy+18%2F19,+53-600+Wroclaw,+Poland&amp;output=embed" width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Expres Polish — Psie Budy 18/19, Wrocław"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--soft" id="faq">
+        <div class="container">
+          <h2 class="section__title">FAQ — TELC</h2>
+          <div class="faq__list">
+            <details class="faq__item">
+              <summary class="faq__question" aria-controls="telc-answer-1">
+                Що таке TELC з польської мови?
+              </summary>
+              <p class="faq__answer" id="telc-answer-1">
+                TELC — система мовних іспитів The European Language
+                Certificates. В офіційному каталозі для польської представлено
+                telc Język polski B1·B2 Szkoła — дворівневий іспит за шкалою
+                CEFR. За результатами можна підтвердити B1 або B2, якщо виконано
+                відповідні вимоги оцінювання.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question" aria-controls="telc-answer-2">
+                Чим TELC відрізняється від державного B1?
+              </summary>
+              <p class="faq__answer" id="telc-answer-2">
+                Це різні системи сертифікації, а не два варіанти одного іспиту.
+                Обирайте за призначенням документа та вимогами установи. Формат
+                завдань і правила оцінювання відрізняються; жоден іспит не є
+                універсально кращим.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question" aria-controls="telc-answer-3">
+                Який рівень польської потрібен?
+              </summary>
+              <p class="faq__answer" id="telc-answer-3">
+                Іспит перевіряє B1 і B2. Для цільової підготовки потрібна
+                відповідна мовна база; якщо ви починаєте з нуля, спершу
+                необхідно розвинути основні навички.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question" aria-controls="telc-answer-4">Як проходить TELC?</summary>
+              <p class="faq__answer" id="telc-answer-4">
+                Іспит має письмову та усну частини. У письмовій частині
+                перевіряють аудіювання, читання, мовні елементи й письмо; усна
+                частина присвячена спілкуванню. Польський B1·B2 Szkoła доступний
+                у паперовому та гібридному форматах і не складається як окремий
+                частковий іспит. Онлайн-підготовка не означає складання іспиту
+                вдома.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question" aria-controls="telc-answer-5">Чи є усна частина?</summary>
+              <p class="faq__answer" id="telc-answer-5">
+                3 частини, зазвичай 2 учасники. Передбачено 20 хвилин
+                підготовки.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question" aria-controls="telc-answer-6">Чи є письмова частина?</summary>
+              <p class="faq__answer" id="telc-answer-6">
+                Письмова частина триває 115 хвилин без перерви. Розклад дня та
+                організаційні деталі підтверджує екзаменаційний центр.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question" aria-controls="telc-answer-7">
+                Скільки часу потрібно готуватися?
+              </summary>
+              <p class="faq__answer" id="telc-answer-7">
+                У Expres Polish можна працювати над форматом іспиту,
+                систематизувати граматику й тренувати всі мовні навички.
+                Навчаємо у Вроцлаві та онлайн. Тривалість підготовки залежить
+                від стартового рівня, регулярності занять і самостійної
+                практики; універсального терміну для всіх немає.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question" aria-controls="telc-answer-8">
+                Чи можна підготуватися онлайн?
+              </summary>
+              <p class="faq__answer" id="telc-answer-8">
+                Онлайн можна тренувати ті самі навички: слухати польську, читати
+                тексти, виконувати письмові завдання та практикувати усні
+                відповіді. Цей формат підходить, якщо ви живете поза Вроцлавом
+                або хочете навчатися без поїздок до школи.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question" aria-controls="telc-answer-9">
+                Чи є підготовка до TELC у Вроцлаві?
+              </summary>
+              <p class="faq__answer" id="telc-answer-9">
+                Заняття у Вроцлаві дають можливість регулярно практикувати
+                польську з викладачем і працювати над екзаменаційними
+                завданнями. Expres Polish знаходиться за адресою Psie Budy
+                18/19, 53-600 Wrocław. Уточніть доступний розклад і формат перед
+                записом.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question" aria-controls="telc-answer-10">Де складають TELC?</summary>
+              <p class="faq__answer" id="telc-answer-10">
+                TELC складають в екзаменаційному центрі, який пропонує польський
+                B1·B2. Перевірте точну адресу та доступність потрібної сесії в
+                організатора. Expres Polish тут пропонує підготовку.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question" aria-controls="telc-answer-11">
+                Як зареєструватися на іспит?
+              </summary>
+              <p class="faq__answer" id="telc-answer-11">
+                Реєстрація відбувається через екзаменаційний центр TELC.
+                Знайдіть центр, який проводить саме польський іспит, і уточніть
+                дату, назву формату, вартість, кінцевий термін запису, документи
+                для ідентифікації та правила скасування. Не кожен центр пропонує
+                всі мови. За потреби спеціальних умов зверніться заздалегідь.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question" aria-controls="telc-answer-12">
+                TELC чи державний B1 — що обрати?
+              </summary>
+              <p class="faq__answer" id="telc-answer-12">
+                Це різні системи сертифікації, а не два варіанти одного іспиту.
+                Обирайте за призначенням документа та вимогами установи. Формат
+                завдань і правила оцінювання відрізняються; жоден іспит не є
+                універсально кращим.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question" aria-controls="telc-answer-13">
+                Чи гарантує підготовка сертифікат B2?
+              </summary>
+              <p class="faq__answer" id="telc-answer-13">
+                Ні. Сертифікат і рівень визначаються результатами іспиту за
+                критеріями TELC. Навчання допомагає підготуватися, але не
+                гарантує конкретного результату.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question" aria-controls="telc-answer-14">
+                Скільки коштує іспит TELC?
+              </summary>
+              <p class="faq__answer" id="telc-answer-14">
+                Вартість встановлює обраний екзаменаційний центр. Уточнюйте
+                актуальну суму й умови оплати безпосередньо перед реєстрацією;
+                вартість підготовки погоджується зі школою окремо.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section class="section section--cta" id="cta">
+        <div class="container cta">
+          <div class="cta__text">
+            <h2 class="section__title">Плануєте підготовку до TELC?</h2>
+            <p class="section__subtitle">
+              Залиште заявку. Допоможемо визначити ваш поточний рівень польської
+              та підібрати формат підготовки до іспиту.
+            </p>
+          </div>
+          <form class="form" id="leadForm" data-success-message="Дякуємо! Ми зв’яжемося з вами щодо підготовки до TELC.">
+            <input type="hidden" name="formType" value="telc_exam_lead">
+            <input type="hidden" name="goal" value="exam_telc">
+            <div class="form__field">
+              <label for="name"> Ім’я </label>
+              <input type="text" id="name" autocomplete="name" name="name" placeholder="Ваше ім’я" required>
+            </div>
+            <div class="form__field">
+              <label for="phone"> Телефон або WhatsApp </label>
+              <input type="tel" id="phone" autocomplete="tel" name="phone" placeholder="+48 ..." required>
+            </div>
+            <div class="form__field">
+              <label for="email"> Email </label>
+              <input type="email" id="email" autocomplete="email" name="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form__field">
+              <label for="level"> Ваш поточний рівень польської </label>
+              <select id="level" name="level">
+                <option value="">Оберіть рівень</option>
+                <option value="A0">З нуля</option>
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="B1">B1</option>
+                <option value="unknown">Не знаю</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn--primary form__btn">
+              Записатися на консультацію
+            </button>
+            <p class="form__note">
+              Натискаючи кнопку, ви погоджуєтесь на обробку ваших даних для
+              зв’язку щодо навчання.
+            </p>
+            <p class="form__status" id="leadFormStatus" role="status" aria-live="polite" aria-atomic="true"></p>
+          </form>
+        </div>
+      </section>
+      <section class="section section--soft" id="comparison">
         <div class="container">
           <h2 class="section__title">
             TELC чи державний іспит B1 — що обрати?
@@ -651,9 +1181,7 @@
                 граматика, письмо та говоріння. Якщо вам потрібен саме державний
                 сертифікат, готуйтеся до цього формату.
               </p>
-              <a class="btn btn--ghost" href="/derzhavnyi-ispyt-b1.html"
-                >Дізнатися про іспит B1</a
-              >
+              <a class="btn btn--ghost" href="/derzhavnyi-ispyt-b1.html">Дізнатися про іспит B1</a>
             </article>
             <article class="card">
               <h3>Іспит TELC з польської мови</h3>
@@ -667,289 +1195,9 @@
           </div>
         </div>
       </section>
-      <section class="section section--soft" id="registration">
-        <div class="container">
-          <h2 class="section__title">Як зареєструватися на TELC?</h2>
-          <p class="section__subtitle">
-            Реєстрація відбувається через екзаменаційний центр TELC. Знайдіть
-            центр, який проводить саме польський іспит, і уточніть дату, назву
-            формату, вартість, кінцевий термін запису, документи для
-            ідентифікації та правила скасування. Не кожен центр пропонує всі
-            мови. За потреби спеціальних умов зверніться заздалегідь.
-          </p>
-          <p>
-            Expres Polish пропонує підготовку. Заявка на заняття в нашій школі
-            не є реєстрацією на іспит TELC. Дату, оплату та допуск до сесії
-            підтверджує обраний екзаменаційний центр.
-          </p>
-          <p>
-            <a
-              href="https://www.telc.net/en/language-examinations/language-examinations-support-faq/"
-              >TELC — FAQ</a
-            >
-          </p>
-        </div>
-      </section>
-      <section class="section" id="faq">
-        <div class="container">
-          <h2 class="section__title">FAQ — TELC</h2>
-          <div class="faq__list">
-            <details class="faq__item">
-              <summary class="faq__question">
-                Що таке TELC з польської мови?
-              </summary>
-              <p class="faq__answer">
-                TELC — система мовних іспитів The European Language
-                Certificates. В офіційному каталозі для польської представлено
-                telc Język polski B1·B2 Szkoła — дворівневий іспит за шкалою
-                CEFR. За результатами можна підтвердити B1 або B2, якщо виконано
-                відповідні вимоги оцінювання.
-              </p>
-            </details>
-            <details class="faq__item">
-              <summary class="faq__question">
-                Чим TELC відрізняється від державного B1?
-              </summary>
-              <p class="faq__answer">
-                Це різні системи сертифікації, а не два варіанти одного іспиту.
-                Обирайте за призначенням документа та вимогами установи. Формат
-                завдань і правила оцінювання відрізняються; жоден іспит не є
-                універсально кращим.
-              </p>
-            </details>
-            <details class="faq__item">
-              <summary class="faq__question">
-                Який рівень польської потрібен?
-              </summary>
-              <p class="faq__answer">
-                Іспит перевіряє B1 і B2. Для цільової підготовки потрібна
-                відповідна мовна база; якщо ви починаєте з нуля, спершу
-                необхідно розвинути основні навички.
-              </p>
-            </details>
-            <details class="faq__item">
-              <summary class="faq__question">Як проходить TELC?</summary>
-              <p class="faq__answer">
-                Іспит має письмову та усну частини. У письмовій частині
-                перевіряють аудіювання, читання, мовні елементи й письмо; усна
-                частина присвячена спілкуванню. Польський B1·B2 Szkoła доступний
-                у паперовому та гібридному форматах і не складається як окремий
-                частковий іспит. Онлайн-підготовка не означає складання іспиту
-                вдома.
-              </p>
-            </details>
-            <details class="faq__item">
-              <summary class="faq__question">Чи є усна частина?</summary>
-              <p class="faq__answer">
-                3 частини, зазвичай 2 учасники. Передбачено 20 хвилин
-                підготовки.
-              </p>
-            </details>
-            <details class="faq__item">
-              <summary class="faq__question">Чи є письмова частина?</summary>
-              <p class="faq__answer">
-                Письмова частина триває 115 хвилин без перерви. Розклад дня та
-                організаційні деталі підтверджує екзаменаційний центр.
-              </p>
-            </details>
-            <details class="faq__item">
-              <summary class="faq__question">
-                Скільки часу потрібно готуватися?
-              </summary>
-              <p class="faq__answer">
-                У Expres Polish можна працювати над форматом іспиту,
-                систематизувати граматику й тренувати всі мовні навички.
-                Навчаємо у Вроцлаві та онлайн. Тривалість підготовки залежить
-                від стартового рівня, регулярності занять і самостійної
-                практики; універсального терміну для всіх немає.
-              </p>
-            </details>
-            <details class="faq__item">
-              <summary class="faq__question">
-                Чи можна підготуватися онлайн?
-              </summary>
-              <p class="faq__answer">
-                Онлайн можна тренувати ті самі навички: слухати польську, читати
-                тексти, виконувати письмові завдання та практикувати усні
-                відповіді. Цей формат підходить, якщо ви живете поза Вроцлавом
-                або хочете навчатися без поїздок до школи.
-              </p>
-            </details>
-            <details class="faq__item">
-              <summary class="faq__question">
-                Чи є підготовка до TELC у Вроцлаві?
-              </summary>
-              <p class="faq__answer">
-                Заняття у Вроцлаві дають можливість регулярно практикувати
-                польську з викладачем і працювати над екзаменаційними
-                завданнями. Expres Polish знаходиться за адресою Psie Budy
-                18/19, 53-600 Wrocław. Уточніть доступний розклад і формат перед
-                записом.
-              </p>
-            </details>
-            <details class="faq__item">
-              <summary class="faq__question">Де складають TELC?</summary>
-              <p class="faq__answer">
-                TELC складають в екзаменаційному центрі, який пропонує польський
-                B1·B2. Перевірте точну адресу та доступність потрібної сесії в
-                організатора. Expres Polish тут пропонує підготовку.
-              </p>
-            </details>
-            <details class="faq__item">
-              <summary class="faq__question">
-                Як зареєструватися на іспит?
-              </summary>
-              <p class="faq__answer">
-                Реєстрація відбувається через екзаменаційний центр TELC.
-                Знайдіть центр, який проводить саме польський іспит, і уточніть
-                дату, назву формату, вартість, кінцевий термін запису, документи
-                для ідентифікації та правила скасування. Не кожен центр пропонує
-                всі мови. За потреби спеціальних умов зверніться заздалегідь.
-              </p>
-            </details>
-            <details class="faq__item">
-              <summary class="faq__question">
-                TELC чи державний B1 — що обрати?
-              </summary>
-              <p class="faq__answer">
-                Це різні системи сертифікації, а не два варіанти одного іспиту.
-                Обирайте за призначенням документа та вимогами установи. Формат
-                завдань і правила оцінювання відрізняються; жоден іспит не є
-                універсально кращим.
-              </p>
-            </details>
-            <details class="faq__item">
-              <summary class="faq__question">
-                Чи гарантує підготовка сертифікат B2?
-              </summary>
-              <p class="faq__answer">
-                Ні. Сертифікат і рівень визначаються результатами іспиту за
-                критеріями TELC. Навчання допомагає підготуватися, але не
-                гарантує конкретного результату.
-              </p>
-            </details>
-            <details class="faq__item">
-              <summary class="faq__question">
-                Скільки коштує іспит TELC?
-              </summary>
-              <p class="faq__answer">
-                Вартість встановлює обраний екзаменаційний центр. Уточнюйте
-                актуальну суму й умови оплати безпосередньо перед реєстрацією;
-                вартість підготовки погоджується зі школою окремо.
-              </p>
-            </details>
-          </div>
-        </div>
-      </section>
-      <section class="section section--soft">
-        <div class="container">
-          <h2 class="section__title">Офіційні матеріали та правила</h2>
-          <p>
-            <a
-              href="https://www.telc.net/en/language-examinations/certificate-exams/polish/telc-polish-b1b2-school/"
-              >telc Język polski B1·B2 Szkoła</a
-            >
-            ·
-            <a
-              href="https://www.telc.net/fileadmin/user_upload/mock_exams/Polnisch/Polnisch_B1_B2_Schule.zip"
-              >Пробний тест (ZIP)</a
-            >
-            ·
-            <a
-              href="https://www.telc.net/en/terms-conditions-and-examination-regulations/"
-              >TELC — правила іспитів</a
-            >
-          </p>
-          <p>
-            Перевірено 7 жовтня 2026 року. Перед реєстрацією звірте правила
-            вашої сесії.
-          </p>
-        </div>
-      </section>
-      <section class="section section--cta" id="cta">
-        <div class="container cta">
-          <div class="cta__text">
-            <h2 class="section__title">Плануєте підготовку до TELC?</h2>
-
-            <p class="section__subtitle">
-              Залиште заявку. Допоможемо визначити ваш поточний рівень польської
-              та підібрати формат підготовки до іспиту.
-            </p>
-          </div>
-
-          <form class="form" id="leadForm">
-            <input type="hidden" name="formType" value="telc_exam_lead" />
-
-            <input type="hidden" name="goal" value="exam_telc" />
-
-            <div class="form__field">
-              <label for="name"> Ім’я </label>
-
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Ваше ім’я"
-                required
-              />
-            </div>
-
-            <div class="form__field">
-              <label for="phone"> Телефон або WhatsApp </label>
-
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="+48 ..."
-                required
-              />
-            </div>
-
-            <div class="form__field">
-              <label for="email"> Email </label>
-
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="your@email.com"
-                required
-              />
-            </div>
-
-            <div class="form__field">
-              <label for="level"> Ваш поточний рівень польської </label>
-
-              <select id="level" name="level">
-                <option value="">Оберіть рівень</option>
-
-                <option value="A0">З нуля</option>
-
-                <option value="A1">A1</option>
-
-                <option value="A2">A2</option>
-
-                <option value="B1">B1</option>
-
-                <option value="unknown">Не знаю</option>
-              </select>
-            </div>
-
-            <button type="submit" class="btn btn--primary form__btn">
-              Записатися на консультацію
-            </button>
-
-            <p class="form__note">
-              Натискаючи кнопку, ви погоджуєтесь на обробку ваших даних для
-              зв’язку щодо навчання.
-            </p>
-
-            <p class="form__status" id="leadFormStatus"></p>
-          </form>
-        </div>
-      </section>
     </main>
+
+
 
     <!-- =====================================================
 FOOTER
@@ -1136,21 +1384,21 @@ AI CHAT
         <div class="ai-chat__quick-actions" aria-label="Швидкі питання">
           <button
             type="button"
-            data-chat-message="Хочу підготуватися до державного іспиту B1"
+            data-chat-message="Хочу підготуватися до іспиту TELC"
           >
-            Підготовка B1
+            Підготовка TELC
           </button>
 
           <button
             type="button"
-            data-chat-message="Як проходить державний іспит B1?"
+            data-chat-message="Як проходить іспит TELC?"
           >
             Про іспит
           </button>
 
           <button
             type="button"
-            data-chat-message="Хочу записатися на консультацію щодо підготовки до B1"
+            data-chat-message="Хочу записатися на консультацію щодо підготовки до TELC"
           >
             Консультація
           </button>
@@ -1188,5 +1436,6 @@ JS
 ===================================================== -->
 
     <script src="/scripts/script.js"></script>
+    <script src="/scripts/telc.js"></script>
   </body>
 </html>

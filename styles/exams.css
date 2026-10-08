@@ -27,3 +27,57 @@
 @media (min-width: 768px) {
   .exam-page .exam-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+/* TELC uses B1 components; these rules only handle its longer exam copy. */
+.telc-page .steps > *,
+.telc-page .cards > * { min-width: 0; }
+.telc-page .section > .container > p:not(.section__subtitle),
+.telc-page .section > .container > h3 {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.telc-page .section > .container > .section__subtitle:last-child { margin-bottom: 0; }
+.telc-page .telc-structure-note { margin-top: 28px; }
+.telc-page .section__title + .cards { margin-top: 50px; }
+@media (max-width: 600px) {
+  .telc-page .section__title + .cards { margin-top: 36px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html:has(.telc-page) { scroll-behavior: auto; }
+  .telc-page *, .telc-page *::before, .telc-page *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .telc-page .card:hover, .telc-page .step:hover, .telc-page .btn:hover { transform: none; }
+}
+
+/* B1's media and contact compositions, scoped to the TELC content. */
+.telc-page .for-whom__layout > *,
+.telc-page .for-whom__cards > * { min-width: 0; }
+.telc-page .telc-section-actions { justify-content: center; margin: 36px 0 0; }
+.telc-page .telc-resources { margin-top: 36px; text-align: center; }
+.telc-page .telc-resources p { max-width: 720px; margin-left: auto; margin-right: auto; }
+
+/* Exam direction cards: shared brand colours, type and button geometry. */
+.exam-directions { display: grid; gap: 24px; margin-top: 40px; }
+.exam-direction { min-width: 0; background: #fff; border: 1px solid #d9e6f3; border-radius: 26px; overflow: hidden; }
+.exam-direction__link { display: flex; flex-direction: column; height: 100%; }
+.exam-direction__image, .exam-direction__placeholder { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
+.exam-direction__placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; background: #eef8fa; color: #0a4d8c; padding: 24px; }
+.exam-direction__placeholder .exam-hero__eyebrow { margin-bottom: 0; }
+.exam-direction__level { font: 800 80px/1.2 "Nunito", sans-serif; }
+.exam-direction__body { display: flex; flex: 1; flex-direction: column; align-items: stretch; padding: 24px; }
+.exam-direction h3 { color: #0a4d8c; font: 800 24px/1.25 "Nunito", sans-serif; margin: 0 0 16px; }
+.exam-direction p { color: #4b5563; margin: 0 0 24px; }
+.exam-direction .exam-direction__cta { margin-top: auto; min-height: 72px; background: #0a4d8c; color: #fff; gap: 8px; text-align: center; }
+.exam-direction__link:hover .exam-direction__cta { background: #1f2933; }
+.exam-direction__link:focus-visible { outline: 3px solid #0a4d8c; outline-offset: -5px; }
+@media (min-width: 768px) {
+  .exam-directions { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .exam-direction__body { padding: 28px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .exam-direction__cta { transition: none; }
+  .exam-direction__link:hover .exam-direction__cta { transform: none; }
+}

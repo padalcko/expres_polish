@@ -1,0 +1,8 @@
+name: Check shared social menu
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/sync-social-menu.py --check

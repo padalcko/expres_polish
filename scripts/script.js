@@ -235,7 +235,7 @@ if (leadForm) {
 
       setFormStatus(
         leadFormStatus,
-        "Дякуємо! Ми зв’яжемося з вами щодо пробного уроку.",
+        leadForm.dataset.successMessage || "Дякуємо! Ми зв’яжемося з вами щодо пробного уроку.",
       );
       leadForm.reset();
     } catch (error) {

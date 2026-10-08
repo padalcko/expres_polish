@@ -1814,3 +1814,24 @@ RESPONSIVE — 600
     height: calc(100vh - 20px);
   }
 }
+/* Reserve space for the existing shared social rail on compact viewports. */
+@media (min-width: 601px) and (max-width: 1344px) {
+  .has-social-menu main { padding-inline: 76px; }
+}
+@media (max-width: 600px) {
+  .has-social-menu { padding-bottom: calc(82px + env(safe-area-inset-bottom)); }
+  .has-social-menu .social-tab { bottom: calc(14px + env(safe-area-inset-bottom)); }
+  html:has(.has-social-menu) { scroll-padding-bottom: 90px; }
+  .has-social-menu :is(input, select, textarea, button, a) { scroll-margin-bottom: 90px; }
+}
+.social-tab__item:focus-visible { outline: 2px solid #0a4d8c; outline-offset: 3px; }
+body:has(.mobile-nav--open) .social-tab,
+body.chat-open .social-tab,
+body.modal-open .social-tab { visibility: hidden; }
+@media (prefers-reduced-motion: reduce) {
+  .social-tab *, .social-tab *::before, .social-tab *::after { transition: none !important; animation: none !important; }
+  .social-tab__item:hover, .social-tab__item:focus-visible { transform: none; }
+}
+@media (max-width: 375px) {
+  .has-social-menu main :is(h1, h2, h3) { overflow-wrap: anywhere; }
+}
