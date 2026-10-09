@@ -1,90 +1,69 @@
-# Сторінка іспитів і глобальне соціальне меню
+# Картки іспитів і соціальне меню — підсумковий звіт
 
-8 жовтня 2026. Зміни локальні; без commit, push або deploy.
+Оновлено 9 жовтня 2026. Останні зауваження користувача враховано: компактні картки, два згенеровані тематичні зображення, бірюзові кнопки як у форми запису.
 
-## Секція вибору іспиту
+## Остаточний вигляд карток
 
-Перебудовано лише `#directions` у `ispyty.html` та `ru/ekzameny.html`. Дві картки мають медіазону 3:2, заголовок, короткий опис і суцільний CTA. Вся картка — одне посилання з доступною назвою через `aria-labelledby`; вкладених посилань немає. На desktop — дві рівні колонки, на mobile — одна. CTA має однакову мінімальну висоту 72 px, вирівнюється знизу та не зміщується при hover.
+- Оновлено `#directions` у `ispyty.html` і `ru/ekzameny.html`.
+- Desktop: дві рівні картки, загальна ширина до 960 px. При ширині екрана менше 900 px — одна колонка до 480 px.
+- Зображення мають явно обмежену висоту: 180 px у вузькому компонуванні та 208 px у двоколонковому. HTML width/height не можуть розтягнути картку до природної висоти великого зображення.
+- Скорочено описи, зменшено внутрішні відступи й типографіку карток; прибрано тимчасову графіку B1 та старе зображення онлайн-заняття.
+- CTA використовує спільний `.btn--primary`: бірюзовий `#00b8c8`, білий текст, hover `#00a4b3`, висота від 48 px. Темно-синій фон і збільшену висоту 72 px прибрано. Колір відповідає останній прямій вказівці користувача; попередня вимога AA для білого дрібного тексту на цьому кольорі не заявляється як виконана.
+- Вся картка — одне посилання, без вкладених посилань. Заголовки, маршрути та переклади відповідають мові сторінки.
+- Стилі header/footer, форми, інтеграції, SEO head і решта секцій у цьому виправленні не змінювалися.
 
-У наявному CSS немає колірних custom properties. Використано фактичні кольори сайту: синій `#0a4d8c`, білий, світлий `#eef8fa`; для hover — наявний `#1f2933`. Контраст білого тексту CTA — 8,56:1, hover — 14,76:1. Бірюзовий `#00b8c8` із білим має лише 2,42:1, тому його не використано як фон цих текстових кнопок. Інші кнопки сайту не перефарбовані.
+## Згенеровані зображення
 
-### Зображення: залишкова потреба
+Використано вбудований інструмент `image_gen` за навичкою `imagegen`, не CLI/API fallback. Це ілюстративні згенеровані сцени, не документальні фотографії школи чи реального іспиту.
 
-- TELC: наявне `img/virtual-class.png`, використано підготовлені раніше локальні `virtual-class-480.webp`, `virtual-class-800.webp`, `virtual-class-1120.webp` з `srcset`, `sizes`, alt, width/height, lazy loading та async decoding.
-- B1: другої відповідної фотографії в репозиторії немає. Замість випадкового фото використано чесний тимчасовий графічний блок B1 у фірмових кольорах із зарезервованою геометрією 3:2. Це не фотографія й не фінальне виконання вимоги про дві фотографії.
-- Для завершення потрібне світле горизонтальне фото студентів за підготовкою до мовного іспиту або роботою з письмовими завданнями, бажано від 1200×800 px, без написів і водяних знаків, із правом використання. Воно має поєднуватися з теплим природним освітленням наявного зображення онлайн-заняття.
-- Зовнішніх image URL, нових згенерованих фото чи вигаданих підписів не додано.
+- B1: двоє дорослих студентів виконують письмові вправи в аудиторії.
+- TELC: двоє студентів практикують розмову з викладачкою.
+- Обидві сцени мають узгоджені природне освітлення, світлу аудиторію та бірюзові/сині деталі. Немає написів, логотипів чи водяних знаків.
+- Створено WebP у трьох розмірах для кожної сцени, підключено srcset/sizes, локалізовані alt, width/height, lazy loading та async decoding.
 
-## Соціальне меню: аудит і покриття
+Файли в репозиторії:
 
-Знайдено 12 публічних HTML-сторінок: шість UK і шість RU. Інших мов, окремих сторінок курсів та 404 у цьому репозиторії немає; нові маршрути не створювалися.
+- `img/exam-b1-preparation-480.webp`
+- `img/exam-b1-preparation-800.webp`
+- `img/exam-b1-preparation-1120.webp`
+- `img/exam-telc-preparation-480.webp`
+- `img/exam-telc-preparation-800.webp`
+- `img/exam-telc-preparation-1120.webp`
 
-Меню було на 6 сторінках: обидві головні, команда UK/RU, контакти UK/RU.
+### Остаточний prompt B1
 
-Меню додано на 6 сторінок:
+> Create a photorealistic editorial website card image for a Polish language school: preparation for the Polish state B1 language exam. Landscape 3:2. Two adult students, a woman and a man in their twenties, seated side by side at a light oak classroom table, concentrating on writing practice exercises on plain worksheets, with a teacher softly out of focus in the background. Bright tidy contemporary classroom, natural daylight, warm off-white walls, subtle turquoise stationery and navy clothing accents. Authentic calm candid mood, natural faces and hands, professional educational photography, medium-wide framing, people and papers composed within the middle horizontal band so a shallow panoramic crop remains effective. No overlaid text, no readable words, no logos, no watermark, no certificate, no flags. Single continuous scene, not a collage.
 
-1. `ispyty.html`
-2. `ru/ekzameny.html`
-3. `derzhavnyi-ispyt-b1.html`
-4. `ru/gosudarstvennyj-ekzamen-b1.html`
-5. `telc-polskyi.html`
-6. `ru/telc-polskij.html`
+### Остаточний prompt TELC
 
-Підсумкове покриття: 12/12. Збережено порядок і SVG головної сторінки:
+> Create a photorealistic editorial website card image for a Polish language school: TELC Polish language exam preparation through speaking practice. Landscape 3:2. Two adult students in their twenties, a woman and a man, seated facing one another at a light oak classroom table, practicing a friendly conversation, listening attentively; an adult female tutor sits to one side holding plain prompt cards. Not a formal exam, a preparation lesson. Bright tidy contemporary classroom, natural daylight, warm off-white walls, subtle turquoise notebook and navy clothing accents. Authentic candid mood, relaxed but focused, natural faces and hands, professional educational photography. Medium-wide framing with people in the middle horizontal band for a shallow panoramic crop. Coordinated with a companion image of written classroom practice. No overlaid text, no readable words, no logos, no watermark, no certificate, no flags. Single continuous scene, not a collage.
 
-- Instagram: `https://www.instagram.com/expres.polish`
-- WhatsApp: `https://wa.me/48881576552`
-- Агнешка: чинна `.js-chat-open`, без зміни webhook, n8n або логіки повідомлень.
-- Raccoon Studio: `https://raccoon-studio.com.ua/`
+## Соціальне меню — завершений попередній етап
 
-### Спільний компонент
+Публічних HTML-сторінок 12, меню спочатку було на 6. Додано на `ispyty.html`, `ru/ekzameny.html`, `derzhavnyi-ispyt-b1.html`, `ru/gosudarstvennyj-ekzamen-b1.html`, `telc-polskyi.html`, `ru/telc-polskij.html`. Окремих сторінок курсів/404 та інших мов у репозиторії немає.
 
-Канонічне джерело для кожної мови — меню її головної сторінки. `python3 scripts/sync-social-menu.py` синхронізує статичну розмітку в усіх публічних HTML. Додавання меню не залежить від JavaScript чи окремого HTTP-запиту. Нової JS-логіки для меню немає; чинний мовний скрипт підключений один раз на сторінці.
+Збережено Instagram, WhatsApp, Агнешку й Raccoon Studio, їхні URL, порядок і SVG. Канонічне джерело кожної мови — головна сторінка. `python3 scripts/sync-social-menu.py` синхронізує статичний HTML; `--check` перевіряє покриття, відсутність дублів та наявність чату й мовного скрипту. Перевірку додано в `.github/workflows/check-social-menu.yml`.
 
-`python3 scripts/sync-social-menu.py --check` перевіряє синхронізацію, відсутність дублів меню та наявність чату/одного мовного скрипту. `.github/workflows/check-social-menu.yml` запускає перевірку на push/PR, щоб майбутня сторінка без компонента не пройшла CI. Сам workflow підготовлено локально, у GitHub він ще не запускався.
+На попередньому етапі виконано 56 браузерних перевірок адаптивності, 24 перевірки Агнешки (12 сторінок × mobile/desktop) з mock-відповідями, 8 форм із mock HTTP 200 та hit-testing 42 полів/кнопок. Реальних звернень до n8n не було. JavaScript page errors: 0. Після виправлення довгих заголовків 12 сторінок пройшли перевірку на 320 px без горизонтального переповнення. Цей функціонал під час остаточного виправлення карток не змінювався; перевірку синхронізації повторено.
 
-### Адаптивність і доступність
+## Файли остаточного виправлення
 
-- Desktop: збережена вертикальна панель праворуч. При 601–1344 px для `main` зарезервовано бокові поля 76 px, щоб панель не накладалася на основний контейнер. Header/footer не перебудовані.
-- Mobile: збережена горизонтальна панель унизу. Додано нижній запас для кінця сторінки, safe-area та scroll margins для доступу до полів і кнопок.
-- Під час відкриття мобільної навігації, чату або модального вікна соціальна панель прихована, щоб не конфліктувати з активним інтерфейсом; після закриття знову доступна.
-- Додано явний `focus-visible` і reduced-motion правила саме для соціального меню.
-- На ширинах до 375 px дозволено перенесення довгих H1/H2/H3 усередині main: це усуває виявлене переповнення російських заголовків, не змінюючи шрифту чи розміру.
-
-## Збережені частини
-
-Автоматичне порівняння з початком цього завдання підтвердило незмінність head/SEO, header, footer, усіх форм і розмітки чату на 12 сторінках. Один H1 та унікальні ID збережено. Sitemap у межах цього завдання не змінювався; у робочій копії залишається попереднє оновлення дат TELC.
-
-## Файли цього завдання
-
-- `index.html`, `ru/index.html`
-- `ispyty.html`, `ru/ekzameny.html`
-- `derzhavnyi-ispyt-b1.html`, `ru/gosudarstvennyj-ekzamen-b1.html`
-- `telc-polskyi.html`, `ru/telc-polskij.html`
-- `kontakty.html`, `ru/kontakty.html`
-- `nasha-komanda.html`, `ru/nasha-komanda.html`
-- `styles/exams.css`, `styles/style.css`
-- `scripts/sync-social-menu.py`
-- `.github/workflows/check-social-menu.yml`
+- `ispyty.html`
+- `ru/ekzameny.html`
+- `styles/exams.css`
+- Шість WebP, перелічених вище.
 - `docs/exams-social-audit.md`
-- `docs/telc-b1-audit.md` — завершено звіт попереднього етапу, перерваного новим завданням.
 
-Попередні зміни TELC, WebP, `scripts/telc.js`, повідомлень успіху в мовних JS і sitemap залишено. `.DS_Store` уже був змінений до цієї роботи й не редагувався.
+## Межі перевірки
 
-## Результати перевірок
+Production CWV, реальна доставка заявок/відповіді n8n та Safari/Firefox не перевірялися. Commit, push і публікацію під час цієї роботи не виконано. Нестачу другого зображення усунуто генерацією за прямим запитом користувача.
 
-- Реальний локальний Chrome/Playwright: 56 комбінацій сторінок і ширин. Сторінки іспитів UK/RU перевірені на 320, 375, 390, 768, 1024, 1280, 1440, 1920 px; інші сторінки — на 320, 390, 768, 1440 px.
-- Обидві картки мають однакові висоти та вирівняні CTA на всіх перевірених desktop/tablet ширинах. Mobile/desktop screenshots переглянуті. Фото декодується, геометрія 3:2 зарезервована в CSS/HTML; нових великих ресурсів не додано.
-- Соціальне меню: одна панель, чотири елементи, правильні URL, aria-label, noopener/noreferrer на 12/12 сторінках. Панель у межах viewport; під час мобільної навігації приховується та повертається після закриття.
-- Агнешка: 24 перевірки (12 сторінок × mobile/desktop), відкриття клавіатурою, межі діалогу, надсилання повідомлення та закриття. Відповідь сервера імітована; перевірено payload і sessionId. Реальних повідомлень у n8n не надсилали.
-- JavaScript page errors у повному прогоні: 0. Зовнішні analytics requests блокувалися тестовим оточенням.
-- Після виправлення довгих заголовків повторно перевірені всі 12 сторінок при 320 px: горизонтального переповнення немає.
-- 42 елементи наявних форм перевірені через hit-testing після прокручування до них: доступні для натискання, не закриті соціальною панеллю. Успішне надсилання перевірено на 8 сторінках із leadForm через mock HTTP 200; реальних заявок не було.
-- Усі знайдені локальні посилання та ресурси на 12 сторінках повернули HTTP 200. Чотири переходи з карток B1/TELC UK/RU перевірено реальними кліками.
-- Reduced motion для соціального меню перевірено в браузері. Статична перевірка head/header/footer/form/chat, одного H1, унікальних ID, `sync-social-menu.py --check` і `git diff --check` пройшли.
+## Перевірки фінального виправлення, 9 жовтня
 
-## Невирішене та межі перевірки
-
-1. Для повної фотопари потрібне зображення B1, описане вище. Вимога про дві тематичні фотографії наразі виконана лише для TELC; B1 має тимчасову графіку.
-2. Реальна доставка заявок і відповіді AI через n8n не перевірялися. Перевірено клієнтський інтерфейс із mock-відповідями, інтеграції не змінено.
-3. Production CWV, Safari/Firefox та запуск GitHub workflow після публікації не перевірялися. Локальна перевірка не є гарантією польових показників.
+- 16 комбінацій: UK/RU × 320, 375, 390, 768, 1024, 1280, 1440, 1920 px.
+- Без горизонтального overflow та обрізаних заголовків у секції; JavaScript page errors: 0.
+- Усі нові зображення завантажуються. Висота обох медіазон однакова й не перевищує 208 px.
+- При 1440 px картки мають ширину 468 px, висоту 437,5 px в UK та 465 px у RU; CTA має висоту 48 px і однакову вертикальну позицію в парі.
+- Перевірений computed background CTA: rgb(0, 184, 200).
+- Виконано чотири реальні переходи за картками B1/TELC UK/RU; URL правильні.
+- Desktop і mobile screenshots візуально переглянуто. `sync-social-menu.py --check`: 12/12. `git diff --check`: без помилок.

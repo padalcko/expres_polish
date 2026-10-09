@@ -59,25 +59,68 @@
 .telc-page .telc-resources { margin-top: 36px; text-align: center; }
 .telc-page .telc-resources p { max-width: 720px; margin-left: auto; margin-right: auto; }
 
-/* Exam direction cards: shared brand colours, type and button geometry. */
-.exam-directions { display: grid; gap: 24px; margin-top: 40px; }
-.exam-direction { min-width: 0; background: #fff; border: 1px solid #d9e6f3; border-radius: 26px; overflow: hidden; }
-.exam-direction__link { display: flex; flex-direction: column; height: 100%; }
-.exam-direction__image, .exam-direction__placeholder { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
-.exam-direction__placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; background: #eef8fa; color: #0a4d8c; padding: 24px; }
-.exam-direction__placeholder .exam-hero__eyebrow { margin-bottom: 0; }
-.exam-direction__level { font: 800 80px/1.2 "Nunito", sans-serif; }
-.exam-direction__body { display: flex; flex: 1; flex-direction: column; align-items: stretch; padding: 24px; }
-.exam-direction h3 { color: #0a4d8c; font: 800 24px/1.25 "Nunito", sans-serif; margin: 0 0 16px; }
-.exam-direction p { color: #4b5563; margin: 0 0 24px; }
-.exam-direction .exam-direction__cta { margin-top: auto; min-height: 72px; background: #0a4d8c; color: #fff; gap: 8px; text-align: center; }
-.exam-direction__link:hover .exam-direction__cta { background: #1f2933; }
-.exam-direction__link:focus-visible { outline: 3px solid #0a4d8c; outline-offset: -5px; }
-@media (min-width: 768px) {
-  .exam-directions { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .exam-direction__body { padding: 28px; }
+/* Compact exam cards reuse the site's primary button and brand palette. */
+.exam-directions {
+  display: grid;
+  gap: 24px;
+  max-width: 480px;
+  margin: 32px auto 0;
+}
+.exam-direction {
+  min-width: 0;
+  background: #fff;
+  border: 1px solid #d9e6f3;
+  border-radius: 26px;
+  overflow: hidden;
+}
+.exam-direction__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.exam-direction__image {
+  display: block;
+  flex: 0 0 auto;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center 25%;
+}
+.exam-direction__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 20px;
+}
+.exam-direction h3 {
+  color: #0a4d8c;
+  font: 800 22px/1.25 "Nunito", sans-serif;
+  margin: 0 0 12px;
+}
+.exam-direction p {
+  color: #4b5563;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+.exam-direction .exam-direction__cta {
+  margin-top: auto;
+  min-height: 48px;
+  padding: 12px 16px;
+  text-align: center;
+}
+.exam-direction__link:hover .exam-direction__cta {
+  background: #00a4b3;
+}
+.exam-direction__link:focus-visible {
+  outline: 3px solid #0a4d8c;
+  outline-offset: -5px;
+}
+@media (min-width: 900px) {
+  .exam-directions { max-width: 960px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .exam-direction__image { height: 208px; }
+  .exam-direction__body { padding: 24px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .exam-direction__cta { transition: none; }
-  .exam-direction__link:hover .exam-direction__cta { transform: none; }
 }
