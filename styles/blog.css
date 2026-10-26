@@ -1,0 +1,56 @@
+/* Blog-only additions; shared typography, cards and chrome remain in style.css. */
+.blog-page .blog-main { padding-bottom: 64px; overflow-wrap: anywhere; }
+.blog-page .blog-breadcrumbs ol { display:flex; flex-wrap:wrap; gap:8px; margin:0; padding:20px 0; list-style:none; font-size:14px; color:#0a4d8c; }
+.blog-page .blog-breadcrumbs li + li::before { content:"/"; margin-right:8px; }
+.blog-page .blog-intro { max-width:800px; margin:24px 0 36px; }
+.blog-page h1 { font-family:"Nunito",sans-serif; color:#0a4d8c; font-size:30px; line-height:1.2; margin:0 0 20px; }
+.blog-page .blog-intro > p { color:#4b5563; }
+.blog-page .blog-grid { grid-template-columns:minmax(0,1fr); }
+.blog-page .blog-card { display:flex; flex-direction:column; min-width:0; padding:24px; }
+.blog-page .blog-card-top { display:flex; align-items:center; justify-content:space-between; gap:12px; min-height:60px; }
+.blog-page .blog-card-top .blog-category { min-width:0; margin:0; line-height:1.4; }
+.blog-page .blog-badge { flex-shrink:0; white-space:nowrap; padding:4px 10px; border-radius:999px; background:#00b8c8; color:#1a1a1a; font-size:12px; font-weight:600; line-height:1.4; }
+.blog-page .blog-card h2 { font-size:20px; line-height:1.35; color:#0a4d8c; margin:12px 0; }
+.blog-page .blog-category { font-size:14px; font-weight:600; color:#0a4d8c; }
+.blog-page .blog-card-description { margin-bottom:24px; }
+.blog-page .blog-read { margin-top:auto; color:#0a4d8c; font-weight:600; padding-top:8px; }
+.blog-page .blog-reading { max-width:760px; margin:auto; }
+.blog-page .blog-prose { line-height:1.8; }
+.blog-page .blog-prose h2 { font-family:"Nunito",sans-serif; color:#0a4d8c; font-size:26px; line-height:1.3; margin:40px 0 16px; }
+.blog-page .blog-prose h3 { color:#0a4d8c; font-size:20px; line-height:1.4; margin:28px 0 12px; }
+.blog-page .blog-prose p { margin:0 0 20px; }
+.blog-page .blog-prose :is(ul,ol) { padding-left:24px; }
+.blog-page .blog-prose li { margin-bottom:12px; }
+.blog-page .blog-main a { text-decoration:underline; text-underline-offset:3px; }
+.blog-page .blog-card h2 a { text-decoration:none; }
+.blog-page .blog-main a:hover { text-decoration:underline; }
+.blog-page .blog-prose a, .blog-page .blog-back a { color:#0a4d8c; }
+.blog-page .blog-back { margin-top:40px; }
+.blog-page .blog-table-wrap { max-width:100%; margin:24px 0; }
+.blog-page table { width:100%; table-layout:fixed; border-collapse:collapse; font-size:13px; line-height:1.55; }
+.blog-page caption { text-align:left; font-weight:600; padding-bottom:12px; }
+.blog-page th, .blog-page td { text-align:left; vertical-align:top; border:1px solid #cbd5e1; padding:8px; overflow-wrap:anywhere; }
+.blog-page th { color:#0a4d8c; background:#f0f9ff; }
+.blog-page :is(a,button,input,textarea,[tabindex]):focus-visible { outline:3px solid #0a4d8c; outline-offset:4px; }
+.blog-page .blog-skip { position:fixed; left:16px; top:-100px; z-index:10000; background:#fff; color:#0a4d8c; padding:12px; }
+.blog-page .blog-skip:focus { top:12px; }
+@media (min-width:768px) {
+ .blog-page .blog-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .blog-page h1 { font-size:42px; }
+ .blog-page table { font-size:15px; }
+ .blog-page th, .blog-page td { padding:12px; }
+}
+@media (min-width:1024px) { .blog-page .blog-grid { grid-template-columns:repeat(4,minmax(0,1fr)); } }
+@media (prefers-reduced-motion:reduce) { .blog-page .blog-card { transition:none; } .blog-page .blog-card:hover { transform:none; } }
+
+/* Stack comparison rows on narrow screens, retaining native table headers. */
+@media (max-width:767px) {
+ .blog-page table { display:block; font-size:16px; }
+ .blog-page caption { display:block; }
+ .blog-page thead { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+ .blog-page tbody, .blog-page tr { display:block; }
+ .blog-page tbody tr { margin-bottom:20px; }
+ .blog-page tbody th, .blog-page td { display:block; width:100%; padding:12px; }
+ .blog-page td { border-top:0; }
+ .blog-page td::before { content:attr(data-label); display:block; font-weight:600; color:#0a4d8c; margin-bottom:4px; }
+}

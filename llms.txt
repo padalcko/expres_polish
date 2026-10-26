@@ -20,6 +20,15 @@
 - [TELC Polish Language Exam — Ukrainian](https://expres-polish.pl/telc-polskyi.html)
 - [TELC Polish Language Exam — Russian](https://expres-polish.pl/ru/telc-polskij.html)
 
+## Blog
+
+- [Blog — Ukrainian](https://expres-polish.pl/blog.html)
+- [Blog — Russian](https://expres-polish.pl/ru/blog.html)
+- [Preparing for B1 — Ukrainian](https://expres-polish.pl/blog-pidhotovka-do-b1.html)
+- [Preparing for B1 — Russian](https://expres-polish.pl/ru/blog-podgotovka-k-b1.html)
+- [State B1 or TELC in 2026 — Ukrainian](https://expres-polish.pl/blog-b1-chy-telc-2026.html)
+- [State B1 or TELC in 2026 — Russian](https://expres-polish.pl/ru/blog-b1-ili-telc-2026.html)
+
 ## AI-readable resources
 
 - [Exams overview](https://expres-polish.pl/ai/exams.md)
@@ -39,4 +48,4 @@ Telephone / WhatsApp: +48 881 576 552. Email: expres.polish@gmail.com.
 
 Preparation enquiries are not examination registrations. The receiving institution determines which language certificate it accepts; see the TELC resource for verified distinctions and official sources.
 
-Last updated: 2026-10-07.
+Last updated: 2026-10-26.

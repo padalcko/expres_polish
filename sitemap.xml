@@ -272,4 +272,42 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://expres-polish.pl/ru/telc-polskij.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://expres-polish.pl/telc-polskyi.html" />
   </url>
+  <!-- BLOG START -->
+  <url>
+    <loc>https://expres-polish.pl/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://expres-polish.pl/blog.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://expres-polish.pl/ru/blog.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://expres-polish.pl/blog.html" />
+  </url>
+  <url>
+    <loc>https://expres-polish.pl/ru/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://expres-polish.pl/blog.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://expres-polish.pl/ru/blog.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://expres-polish.pl/blog.html" />
+  </url>
+  <url>
+    <loc>https://expres-polish.pl/blog-pidhotovka-do-b1.html</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://expres-polish.pl/blog-pidhotovka-do-b1.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://expres-polish.pl/ru/blog-podgotovka-k-b1.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://expres-polish.pl/blog-pidhotovka-do-b1.html" />
+  </url>
+  <url>
+    <loc>https://expres-polish.pl/ru/blog-podgotovka-k-b1.html</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://expres-polish.pl/blog-pidhotovka-do-b1.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://expres-polish.pl/ru/blog-podgotovka-k-b1.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://expres-polish.pl/blog-pidhotovka-do-b1.html" />
+  </url>
+  <url>
+    <loc>https://expres-polish.pl/blog-b1-chy-telc-2026.html</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://expres-polish.pl/blog-b1-chy-telc-2026.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://expres-polish.pl/ru/blog-b1-ili-telc-2026.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://expres-polish.pl/blog-b1-chy-telc-2026.html" />
+  </url>
+  <url>
+    <loc>https://expres-polish.pl/ru/blog-b1-ili-telc-2026.html</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://expres-polish.pl/blog-b1-chy-telc-2026.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://expres-polish.pl/ru/blog-b1-ili-telc-2026.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://expres-polish.pl/blog-b1-chy-telc-2026.html" />
+  </url>
+  <!-- BLOG END -->
 </urlset>
