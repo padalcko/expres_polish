@@ -8,6 +8,7 @@ import json,re,sys
 ROOT=Path(__file__).resolve().parents[1]
 BASE='https://expres-polish.pl'
 ARTICLES=[
+ {'id': 'films', 'badge': '🔥🔥🔥', 'modified': '2026-10-28', 'ru': {'path': 'ru/blog-polskie-filmy-i-serialy-dlya-izucheniya-yazyka.html', 'title': 'Какие польские фильмы и сериалы смотреть, чтобы быстрее выучить польский язык', 'seo': 'Польские фильмы и сериалы для изучения языка | Expres Polish', 'description': 'Какие фильмы и сериалы помогут выучить польский язык? Подборка для уровней A1, A2 и B1, советы по просмотру и изучению польского с Expres Polish.', 'card': 'Фильмы и сериалы для уровней A1, A2 и B1, советы по просмотру с субтитрами.', 'category': 'Изучение языка'}, 'uk': {'path': 'blog-polski-filmy-ta-serialy-dlya-vyvchennya-movy.html', 'title': 'Які польські фільми та серіали дивитися, щоб швидше вивчити польську мову', 'seo': 'Польські фільми та серіали для вивчення мови | Expres Polish', 'description': 'Які польські фільми та серіали допоможуть вивчити мову? Добірка для рівнів A1, A2 і B1, поради щодо перегляду та навчання від Expres Polish.', 'card': 'Фільми та серіали для рівнів A1, A2 і B1, поради щодо перегляду із субтитрами.', 'category': 'Вивчення мови'}},
  {'id':'b1','uk':{'path':'blog-pidhotovka-do-b1.html','title':'Як підготуватися до державного іспиту з польської мови B1: повний посібник','seo':'Підготовка до державного B1: план і поради | Expres Polish','description':'Як готуватися до державного B1 з польської: структура, оцінювання, робота з п’ятьма навичками та адаптивний план на 10 тижнів.','card':'П’ять навичок і план підготовки на 10 тижнів.','category':'Підготовка до B1'},
  'ru':{'path':'ru/blog-podgotovka-k-b1.html','title':'Как подготовиться к государственному экзамену по польскому языку B1: полное руководство','seo':'Подготовка к государственному B1: план и советы | Expres Polish','description':'Подготовка к государственному B1 по польскому: структура экзамена, оценивание, пять навыков и практический план занятий на 10 недель.','card':'Пять навыков и план подготовки на 10 недель.','category':'Подготовка к B1'}},
  {'id':'compare','uk':{'path':'blog-b1-chy-telc-2026.html','title':'Державний іспит B1 чи TELC у 2026 році: у чому різниця та який сертифікат обрати','seo':'Державний B1 чи TELC у 2026: порівняння | Expres Polish','description':'Порівняння державного B1 і польського TELC: формат, визнання для громадянства, резидентства та навчання, оплата й строки результатів.','card':'Формат іспитів і визнання сертифікатів у 2026 році.','category':'Вибір сертифіката'},
@@ -36,6 +37,9 @@ def render(lang, item=None):
  schema={'@type':'BlogPosting' if item else 'Blog','@id':url+'#'+('article' if item else 'blog'),'url':url,'name':title,'description':desc,'inLanguage':lang}
  if item:schema.update(headline=title,mainEntityOfPage=url,isPartOf={'@id':BASE+'/'+cfg['index']+'#blog'},articleSection=data['category'])
  else:schema['blogPost']=[{'@type':'BlogPosting','headline':a[lang]['title'],'url':BASE+'/'+a[lang]['path']} for a in ARTICLES]
+ if item and item.get('modified'):
+  schema['dateModified']=item['modified']
+  for k,v in {'card':'summary','title':data['seo'],'description':desc}.items():head+=f'<meta name="twitter:{k}" content="{escape(v,quote=True)}">\n'
  head+=ld(schema)
  chrome=source.split('<body',1)[1].split('>',1)[1].split('<main>',1)[0]
  chrome=re.sub(r'(<a href="/(?:ispyty|ru/ekzameny).html") aria-current="page"',r'\1',chrome)
@@ -51,11 +55,12 @@ def render(lang, item=None):
  breadcrumb+='</ol></nav>'
  if item:
   body=(ROOT/'content/blog'/f'{item["id"]}-{lang}.html').read_text()
-  main=f'<div class="container"><div class="blog-reading">{breadcrumb}<article><header class="blog-intro"><p class="blog-category">{data["category"]}</p><h1>{escape(title)}</h1></header><div class="blog-prose">{body}</div></article><p class="blog-back"><a href="/{cfg["index"]}">{cfg["back"]}</a></p></div></div>'
+  updated=('<p>'+('Оновлено' if lang=='uk' else 'Обновлено')+': <time datetime="'+item['modified']+'">28.10.2026</time></p>') if item.get('modified') else ''
+  main=f'<div class="container"><div class="blog-reading">{breadcrumb}<article><header class="blog-intro"><p class="blog-category">{data["category"]}</p><h1>{escape(title)}</h1>{updated}</header><div class="blog-prose">{body}</div></article><p class="blog-back"><a href="/{cfg["index"]}">{cfg["back"]}</a></p></div></div>'
  else:
   cards=''
   for a in ARTICLES:
-   d=a[lang];badge="Важливо" if lang=="uk" else "Важно";cards+=f'<article class="card blog-card"><div class="blog-card-top"><p class="blog-category">{d["category"]}</p><span class="blog-badge">{badge}</span></div><h2><a href="/{d["path"]}">{escape(d["title"])}</a></h2><p class="blog-card-description">{d["card"]}</p><a class="blog-read" href="/{d["path"]}" aria-label="{escape(cfg["read"]+": "+d["title"],quote=True)}">{cfg["read"]}</a></article>\n'
+   d=a[lang];badge=a.get("badge", "Важливо" if lang=="uk" else "Важно");cards+=f'<article class="card blog-card"><div class="blog-card-top"><p class="blog-category">{d["category"]}</p><span class="blog-badge">{badge}</span></div><h2><a href="/{d["path"]}">{escape(d["title"])}</a></h2><p class="blog-card-description">{d["card"]}</p><a class="blog-read" href="/{d["path"]}" aria-label="{escape(cfg["read"]+": "+d["title"],quote=True)}">{cfg["read"]}</a></article>\n'
   main=f'<div class="container">{breadcrumb}<header class="blog-intro"><h1>{title}</h1><p>{desc}</p></header><div class="cards blog-grid">{cards}</div></div>'
  return '<!doctype html>\n<html lang="'+lang+'">\n<head>'+head+'</head>\n<body id="top" class="has-social-menu blog-page">\n<a class="blog-skip" href="#blog-main">'+cfg['skip']+'</a>'+chrome+'<main id="blog-main" class="blog-main">'+main+'</main>'+tail
 
@@ -86,4 +91,4 @@ if __name__=='__main__':
    if not p.exists() or p.read_text()!=html:stale.append(name)
   else:p.write_text(html)
  if stale:raise SystemExit('Stale: '+', '.join(stale))
- print('Blog: '+('fresh' if '--check' in sys.argv else 'generated')+' (6 pages + sitemap)')
+ print('Blog: '+('fresh' if '--check' in sys.argv else 'generated')+f' ({len(LOCALES)*(1+len(ARTICLES))} pages + sitemap)')

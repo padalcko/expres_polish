@@ -286,6 +286,18 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://expres-polish.pl/blog.html" />
   </url>
   <url>
+    <loc>https://expres-polish.pl/blog-polski-filmy-ta-serialy-dlya-vyvchennya-movy.html</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://expres-polish.pl/blog-polski-filmy-ta-serialy-dlya-vyvchennya-movy.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://expres-polish.pl/ru/blog-polskie-filmy-i-serialy-dlya-izucheniya-yazyka.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://expres-polish.pl/blog-polski-filmy-ta-serialy-dlya-vyvchennya-movy.html" />
+  </url>
+  <url>
+    <loc>https://expres-polish.pl/ru/blog-polskie-filmy-i-serialy-dlya-izucheniya-yazyka.html</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://expres-polish.pl/blog-polski-filmy-ta-serialy-dlya-vyvchennya-movy.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://expres-polish.pl/ru/blog-polskie-filmy-i-serialy-dlya-izucheniya-yazyka.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://expres-polish.pl/blog-polski-filmy-ta-serialy-dlya-vyvchennya-movy.html" />
+  </url>
+  <url>
     <loc>https://expres-polish.pl/blog-pidhotovka-do-b1.html</loc>
     <xhtml:link rel="alternate" hreflang="uk" href="https://expres-polish.pl/blog-pidhotovka-do-b1.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://expres-polish.pl/ru/blog-podgotovka-k-b1.html" />

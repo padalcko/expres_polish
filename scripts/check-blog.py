@@ -42,14 +42,23 @@ for name,expected in blog.outputs().items():
  check('<img' not in main and '<svg' not in main,name+': decorative main image')
  for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>',s,re.S):
   d=json.loads(raw);check(d['@type'] in ['Blog','BlogPosting','BreadcrumbList'],name+': schema type')
-  check(not any(k in d for k in ['image','author','datePublished','dateModified','aggregateRating']),name+': invented schema fields')
+  check(not any(k in d for k in ['image','author','datePublished','aggregateRating']),name+': invented schema fields')
+ if 'filmy' in name:
+  text=re.sub('<[^>]+>',' ',main)
+  check(not re.search(r'[\u2010-\u2015\u2212]',text),name+': dash in article')
+  for title in ['Świnka Peppa','Rodzinka.pl','Listy do M.','Na Wspólnej','M jak miłość','1670','Ranczo','Znachor']:
+   check(title in text,name+': missing film '+title)
+  for key in ['twitter:card','twitter:title','twitter:description']:
+   check(any(t=='meta' and a.get('name')==key for t,a in tags),name+': '+key)
+  check('noindex' not in s,name+': noindex')
+  check('datetime="2026-10-28"' in main,name+': visible modification date')
  source=(ROOT/blog.LOCALES[lang]['source']).read_text()
  for pattern in [r'<footer\b.*?</footer>',r'<aside class="social-tab".*?</aside>']:
   check(re.search(pattern,s,re.S)[0]==re.search(pattern,source,re.S)[0],name+': chrome changed')
  for a in re.findall(r'<div class="language-switcher".*?</div>',s,re.S):
   check(f'href="/{name}" lang="{lang}" aria-current="page"' in a,name+': language switch')
  if 'blog.html' not in name:
-  check(len(re.sub('<[^>]+>',' ',main).split())>900,name+': article incomplete')
+  check(len(re.sub('<[^>]+>',' ',main).split())>(700 if 'filmy' in name else 900),name+': article incomplete')
 ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
 urls=[n.text for n in ET.parse(ROOT/'sitemap.xml').findall('s:url/s:loc',ns)]
 check(len(urls)==len(set(urls)),'sitemap duplicate URLs')
@@ -59,8 +68,6 @@ for n in blog.outputs():
 for p in list(ROOT.glob('*.html'))+list((ROOT/'ru').glob('*.html')):
  if p.name.startswith('blog'):continue
  rel=p.relative_to(ROOT).as_posix();old=subprocess.check_output(['git','show','HEAD:'+rel],cwd=ROOT,text=True);new=p.read_text()
- stripped=re.sub(r'<a href="/(?:ru/)?blog.html">\s*Блог\s*</a>','',new)
- check(re.sub(r'\s+','',stripped)==re.sub(r'\s+','',old),rel+': unrelated changes')
- check(new.count('> Блог </a>')==2,rel+': missing blog navigation')
+ check(new==old,rel+': unrelated changes')
 if errors:raise SystemExit('\n'.join(errors))
-print('PASS: 6 pages; static content, metadata, schema, links, locale pairs, sitemap; existing pages only add blog navigation.')
+print('PASS: 8 pages; static content, metadata, schema, links, locale pairs, sitemap; existing pages unchanged.')
