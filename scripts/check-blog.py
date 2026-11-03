@@ -70,4 +70,4 @@ for p in list(ROOT.glob('*.html'))+list((ROOT/'ru').glob('*.html')):
  rel=p.relative_to(ROOT).as_posix();old=subprocess.check_output(['git','show','HEAD:'+rel],cwd=ROOT,text=True);new=p.read_text()
  check(new==old,rel+': unrelated changes')
 if errors:raise SystemExit('\n'.join(errors))
-print('PASS: 8 pages; static content, metadata, schema, links, locale pairs, sitemap; existing pages unchanged.')
+print(f'PASS: {len(blog.LOCALES)*(1+len(blog.ARTICLES))} pages; static content, metadata, schema, links, locale pairs, sitemap; existing pages unchanged.')
