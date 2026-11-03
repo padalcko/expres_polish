@@ -1,0 +1,23 @@
+# Keep Netlify clean-URL aliases aligned with canonical .html URLs.
+/index.html / 301!
+/ru/index.html /ru/ 301!
+/nasha-komanda /nasha-komanda.html 301!
+/ru/nasha-komanda /ru/nasha-komanda.html 301!
+/derzhavnyi-ispyt-b1 /derzhavnyi-ispyt-b1.html 301!
+/ru/gosudarstvennyj-ekzamen-b1 /ru/gosudarstvennyj-ekzamen-b1.html 301!
+/kontakty /kontakty.html 301!
+/ru/kontakty /ru/kontakty.html 301!
+/ispyty /ispyty.html 301!
+/ru/ekzameny /ru/ekzameny.html 301!
+/telc-polskyi /telc-polskyi.html 301!
+/ru/telc-polskij /ru/telc-polskij.html 301!
+/blog /blog.html 301!
+/ru/blog /ru/blog.html 301!
+/blog-yak-rozpovisty-pro-sebe-polskoyu /blog-yak-rozpovisty-pro-sebe-polskoyu.html 301!
+/ru/blog-kak-rasskazat-o-sebe-na-polskom /ru/blog-kak-rasskazat-o-sebe-na-polskom.html 301!
+/blog-polski-filmy-ta-serialy-dlya-vyvchennya-movy /blog-polski-filmy-ta-serialy-dlya-vyvchennya-movy.html 301!
+/ru/blog-polskie-filmy-i-serialy-dlya-izucheniya-yazyka /ru/blog-polskie-filmy-i-serialy-dlya-izucheniya-yazyka.html 301!
+/blog-pidhotovka-do-b1 /blog-pidhotovka-do-b1.html 301!
+/ru/blog-podgotovka-k-b1 /ru/blog-podgotovka-k-b1.html 301!
+/blog-b1-chy-telc-2026 /blog-b1-chy-telc-2026.html 301!
+/ru/blog-b1-ili-telc-2026 /ru/blog-b1-ili-telc-2026.html 301!
