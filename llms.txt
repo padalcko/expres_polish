@@ -1,51 +1,41 @@
 # Expres Polish
 
-> Polish language school in Wrocław and online. Preparation for State Polish B1 and TELC examinations. Website languages: Ukrainian and Russian.
+> Polish language school in Wrocław and online. Website languages: Ukrainian and Russian.
 
-## Main pages
+Canonical HTML pages are the source of truth. Markdown preserves their language and public text; navigation, forms and interactive controls are omitted. Course enrolment is not exam registration.
 
-- [Home — Ukrainian](https://expres-polish.pl/)
-- [Home — Russian](https://expres-polish.pl/ru/)
-- [Teachers — Ukrainian](https://expres-polish.pl/nasha-komanda.html)
-- [Teachers — Russian](https://expres-polish.pl/ru/nasha-komanda.html)
-- [Contact — Ukrainian](https://expres-polish.pl/kontakty.html)
-- [Contact — Russian](https://expres-polish.pl/ru/kontakty.html)
+## Українською
 
-## Exams
+- [Курси польської мови у Вроцлаві та онлайн](https://expres-polish.pl/index.md): Expres Polish — курси польської мови у Вроцлаві та онлайн. Міні-групи, індивідуальні та парні заняття, польська для життя і роботи, підготовка до державного іспиту B1.
+- [Державний іспит B1 чи TELC у 2026 році: у чому різниця та який сертифікат обрати](https://expres-polish.pl/blog-b1-chy-telc-2026.md): Порівняння державного B1 і польського TELC: формат, визнання для громадянства, резидентства та навчання, оплата й строки результатів.
+- [Як підготуватися до державного іспиту з польської мови B1: повний посібник](https://expres-polish.pl/blog-pidhotovka-do-b1.md): Як готуватися до державного B1 з польської: структура, оцінювання, робота з п’ятьма навичками та адаптивний план на 10 тижнів.
+- [Які польські фільми та серіали дивитися, щоб швидше вивчити польську мову](https://expres-polish.pl/blog-polski-filmy-ta-serialy-dlya-vyvchennya-movy.md): Які польські фільми та серіали допоможуть вивчити мову? Добірка для рівнів A1, A2 і B1, поради щодо перегляду та навчання від Expres Polish.
+- [Польські свята очима українців: традиції, звичаї та особливості життя в Польщі](https://expres-polish.pl/blog-polski-sviata-ta-tradytsii.md): Дізнайтеся про польські свята, Різдво, Великдень, День незалежності, majówkę та інші традиції. Корисні польські слова й поради від Expres Polish.
+- [Як розповісти про себе польською мовою: фрази, приклади та тест](https://expres-polish.pl/blog-yak-rozpovisty-pro-sebe-polskoyu.md): Фрази та приклади самопрезентації польською, типові помилки, тест із 10 запитань і конструктор власної розповіді.
+- [Блог школи польської мови](https://expres-polish.pl/blog.md): Корисні матеріали про вивчення польської мови, підготовку до іспитів B1 і TELC, сертифікацію та практичне використання польської мови.
+- [Державний іспит з польської мови B1 у Польщі](https://expres-polish.pl/derzhavnyi-ispyt-b1.md): Державний іспит з польської мови B1 у Польщі: структура, вимоги, реєстрація та підготовка. Курси підготовки до B1 у Вроцлаві та онлайн в Expres Polish.
+- [Іспити з польської мови — підготовка у Вроцлаві та онлайн](https://expres-polish.pl/ispyty.md): Підготовка до іспитів з польської мови у Вроцлаві та онлайн. Порівняйте державний B1 і TELC та оберіть формат підготовки з Expres Polish.
+- [Хочете нарешті вільно говорити польською?](https://expres-polish.pl/kontakty.md): Контакти Expres Polish — школи польської мови у Вроцлаві та онлайн. Зателефонуйте, напишіть у WhatsApp, Instagram або email. Адреса школи: Psie Budy 18/19, Wrocław.
+- [Наша команда](https://expres-polish.pl/nasha-komanda.md): Познайомтеся з командою Expres Polish. Викладачі польської мови у Вроцлаві та онлайн. Індивідуальний підхід, розмовна практика та підготовка до іспитів.
+- [Іспит TELC з польської мови B1·B2](https://expres-polish.pl/telc-polskyi.md): Іспит TELC з польської B1·B2: структура, оцінювання, реєстрація та відмінності від державного B1. Підготовка в Expres Polish у Вроцлаві та онлайн.
 
-- [Exams overview — Ukrainian](https://expres-polish.pl/ispyty.html)
-- [Exams overview — Russian](https://expres-polish.pl/ru/ekzameny.html)
-- [State Polish Language Exam B1 — Ukrainian](https://expres-polish.pl/derzhavnyi-ispyt-b1.html)
-- [State Polish Language Exam B1 — Russian](https://expres-polish.pl/ru/gosudarstvennyj-ekzamen-b1.html)
-- [TELC Polish Language Exam — Ukrainian](https://expres-polish.pl/telc-polskyi.html)
-- [TELC Polish Language Exam — Russian](https://expres-polish.pl/ru/telc-polskij.html)
+## На русском
 
-## Blog
+- [Курсы польского языка во Вроцлаве и онлайн](https://expres-polish.pl/ru/index.md): Expres Polish — курсы польского языка во Вроцлаве и онлайн. Мини-группы, индивидуальные и парные занятия, польский для жизни и работы, подготовка к государственному экзамену B1.
+- [Государственный экзамен B1 или TELC в 2026 году: в чём разница и какой сертификат выбрать](https://expres-polish.pl/ru/blog-b1-ili-telc-2026.md): Государственный B1 и польский TELC: формат, признание для гражданства, резидентства и учёбы, стоимость и ожидание результатов.
+- [Как рассказать о себе на польском языке: фразы, примеры и тест](https://expres-polish.pl/ru/blog-kak-rasskazat-o-sebe-na-polskom.md): Фразы и примеры самопрезентации на польском, типичные ошибки, тест из 10 вопросов и конструктор собственного рассказа.
+- [Как подготовиться к государственному экзамену по польскому языку B1: полное руководство](https://expres-polish.pl/ru/blog-podgotovka-k-b1.md): Подготовка к государственному B1 по польскому: структура экзамена, оценивание, пять навыков и практический план занятий на 10 недель.
+- [Какие польские фильмы и сериалы смотреть, чтобы быстрее выучить польский язык](https://expres-polish.pl/ru/blog-polskie-filmy-i-serialy-dlya-izucheniya-yazyka.md): Какие фильмы и сериалы помогут выучить польский язык? Подборка для уровней A1, A2 и B1, советы по просмотру и изучению польского с Expres Polish.
+- [Польские праздники глазами украинцев: традиции, обычаи и особенности жизни в Польше](https://expres-polish.pl/ru/blog-polskie-prazdniki-i-tradicii.md): Узнайте о польских праздниках, Рождестве, Пасхе, Дне независимости, majówka и других традициях. Полезные польские фразы и советы от Expres Polish.
+- [Блог школы польского языка](https://expres-polish.pl/ru/blog.md): Полезные материалы об изучении польского языка, подготовке к экзаменам B1 и TELC, сертификации и практическом использовании польского языка.
+- [Экзамены по польскому языку — подготовка во Вроцлаве и онлайн](https://expres-polish.pl/ru/ekzameny.md): Подготовка к экзаменам по польскому языку во Вроцлаве и онлайн. Сравните государственный B1 и TELC и выберите подготовку с Expres Polish.
+- [Государственный экзамен по польскому языку B1 в Польше](https://expres-polish.pl/ru/gosudarstvennyj-ekzamen-b1.md): Государственный экзамен по польскому языку B1 в Польше: структура, требования, регистрация и подготовка. Подготовка к B1 во Вроцлаве и онлайн в Expres Polish.
+- [Хотите наконец свободно говорить по-польски?](https://expres-polish.pl/ru/kontakty.md): Контакты Expres Polish — школы польского языка во Вроцлаве и онлайн. Позвоните, напишите в WhatsApp, Instagram или по email. Адрес школы: Psie Budy 18/19, Wrocław.
+- [Наши учителя](https://expres-polish.pl/ru/nasha-komanda.md): Познакомьтесь с преподавателями Expres Polish. Учителя польского языка во Вроцлаве и онлайн. Индивидуальный подход, разговорная практика и подготовка к экзаменам.
+- [Экзамен TELC по польскому языку B1·B2](https://expres-polish.pl/ru/telc-polskij.md): Экзамен TELC по польскому B1·B2: структура, оценивание, регистрация и отличия от государственного B1. Подготовка в Expres Polish во Вроцлаве и онлайн.
 
-- [Blog — Ukrainian](https://expres-polish.pl/blog.html)
-- [Blog — Russian](https://expres-polish.pl/ru/blog.html)
-- [Preparing for B1 — Ukrainian](https://expres-polish.pl/blog-pidhotovka-do-b1.html)
-- [Preparing for B1 — Russian](https://expres-polish.pl/ru/blog-podgotovka-k-b1.html)
-- [State B1 or TELC in 2026 — Ukrainian](https://expres-polish.pl/blog-b1-chy-telc-2026.html)
-- [State B1 or TELC in 2026 — Russian](https://expres-polish.pl/ru/blog-b1-ili-telc-2026.html)
+## Resources
 
-## AI-readable resources
-
-- [Exams overview](https://expres-polish.pl/ai/exams.md)
-- [State Polish Language Exam B1](https://expres-polish.pl/ai/b1-exam.md)
-- [TELC Polish Language Exam](https://expres-polish.pl/ai/telc-exam.md)
-
-## Languages
-
-- Ukrainian: root pages; language code uk.
-- Russian: /ru/ pages; language code ru.
-- English Markdown summaries provide retrieval context and link to the canonical Ukrainian and Russian HTML pages.
-
-## School contacts
-
-Expres Polish, Psie Budy 18/19, 53-600 Wrocław, Poland.
-Telephone / WhatsApp: +48 881 576 552. Email: expres.polish@gmail.com.
-
-Preparation enquiries are not examination registrations. The receiving institution determines which language certificate it accepts; see the TELC resource for verified distinctions and official sources.
-
-Last updated: 2026-10-26.
+- [Full text](https://expres-polish.pl/llms-full.txt)
+- [JSON catalog](https://expres-polish.pl/ai-catalog.json)
+- [HTML sitemap](https://expres-polish.pl/sitemap.xml)

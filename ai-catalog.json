@@ -1,0 +1,323 @@
+{
+  "site": "https://expres-polish.pl",
+  "name": "Expres Polish",
+  "languages": [
+    "uk",
+    "ru"
+  ],
+  "source": "https://expres-polish.pl/sitemap.xml",
+  "pages": [
+    {
+      "url": "https://expres-polish.pl/",
+      "markdown": "https://expres-polish.pl/index.md",
+      "language": "uk",
+      "title": "Курси польської мови у Вроцлаві та онлайн",
+      "description": "Expres Polish — курси польської мови у Вроцлаві та онлайн. Міні-групи, індивідуальні та парні заняття, польська для життя і роботи, підготовка до державного іспиту B1.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/",
+        "ru": "https://expres-polish.pl/ru/",
+        "x-default": "https://expres-polish.pl/"
+      },
+      "content_sha256": "d16163636524935b0b4172e4550e4505c2ff65f07f395a1297f778f52184e57f"
+    },
+    {
+      "url": "https://expres-polish.pl/blog-b1-chy-telc-2026.html",
+      "markdown": "https://expres-polish.pl/blog-b1-chy-telc-2026.md",
+      "language": "uk",
+      "title": "Державний іспит B1 чи TELC у 2026 році: у чому різниця та який сертифікат обрати",
+      "description": "Порівняння державного B1 і польського TELC: формат, визнання для громадянства, резидентства та навчання, оплата й строки результатів.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog-b1-chy-telc-2026.html",
+        "ru": "https://expres-polish.pl/ru/blog-b1-ili-telc-2026.html",
+        "x-default": "https://expres-polish.pl/blog-b1-chy-telc-2026.html"
+      },
+      "content_sha256": "0b3b6a2988a0127abb7a90d6f2f6908d2956ac90b5341c12ea14c17c0e97eab7"
+    },
+    {
+      "url": "https://expres-polish.pl/blog-pidhotovka-do-b1.html",
+      "markdown": "https://expres-polish.pl/blog-pidhotovka-do-b1.md",
+      "language": "uk",
+      "title": "Як підготуватися до державного іспиту з польської мови B1: повний посібник",
+      "description": "Як готуватися до державного B1 з польської: структура, оцінювання, робота з п’ятьма навичками та адаптивний план на 10 тижнів.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog-pidhotovka-do-b1.html",
+        "ru": "https://expres-polish.pl/ru/blog-podgotovka-k-b1.html",
+        "x-default": "https://expres-polish.pl/blog-pidhotovka-do-b1.html"
+      },
+      "content_sha256": "6b0bb20fa5eae51380091098277bef22f5b935808f8b30bf3c89398965652ca3"
+    },
+    {
+      "url": "https://expres-polish.pl/blog-polski-filmy-ta-serialy-dlya-vyvchennya-movy.html",
+      "markdown": "https://expres-polish.pl/blog-polski-filmy-ta-serialy-dlya-vyvchennya-movy.md",
+      "language": "uk",
+      "title": "Які польські фільми та серіали дивитися, щоб швидше вивчити польську мову",
+      "description": "Які польські фільми та серіали допоможуть вивчити мову? Добірка для рівнів A1, A2 і B1, поради щодо перегляду та навчання від Expres Polish.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog-polski-filmy-ta-serialy-dlya-vyvchennya-movy.html",
+        "ru": "https://expres-polish.pl/ru/blog-polskie-filmy-i-serialy-dlya-izucheniya-yazyka.html",
+        "x-default": "https://expres-polish.pl/blog-polski-filmy-ta-serialy-dlya-vyvchennya-movy.html"
+      },
+      "content_sha256": "d63520996cb63224b793937b7ff9fd6e947c4b564214d1ab7b894136b92a3411"
+    },
+    {
+      "url": "https://expres-polish.pl/blog-polski-sviata-ta-tradytsii.html",
+      "markdown": "https://expres-polish.pl/blog-polski-sviata-ta-tradytsii.md",
+      "language": "uk",
+      "title": "Польські свята очима українців: традиції, звичаї та особливості життя в Польщі",
+      "description": "Дізнайтеся про польські свята, Різдво, Великдень, День незалежності, majówkę та інші традиції. Корисні польські слова й поради від Expres Polish.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog-polski-sviata-ta-tradytsii.html",
+        "ru": "https://expres-polish.pl/ru/blog-polskie-prazdniki-i-tradicii.html",
+        "x-default": "https://expres-polish.pl/blog-polski-sviata-ta-tradytsii.html"
+      },
+      "content_sha256": "3c2a1b918023f8310a4c7b693ba646703af78c20adc083145e19dc80bf0c2f73"
+    },
+    {
+      "url": "https://expres-polish.pl/blog-yak-rozpovisty-pro-sebe-polskoyu.html",
+      "markdown": "https://expres-polish.pl/blog-yak-rozpovisty-pro-sebe-polskoyu.md",
+      "language": "uk",
+      "title": "Як розповісти про себе польською мовою: фрази, приклади та тест",
+      "description": "Фрази та приклади самопрезентації польською, типові помилки, тест із 10 запитань і конструктор власної розповіді.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog-yak-rozpovisty-pro-sebe-polskoyu.html",
+        "ru": "https://expres-polish.pl/ru/blog-kak-rasskazat-o-sebe-na-polskom.html",
+        "x-default": "https://expres-polish.pl/blog-yak-rozpovisty-pro-sebe-polskoyu.html"
+      },
+      "content_sha256": "90d827709c8a7f300cbb0da38195bbc0adb8cd006bca80b83070f3ca56bedcea"
+    },
+    {
+      "url": "https://expres-polish.pl/blog.html",
+      "markdown": "https://expres-polish.pl/blog.md",
+      "language": "uk",
+      "title": "Блог школи польської мови",
+      "description": "Корисні матеріали про вивчення польської мови, підготовку до іспитів B1 і TELC, сертифікацію та практичне використання польської мови.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog.html",
+        "ru": "https://expres-polish.pl/ru/blog.html",
+        "x-default": "https://expres-polish.pl/blog.html"
+      },
+      "content_sha256": "700d8a48fb0b941d0f80d97c8329748b2eca70fada0a4c500aa4a6533098f73a"
+    },
+    {
+      "url": "https://expres-polish.pl/derzhavnyi-ispyt-b1.html",
+      "markdown": "https://expres-polish.pl/derzhavnyi-ispyt-b1.md",
+      "language": "uk",
+      "title": "Державний іспит з польської мови B1 у Польщі",
+      "description": "Державний іспит з польської мови B1 у Польщі: структура, вимоги, реєстрація та підготовка. Курси підготовки до B1 у Вроцлаві та онлайн в Expres Polish.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/derzhavnyi-ispyt-b1.html",
+        "x-default": "https://expres-polish.pl/derzhavnyi-ispyt-b1.html",
+        "ru": "https://expres-polish.pl/ru/gosudarstvennyj-ekzamen-b1.html"
+      },
+      "content_sha256": "1c1a18bd7a7c40cf931086db8ac732e8c80b57eccdcd92cd37bbe063127b4b92"
+    },
+    {
+      "url": "https://expres-polish.pl/ispyty.html",
+      "markdown": "https://expres-polish.pl/ispyty.md",
+      "language": "uk",
+      "title": "Іспити з польської мови — підготовка у Вроцлаві та онлайн",
+      "description": "Підготовка до іспитів з польської мови у Вроцлаві та онлайн. Порівняйте державний B1 і TELC та оберіть формат підготовки з Expres Polish.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/ispyty.html",
+        "ru": "https://expres-polish.pl/ru/ekzameny.html",
+        "x-default": "https://expres-polish.pl/ispyty.html"
+      },
+      "content_sha256": "77f5d11d7c1d47eb2e02dd9e293de4a2286f2d20081d007d5bb27f0200a6e272"
+    },
+    {
+      "url": "https://expres-polish.pl/kontakty.html",
+      "markdown": "https://expres-polish.pl/kontakty.md",
+      "language": "uk",
+      "title": "Хочете нарешті вільно говорити польською?",
+      "description": "Контакти Expres Polish — школи польської мови у Вроцлаві та онлайн. Зателефонуйте, напишіть у WhatsApp, Instagram або email. Адреса школи: Psie Budy 18/19, Wrocław.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/kontakty.html",
+        "ru": "https://expres-polish.pl/ru/kontakty.html",
+        "x-default": "https://expres-polish.pl/kontakty.html"
+      },
+      "content_sha256": "41670a014095826abb831b9e90d5321721c66354ac227e51f55ff9129d4a78a6"
+    },
+    {
+      "url": "https://expres-polish.pl/nasha-komanda.html",
+      "markdown": "https://expres-polish.pl/nasha-komanda.md",
+      "language": "uk",
+      "title": "Наша команда",
+      "description": "Познайомтеся з командою Expres Polish. Викладачі польської мови у Вроцлаві та онлайн. Індивідуальний підхід, розмовна практика та підготовка до іспитів.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/nasha-komanda.html",
+        "ru": "https://expres-polish.pl/ru/nasha-komanda.html",
+        "x-default": "https://expres-polish.pl/nasha-komanda.html"
+      },
+      "content_sha256": "591038939386d85871805fd66f68df52ecdcce48e4f45590e067ba792afecf32"
+    },
+    {
+      "url": "https://expres-polish.pl/ru/",
+      "markdown": "https://expres-polish.pl/ru/index.md",
+      "language": "ru",
+      "title": "Курсы польского языка во Вроцлаве и онлайн",
+      "description": "Expres Polish — курсы польского языка во Вроцлаве и онлайн. Мини-группы, индивидуальные и парные занятия, польский для жизни и работы, подготовка к государственному экзамену B1.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/",
+        "ru": "https://expres-polish.pl/ru/",
+        "x-default": "https://expres-polish.pl/"
+      },
+      "content_sha256": "b1290ed01abd18820fcb5db0861edee71607138e697a45b858df3cdf2f1e58db"
+    },
+    {
+      "url": "https://expres-polish.pl/ru/blog-b1-ili-telc-2026.html",
+      "markdown": "https://expres-polish.pl/ru/blog-b1-ili-telc-2026.md",
+      "language": "ru",
+      "title": "Государственный экзамен B1 или TELC в 2026 году: в чём разница и какой сертификат выбрать",
+      "description": "Государственный B1 и польский TELC: формат, признание для гражданства, резидентства и учёбы, стоимость и ожидание результатов.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog-b1-chy-telc-2026.html",
+        "ru": "https://expres-polish.pl/ru/blog-b1-ili-telc-2026.html",
+        "x-default": "https://expres-polish.pl/blog-b1-chy-telc-2026.html"
+      },
+      "content_sha256": "bd466d1e50266e3dc67b88081afcbb76e6fb57c9f28aba8bc85a9674ddb8afea"
+    },
+    {
+      "url": "https://expres-polish.pl/ru/blog-kak-rasskazat-o-sebe-na-polskom.html",
+      "markdown": "https://expres-polish.pl/ru/blog-kak-rasskazat-o-sebe-na-polskom.md",
+      "language": "ru",
+      "title": "Как рассказать о себе на польском языке: фразы, примеры и тест",
+      "description": "Фразы и примеры самопрезентации на польском, типичные ошибки, тест из 10 вопросов и конструктор собственного рассказа.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog-yak-rozpovisty-pro-sebe-polskoyu.html",
+        "ru": "https://expres-polish.pl/ru/blog-kak-rasskazat-o-sebe-na-polskom.html",
+        "x-default": "https://expres-polish.pl/blog-yak-rozpovisty-pro-sebe-polskoyu.html"
+      },
+      "content_sha256": "8c3f34a4061a9f5af5dfd54c01a0ac64a2abae9342a65e10cff7fa5fbfd170f6"
+    },
+    {
+      "url": "https://expres-polish.pl/ru/blog-podgotovka-k-b1.html",
+      "markdown": "https://expres-polish.pl/ru/blog-podgotovka-k-b1.md",
+      "language": "ru",
+      "title": "Как подготовиться к государственному экзамену по польскому языку B1: полное руководство",
+      "description": "Подготовка к государственному B1 по польскому: структура экзамена, оценивание, пять навыков и практический план занятий на 10 недель.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog-pidhotovka-do-b1.html",
+        "ru": "https://expres-polish.pl/ru/blog-podgotovka-k-b1.html",
+        "x-default": "https://expres-polish.pl/blog-pidhotovka-do-b1.html"
+      },
+      "content_sha256": "53311b4efcb24ad8a1dcf39a675d27ce776e34273bfcee6a2e2c9c5555c3aa63"
+    },
+    {
+      "url": "https://expres-polish.pl/ru/blog-polskie-filmy-i-serialy-dlya-izucheniya-yazyka.html",
+      "markdown": "https://expres-polish.pl/ru/blog-polskie-filmy-i-serialy-dlya-izucheniya-yazyka.md",
+      "language": "ru",
+      "title": "Какие польские фильмы и сериалы смотреть, чтобы быстрее выучить польский язык",
+      "description": "Какие фильмы и сериалы помогут выучить польский язык? Подборка для уровней A1, A2 и B1, советы по просмотру и изучению польского с Expres Polish.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog-polski-filmy-ta-serialy-dlya-vyvchennya-movy.html",
+        "ru": "https://expres-polish.pl/ru/blog-polskie-filmy-i-serialy-dlya-izucheniya-yazyka.html",
+        "x-default": "https://expres-polish.pl/blog-polski-filmy-ta-serialy-dlya-vyvchennya-movy.html"
+      },
+      "content_sha256": "42a2342f6cb1237014e1976ff2b138136c3ca4d06722ca45a92f1a8efc19f7ac"
+    },
+    {
+      "url": "https://expres-polish.pl/ru/blog-polskie-prazdniki-i-tradicii.html",
+      "markdown": "https://expres-polish.pl/ru/blog-polskie-prazdniki-i-tradicii.md",
+      "language": "ru",
+      "title": "Польские праздники глазами украинцев: традиции, обычаи и особенности жизни в Польше",
+      "description": "Узнайте о польских праздниках, Рождестве, Пасхе, Дне независимости, majówka и других традициях. Полезные польские фразы и советы от Expres Polish.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog-polski-sviata-ta-tradytsii.html",
+        "ru": "https://expres-polish.pl/ru/blog-polskie-prazdniki-i-tradicii.html",
+        "x-default": "https://expres-polish.pl/blog-polski-sviata-ta-tradytsii.html"
+      },
+      "content_sha256": "18873f8b17ac35670adf6ea1eec013f8bd3080123b4edbfe550bbed272767481"
+    },
+    {
+      "url": "https://expres-polish.pl/ru/blog.html",
+      "markdown": "https://expres-polish.pl/ru/blog.md",
+      "language": "ru",
+      "title": "Блог школы польского языка",
+      "description": "Полезные материалы об изучении польского языка, подготовке к экзаменам B1 и TELC, сертификации и практическом использовании польского языка.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog.html",
+        "ru": "https://expres-polish.pl/ru/blog.html",
+        "x-default": "https://expres-polish.pl/blog.html"
+      },
+      "content_sha256": "0a9bfb15c2aec3d7d4904104068c8738ecc9bc990748b5170b3a239d80d41427"
+    },
+    {
+      "url": "https://expres-polish.pl/ru/ekzameny.html",
+      "markdown": "https://expres-polish.pl/ru/ekzameny.md",
+      "language": "ru",
+      "title": "Экзамены по польскому языку — подготовка во Вроцлаве и онлайн",
+      "description": "Подготовка к экзаменам по польскому языку во Вроцлаве и онлайн. Сравните государственный B1 и TELC и выберите подготовку с Expres Polish.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/ispyty.html",
+        "ru": "https://expres-polish.pl/ru/ekzameny.html",
+        "x-default": "https://expres-polish.pl/ispyty.html"
+      },
+      "content_sha256": "2424f572e6bcd77e43ae890247aaa188aa595e715c887f87bd7996da53591c27"
+    },
+    {
+      "url": "https://expres-polish.pl/ru/gosudarstvennyj-ekzamen-b1.html",
+      "markdown": "https://expres-polish.pl/ru/gosudarstvennyj-ekzamen-b1.md",
+      "language": "ru",
+      "title": "Государственный экзамен по польскому языку B1 в Польше",
+      "description": "Государственный экзамен по польскому языку B1 в Польше: структура, требования, регистрация и подготовка. Подготовка к B1 во Вроцлаве и онлайн в Expres Polish.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/derzhavnyi-ispyt-b1.html",
+        "ru": "https://expres-polish.pl/ru/gosudarstvennyj-ekzamen-b1.html",
+        "x-default": "https://expres-polish.pl/derzhavnyi-ispyt-b1.html"
+      },
+      "content_sha256": "798118747ef3f8b99ebaeba0e3a9e5b9eac307b8302755f62bfef3c9583d54b5"
+    },
+    {
+      "url": "https://expres-polish.pl/ru/kontakty.html",
+      "markdown": "https://expres-polish.pl/ru/kontakty.md",
+      "language": "ru",
+      "title": "Хотите наконец свободно говорить по-польски?",
+      "description": "Контакты Expres Polish — школы польского языка во Вроцлаве и онлайн. Позвоните, напишите в WhatsApp, Instagram или по email. Адрес школы: Psie Budy 18/19, Wrocław.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/kontakty.html",
+        "ru": "https://expres-polish.pl/ru/kontakty.html",
+        "x-default": "https://expres-polish.pl/kontakty.html"
+      },
+      "content_sha256": "382c548b99e31982472d5a42a83b4c25da1fef5fd0d0d8b6a5312695d50ef860"
+    },
+    {
+      "url": "https://expres-polish.pl/ru/nasha-komanda.html",
+      "markdown": "https://expres-polish.pl/ru/nasha-komanda.md",
+      "language": "ru",
+      "title": "Наши учителя",
+      "description": "Познакомьтесь с преподавателями Expres Polish. Учителя польского языка во Вроцлаве и онлайн. Индивидуальный подход, разговорная практика и подготовка к экзаменам.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/nasha-komanda.html",
+        "ru": "https://expres-polish.pl/ru/nasha-komanda.html",
+        "x-default": "https://expres-polish.pl/nasha-komanda.html"
+      },
+      "content_sha256": "8b0e94e5045fa2185c925e2394d41ea7e2c965e14b1bd881e915a9f2a2515eec"
+    },
+    {
+      "url": "https://expres-polish.pl/ru/telc-polskij.html",
+      "markdown": "https://expres-polish.pl/ru/telc-polskij.md",
+      "language": "ru",
+      "title": "Экзамен TELC по польскому языку B1·B2",
+      "description": "Экзамен TELC по польскому B1·B2: структура, оценивание, регистрация и отличия от государственного B1. Подготовка в Expres Polish во Вроцлаве и онлайн.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/telc-polskyi.html",
+        "ru": "https://expres-polish.pl/ru/telc-polskij.html",
+        "x-default": "https://expres-polish.pl/telc-polskyi.html"
+      },
+      "content_sha256": "28a6977f9d50b402cc67aed7b057cf198e245d06ff17f20d09ed44bd829a8b31"
+    },
+    {
+      "url": "https://expres-polish.pl/telc-polskyi.html",
+      "markdown": "https://expres-polish.pl/telc-polskyi.md",
+      "language": "uk",
+      "title": "Іспит TELC з польської мови B1·B2",
+      "description": "Іспит TELC з польської B1·B2: структура, оцінювання, реєстрація та відмінності від державного B1. Підготовка в Expres Polish у Вроцлаві та онлайн.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/telc-polskyi.html",
+        "ru": "https://expres-polish.pl/ru/telc-polskij.html",
+        "x-default": "https://expres-polish.pl/telc-polskyi.html"
+      },
+      "content_sha256": "a8fc3f7edb2d20bb48f46b7a019cea57894f1845844d26c9242f0e1ea1dbd0de"
+    }
+  ]
+}

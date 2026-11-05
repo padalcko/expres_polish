@@ -5,9 +5,12 @@ Run python3 scripts/build-blog.py; --check verifies generated output freshness.
 from pathlib import Path
 from html import escape
 import json,re,sys
+sys.dont_write_bytecode=True
+from ai_resources import integrate, strip_integration
 ROOT=Path(__file__).resolve().parents[1]
 BASE='https://expres-polish.pl'
 ARTICLES=[
+ {'id': 'holidays', 'badges': {'uk': 'Побут', 'ru': 'Быт'}, 'published': '2026-11-05', 'uk': {'title': 'Польські свята очима українців: традиції, звичаї та особливості життя в Польщі', 'path': 'blog-polski-sviata-ta-tradytsii.html', 'seo': 'Польські свята та традиції | Що варто знати українцям у Польщі', 'description': 'Дізнайтеся про польські свята, Різдво, Великдень, День незалежності, majówkę та інші традиції. Корисні польські слова й поради від Expres Polish.', 'card': 'Польські свята, традиції та корисні фрази для повсякденного життя в Польщі.', 'category': 'Життя в Польщі'}, 'ru': {'title': 'Польские праздники глазами украинцев: традиции, обычаи и особенности жизни в Польше', 'path': 'ru/blog-polskie-prazdniki-i-tradicii.html', 'seo': 'Польские праздники и традиции | Что нужно знать в Польше', 'description': 'Узнайте о польских праздниках, Рождестве, Пасхе, Дне независимости, majówka и других традициях. Полезные польские фразы и советы от Expres Polish.', 'card': 'Польские праздники, традиции и полезные фразы для повседневной жизни в Польше.', 'category': 'Жизнь в Польше'}},
  {'id': 'introduction', 'badge': 'Тест', 'interactive': True, 'created': '2026-11-03', 'uk': {'title': 'Як розповісти про себе польською мовою: фрази, приклади та тест', 'path': 'blog-yak-rozpovisty-pro-sebe-polskoyu.html', 'seo': 'Як розповісти про себе польською мовою: фрази, приклади та тест | Expres Polish', 'description': 'Фрази та приклади самопрезентації польською, типові помилки, тест із 10 запитань і конструктор власної розповіді.', 'card': 'Фрази та приклади самопрезентації польською, типові помилки, тест із 10 запитань і конструктор власної розповіді.', 'category': 'Вивчення мови'}, 'ru': {'title': 'Как рассказать о себе на польском языке: фразы, примеры и тест', 'path': 'ru/blog-kak-rasskazat-o-sebe-na-polskom.html', 'seo': 'Как рассказать о себе на польском языке: фразы, примеры и тест | Expres Polish', 'description': 'Фразы и примеры самопрезентации на польском, типичные ошибки, тест из 10 вопросов и конструктор собственного рассказа.', 'card': 'Фразы и примеры самопрезентации на польском, типичные ошибки, тест из 10 вопросов и конструктор собственного рассказа.', 'category': 'Изучение языка'}},
  {'id': 'films', 'badge': '🔥🔥🔥', 'modified': '2026-10-28', 'ru': {'path': 'ru/blog-polskie-filmy-i-serialy-dlya-izucheniya-yazyka.html', 'title': 'Какие польские фильмы и сериалы смотреть, чтобы быстрее выучить польский язык', 'seo': 'Польские фильмы и сериалы для изучения языка | Expres Polish', 'description': 'Какие фильмы и сериалы помогут выучить польский язык? Подборка для уровней A1, A2 и B1, советы по просмотру и изучению польского с Expres Polish.', 'card': 'Фильмы и сериалы для уровней A1, A2 и B1, советы по просмотру с субтитрами.', 'category': 'Изучение языка'}, 'uk': {'path': 'blog-polski-filmy-ta-serialy-dlya-vyvchennya-movy.html', 'title': 'Які польські фільми та серіали дивитися, щоб швидше вивчити польську мову', 'seo': 'Польські фільми та серіали для вивчення мови | Expres Polish', 'description': 'Які польські фільми та серіали допоможуть вивчити мову? Добірка для рівнів A1, A2 і B1, поради щодо перегляду та навчання від Expres Polish.', 'card': 'Фільми та серіали для рівнів A1, A2 і B1, поради щодо перегляду із субтитрами.', 'category': 'Вивчення мови'}},
  {'id':'b1','uk':{'path':'blog-pidhotovka-do-b1.html','title':'Як підготуватися до державного іспиту з польської мови B1: повний посібник','seo':'Підготовка до державного B1: план і поради | Expres Polish','description':'Як готуватися до державного B1 з польської: структура, оцінювання, робота з п’ятьма навичками та адаптивний план на 10 тижнів.','card':'П’ять навичок і план підготовки на 10 тижнів.','category':'Підготовка до B1'},
@@ -23,7 +26,7 @@ def render(lang, item=None):
  data=item[lang] if item else {'path':cfg['index'],'title':cfg['title'],'seo':cfg['title']+' | Expres Polish','description':cfg['description']}
  path=data['path']; title=data['title']; desc=data['description']; url=BASE+'/'+path
  pairs={l:BASE+'/'+(item[l]['path'] if item else LOCALES[l]['index']) for l in LOCALES}
- head=source.split('<head>',1)[1].split('</head>',1)[0]
+ head=strip_integration(source).split('<head>',1)[1].split('</head>',1)[0]
  head=re.sub(r'<script type="application/ld\+json">.*?</script>','',head,flags=re.S)
  head=re.sub(r'<title>.*?</title>',lambda _: '<title>'+escape(data['seo'])+'</title>',head,flags=re.S)
  head=re.sub(r'<meta\b[^>]*(?:name="(?:description|author|twitter:[^"]+)"|property="og:[^"]+")[^>]*>','',head,flags=re.S)
@@ -44,6 +47,10 @@ def render(lang, item=None):
  if item and item.get("created"):
   schema["dateCreated"]=item["created"]
   for k,v in {"card":"summary","title":data["seo"],"description":desc}.items():head+=f'<meta name="twitter:{k}" content="{escape(v,quote=True)}">\n'
+ if item and item.get('published'):
+  schema['datePublished']=item['published']
+  head+=f'<meta property="article:published_time" content="{item["published"]}">\n'
+  for k,v in {'card':'summary','title':data['seo'],'description':desc}.items():head+=f'<meta name="twitter:{k}" content="{escape(v,quote=True)}">\n'
  if item and item.get("interactive"):
   head+='<link rel="stylesheet" href="/styles/learning-widgets.css">\n<script type="module" src="/scripts/introduction.js"></script>\n'
  head+=ld(schema)
@@ -62,13 +69,16 @@ def render(lang, item=None):
  if item:
   body=(ROOT/'content/blog'/f'{item["id"]}-{lang}.html').read_text()
   updated=('<p>'+('Оновлено' if lang=='uk' else 'Обновлено')+': <time datetime="'+item['modified']+'">28.10.2026</time></p>') if item.get('modified') else ''
+  if item.get('published'):
+   date=item['published']; display='.'.join(reversed(date.split('-')))
+   updated='<p>'+('Опубліковано' if lang=='uk' else 'Опубликовано')+f': <time datetime="{date}">{display}</time></p>'
   main=f'<div class="container"><div class="blog-reading">{breadcrumb}<article><header class="blog-intro"><p class="blog-category">{data["category"]}</p><h1>{escape(title)}</h1>{updated}</header><div class="blog-prose">{body}</div></article><p class="blog-back"><a href="/{cfg["index"]}">{cfg["back"]}</a></p></div></div>'
  else:
   cards=''
   for a in ARTICLES:
-   d=a[lang];badge=a.get("badge", "Важливо" if lang=="uk" else "Важно");cards+=f'<article class="card blog-card"><div class="blog-card-top"><p class="blog-category">{d["category"]}</p><span class="blog-badge">{badge}</span></div><h2><a href="/{d["path"]}">{escape(d["title"])}</a></h2><p class="blog-card-description">{d["card"]}</p><a class="blog-read" href="/{d["path"]}" aria-label="{escape(cfg["read"]+": "+d["title"],quote=True)}">{cfg["read"]}</a></article>\n'
+   d=a[lang];badge=a.get("badges", {}).get(lang, a.get("badge", "Важливо" if lang=="uk" else "Важно"));cards+=f'<article class="card blog-card"><div class="blog-card-top"><p class="blog-category">{d["category"]}</p><span class="blog-badge">{badge}</span></div><h2><a href="/{d["path"]}">{escape(d["title"])}</a></h2><p class="blog-card-description">{d["card"]}</p><a class="blog-read" href="/{d["path"]}" aria-label="{escape(cfg["read"]+": "+d["title"],quote=True)}">{cfg["read"]}</a></article>\n'
   main=f'<div class="container">{breadcrumb}<header class="blog-intro"><h1>{title}</h1><p>{desc}</p></header><div class="cards blog-grid">{cards}</div></div>'
- return '<!doctype html>\n<html lang="'+lang+'">\n<head>'+head+'</head>\n<body id="top" class="has-social-menu blog-page">\n<a class="blog-skip" href="#blog-main">'+cfg['skip']+'</a>'+chrome+'<main id="blog-main" class="blog-main">'+main+'</main>'+tail
+ return integrate('<!doctype html>\n<html lang="'+lang+'">\n<head>'+head+'</head>\n<body id="top" class="has-social-menu blog-page">\n<a class="blog-skip" href="#blog-main">'+cfg['skip']+'</a>'+chrome+'<main id="blog-main" class="blog-main">'+main+'</main>'+tail, path)
 
 def outputs():
  out={}

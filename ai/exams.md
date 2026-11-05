@@ -1,36 +1,113 @@
-# Exams at Expres Polish
+# Іспити з польської мови — підготовка у Вроцлаві та онлайн
 
-Last updated: 2026-10-07
+Джерело HTML: https://expres-polish.pl/ispyty.html
 
-Expres Polish is a Polish language school in Wrocław, Poland, offering in-person and online preparation for the State Polish Language Exam B1 and TELC Polish B1·B2.
+Language: uk
 
-## Choose an examination
+Language versions: [uk](https://expres-polish.pl/ispyty.html), [ru](https://expres-polish.pl/ru/ekzameny.html)
 
-- State Polish B1: preparation for the state certification format, including listening, reading, grammar, writing and speaking.
-- TELC: preparation for the Polish B1·B2 format. The official TELC catalogue lists telc Język polski B1·B2 Szkoła.
-- First confirm which certificate and level the receiving institution requires. State certification and TELC are different systems and are not interchangeable for every procedure.
-- Preparation starts with the learner's current skills, target examination and available time. No fixed preparation duration or guaranteed result is promised.
-- Enrolling in preparation at Expres Polish is not registration for an examination. Registration is handled by the relevant examination centre.
+> Підготовка до іспитів з польської мови у Вроцлаві та онлайн. Порівняйте державний B1 і TELC та оберіть формат підготовки з Expres Polish.
 
-## Canonical pages
+Expres Polish · Wrocław · Online
 
-- [Exams overview — Ukrainian](https://expres-polish.pl/ispyty.html)
-- [Exams overview — Russian](https://expres-polish.pl/ru/ekzameny.html)
-- [State B1 — Ukrainian](https://expres-polish.pl/derzhavnyi-ispyt-b1.html)
-- [State B1 — Russian](https://expres-polish.pl/ru/gosudarstvennyj-ekzamen-b1.html)
-- [TELC — Ukrainian](https://expres-polish.pl/telc-polskyi.html)
-- [TELC — Russian](https://expres-polish.pl/ru/telc-polskij.html)
+Expres Polish готує до державного іспиту B1 та TELC з польської мови. На заняттях у Вроцлаві й онлайн працюємо з мовними навичками та завданнями обраного іспиту. Почніть із мети: який документ, для кого і до якого терміну вам потрібен?
 
-## Contact and preparation location
+[Записатися на консультацію](https://expres-polish.pl/ispyty.html#cta)[Оберіть напрямок підготовки](https://expres-polish.pl/ispyty.html#directions)
 
-- School: Expres Polish
-- Address: Psie Budy 18/19, 53-600 Wrocław, Poland
-- Telephone / WhatsApp: +48 881 576 552
-- Email: expres.polish@gmail.com
-- [Contact — Ukrainian](https://expres-polish.pl/kontakty.html)
-- [Contact — Russian](https://expres-polish.pl/ru/kontakty.html)
+## Навіщо підтверджувати знання польської?
 
-## Related AI resources
+Сертифікат допомагає підтвердити мовний рівень, коли цього вимагає конкретна установа, або зафіксувати власний прогрес. Державний іспит і TELC належать до різних систем сертифікації: однакове позначення рівня не означає однакових правил використання документа. До початку підготовки перевірте вимоги установи, яка прийматиме сертифікат.
 
-- [State B1](https://expres-polish.pl/ai/b1-exam.md)
-- [TELC](https://expres-polish.pl/ai/telc-exam.md)
+## Оберіть напрямок підготовки
+
+[### Державний іспит B1 з польської мови
+
+Підготовка до державного іспиту B1: практичні завдання, тренування письма й говоріння та підтримка викладачів.
+
+Дізнатися про іспит B1](https://expres-polish.pl/derzhavnyi-ispyt-b1.html)
+
+[### Іспит TELC з польської мови
+
+Підготовка до TELC: знайомство з форматом тестування, практичні завдання та розвиток мовних навичок.
+
+Дізнатися про TELC](https://expres-polish.pl/telc-polskyi.html)
+
+## Як вибрати іспит і почати підготовку?
+
+### Визначте мету
+
+Уточніть назву документа та мінімальний рівень у роботодавця, навчального закладу або органу, до якого подаєте документи.
+
+### Оцініть свою польську
+
+Перевірте не лише розмовну мову, а й читання, аудіювання та письмо. Різниця між навичками впливає на план підготовки.
+
+### Погодьте план занять
+
+Розкажіть Expres Polish про обраний іспит, свій рівень і термін. Допоможемо визначити пріоритети підготовки.
+
+## Підготовка до іспитів у Вроцлаві та онлайн
+
+У Expres Polish можна працювати над форматом іспиту, систематизувати граматику й тренувати всі мовні навички. Навчаємо у Вроцлаві та онлайн. Тривалість підготовки залежить від стартового рівня, регулярності занять і самостійної практики; універсального терміну для всіх немає.
+
+## Потрібна допомога з вибором підготовки?
+
+Залиште заявку. Допоможемо визначити ваш поточний рівень польської та підібрати формат підготовки до іспиту.
+
+---
+
+# Экзамены по польскому языку — подготовка во Вроцлаве и онлайн
+
+Источник HTML: https://expres-polish.pl/ru/ekzameny.html
+
+Language: ru
+
+Language versions: [uk](https://expres-polish.pl/ispyty.html), [ru](https://expres-polish.pl/ru/ekzameny.html)
+
+> Подготовка к экзаменам по польскому языку во Вроцлаве и онлайн. Сравните государственный B1 и TELC и выберите подготовку с Expres Polish.
+
+Expres Polish · Wrocław · Online
+
+Expres Polish готовит к государственному экзамену B1 и TELC по польскому языку. На занятиях во Вроцлаве и онлайн работаем с языковыми навыками и заданиями выбранного экзамена. Начните с цели: какой документ, для кого и к какому сроку вам нужен?
+
+[Записаться на консультацию](https://expres-polish.pl/ru/ekzameny.html#cta)[Выберите направление подготовки](https://expres-polish.pl/ru/ekzameny.html#directions)
+
+## Зачем подтверждать знание польского?
+
+Сертификат помогает подтвердить языковой уровень, когда этого требует конкретное учреждение, или зафиксировать собственный прогресс. Государственный экзамен и TELC относятся к разным системам сертификации: одинаковое обозначение уровня не означает одинаковых правил использования документа. До начала подготовки проверьте требования учреждения, которое будет принимать сертификат.
+
+## Выберите направление подготовки
+
+[### Государственный экзамен B1 по польскому языку
+
+Подготовка к государственному экзамену B1: практические задания, тренировка письма и говорения и поддержка преподавателей.
+
+Узнать об экзамене B1](https://expres-polish.pl/ru/gosudarstvennyj-ekzamen-b1.html)
+
+[### Экзамен TELC по польскому языку
+
+Подготовка к TELC: знакомство с форматом тестирования, практические задания и развитие языковых навыков.
+
+Узнать о TELC](https://expres-polish.pl/ru/telc-polskij.html)
+
+## Как выбрать экзамен и начать подготовку?
+
+### Определите цель
+
+Уточните название документа и минимальный уровень у работодателя, учебного заведения или органа, в который подаёте документы.
+
+### Оцените свой польский
+
+Проверьте не только разговорную речь, но и чтение, аудирование и письмо. Разница между навыками влияет на план подготовки.
+
+### Согласуйте план занятий
+
+Расскажите Expres Polish о выбранном экзамене, своём уровне и сроке. Поможем определить приоритеты подготовки.
+
+## Подготовка к экзаменам во Вроцлаве и онлайн
+
+В Expres Polish можно работать над форматом экзамена, систематизировать грамматику и тренировать все языковые навыки. Обучаем во Вроцлаве и онлайн. Продолжительность подготовки зависит от начального уровня, регулярности занятий и самостоятельной практики; универсального срока для всех нет.
+
+## Нужна помощь с выбором подготовки?
+
+Оставьте заявку. Поможем определить ваш текущий уровень польского и подобрать формат подготовки к экзамену.

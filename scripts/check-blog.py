@@ -2,6 +2,7 @@
 """Validate blog HTML, locale pairs, internal targets, sitemap and preserved chrome."""
 import importlib.util,json,re,subprocess,sys
 sys.dont_write_bytecode=True
+from ai_resources import strip_integration
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit,unquote
@@ -42,7 +43,9 @@ for name,expected in blog.outputs().items():
  check('<img' not in main and '<svg' not in main,name+': decorative main image')
  for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>',s,re.S):
   d=json.loads(raw);check(d['@type'] in ['Blog','BlogPosting','BreadcrumbList'],name+': schema type')
-  check(not any(k in d for k in ['image','author','datePublished','aggregateRating']),name+': invented schema fields')
+  check(not any(k in d for k in ['image','author','aggregateRating']),name+': invented schema fields')
+  if 'datePublished' in d:
+   check(any(a.get('published')==d['datePublished'] and a[lang]['path']==name for a in blog.ARTICLES),name+': unapproved publication date')
  if 'filmy' in name:
   text=re.sub('<[^>]+>',' ',main)
   check(not re.search(r'[\u2010-\u2015\u2212]',text),name+': dash in article')
@@ -68,6 +71,6 @@ for n in blog.outputs():
 for p in list(ROOT.glob('*.html'))+list((ROOT/'ru').glob('*.html')):
  if p.name.startswith('blog'):continue
  rel=p.relative_to(ROOT).as_posix();old=subprocess.check_output(['git','show','HEAD:'+rel],cwd=ROOT,text=True);new=p.read_text()
- check(new==old,rel+': unrelated changes')
+ check(strip_integration(new)==strip_integration(old),rel+': unrelated changes')
 if errors:raise SystemExit('\n'.join(errors))
 print(f'PASS: {len(blog.LOCALES)*(1+len(blog.ARTICLES))} pages; static content, metadata, schema, links, locale pairs, sitemap; existing pages unchanged.')

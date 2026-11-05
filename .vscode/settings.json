@@ -1,3 +1,10 @@
 {
-  "liveServer.settings.port": 5502
+  "liveServer.settings.port": 5502,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "*.html": "${capture}.md",
+    "favicon.ico": "favicon-*.png, favicon.svg, apple-touch-icon.png, android-chrome-*.png, site.webmanifest",
+    "llms.txt": "llms-full.txt, ai-catalog.json"
+  }
 }
