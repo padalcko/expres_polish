@@ -27,6 +27,8 @@ def render(lang, item=None):
  path=data['path']; title=data['title']; desc=data['description']; url=BASE+'/'+path
  pairs={l:BASE+'/'+(item[l]['path'] if item else LOCALES[l]['index']) for l in LOCALES}
  head=strip_integration(source).split('<head>',1)[1].split('</head>',1)[0]
+ head=re.sub(r'(?m)^[ \t]+$', '', head)
+ head=head.rstrip()
  head=re.sub(r'<script type="application/ld\+json">.*?</script>','',head,flags=re.S)
  head=re.sub(r'<title>.*?</title>',lambda _: '<title>'+escape(data['seo'])+'</title>',head,flags=re.S)
  head=re.sub(r'<meta\b[^>]*(?:name="(?:description|author|twitter:[^"]+)"|property="og:[^"]+")[^>]*>','',head,flags=re.S)
@@ -55,6 +57,11 @@ def render(lang, item=None):
   head+='<link rel="stylesheet" href="/styles/learning-widgets.css">\n<script type="module" src="/scripts/introduction.js"></script>\n'
  head+=ld(schema)
  chrome=source.split('<body',1)[1].split('>',1)[1].split('<main>',1)[0]
+ gtm_match=re.match(r'\s*(<!-- Google Tag Manager \(noscript\) -->.*?<!-- End Google Tag Manager \(noscript\) -->)\s*',chrome,re.S)
+ if not gtm_match:
+  raise ValueError(f'GTM noscript snippet missing from {cfg["source"]}')
+ gtm_noscript=gtm_match.group(1)
+ chrome=chrome[gtm_match.end():]
  chrome=re.sub(r'(<a href="/(?:ispyty|ru/ekzameny).html") aria-current="page"',r'\1',chrome)
  def switch(m):
   t=m[0]
@@ -78,7 +85,7 @@ def render(lang, item=None):
   for a in ARTICLES:
    d=a[lang];badge=a.get("badges", {}).get(lang, a.get("badge", "Важливо" if lang=="uk" else "Важно"));cards+=f'<article class="card blog-card"><div class="blog-card-top"><p class="blog-category">{d["category"]}</p><span class="blog-badge">{badge}</span></div><h2><a href="/{d["path"]}">{escape(d["title"])}</a></h2><p class="blog-card-description">{d["card"]}</p><a class="blog-read" href="/{d["path"]}" aria-label="{escape(cfg["read"]+": "+d["title"],quote=True)}">{cfg["read"]}</a></article>\n'
   main=f'<div class="container">{breadcrumb}<header class="blog-intro"><h1>{title}</h1><p>{desc}</p></header><div class="cards blog-grid">{cards}</div></div>'
- return integrate('<!doctype html>\n<html lang="'+lang+'">\n<head>'+head+'</head>\n<body id="top" class="has-social-menu blog-page">\n<a class="blog-skip" href="#blog-main">'+cfg['skip']+'</a>'+chrome+'<main id="blog-main" class="blog-main">'+main+'</main>'+tail, path)
+ return integrate('<!doctype html>\n<html lang="'+lang+'">\n<head>'+head+'</head>\n<body id="top" class="has-social-menu blog-page">\n'+gtm_noscript+'\n<a class="blog-skip" href="#blog-main">'+cfg['skip']+'</a>'+chrome+'<main id="blog-main" class="blog-main">'+main+'</main>'+tail, path)
 
 def outputs():
  out={}
