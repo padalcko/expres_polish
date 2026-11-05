@@ -30,6 +30,80 @@ const quickChatButtons = document.querySelectorAll("[data-chat-message]");
 let chatStarted = false;
 let chatHistory = [];
 
+function getAnalyticsPageLocation() {
+  const pageUrl = new URL(window.location.href);
+  pageUrl.search = "";
+  pageUrl.hash = "";
+  return pageUrl.href;
+}
+
+function pushAnalyticsEvent(eventName, parameters = {}) {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: eventName,
+    page_location: getAnalyticsPageLocation(),
+    page_language: document.documentElement.lang,
+    ...parameters,
+  });
+}
+
+function getButtonLocation(element) {
+  if (element.closest(".social-tab")) return "social_menu";
+  if (element.closest("#mobileNav")) return "mobile_menu";
+  if (element.closest(".header")) return "header";
+  if (element.closest(".footer")) return "footer";
+  if (element.closest(".contact-method, .location__contact")) {
+    return "contact_section";
+  }
+  return "content";
+}
+
+document.addEventListener("click", (event) => {
+  if (!(event.target instanceof Element)) return;
+
+  const link = event.target.closest("a[href]");
+  if (!(link instanceof HTMLAnchorElement)) return;
+
+  let eventName;
+  let contactMethod;
+  const linkUrl = new URL(link.href);
+
+  if (linkUrl.protocol === "tel:") {
+    eventName = "phone_click";
+    contactMethod = "phone";
+  } else if (
+    linkUrl.hostname === "wa.me" ||
+    linkUrl.hostname === "whatsapp.com" ||
+    linkUrl.hostname.endsWith(".whatsapp.com")
+  ) {
+    eventName = "whatsapp_click";
+    contactMethod = "whatsapp";
+  } else if (
+    linkUrl.hostname === "raccoon-studio.com.ua" ||
+    linkUrl.hostname.endsWith(".raccoon-studio.com.ua")
+  ) {
+    eventName = "raccoon_studio_click";
+  } else {
+    return;
+  }
+
+  linkUrl.search = "";
+  linkUrl.hash = "";
+
+  const safeLinkUrl =
+    contactMethod === "phone"
+      ? "tel:"
+      : contactMethod === "whatsapp"
+        ? `${linkUrl.origin}/`
+        : linkUrl.href;
+
+  pushAnalyticsEvent(eventName, {
+    button_location: getButtonLocation(link),
+    ...(contactMethod ? { contact_method: contactMethod } : {}),
+    link_url: safeLinkUrl,
+  });
+});
+
 if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
 }
@@ -123,6 +197,12 @@ function setFormStatus(element, message) {
   }
 }
 
+function pushFormSubmitEvent(form) {
+  pushAnalyticsEvent("form_submit", {
+    button_location: form.id === "modalForm" ? "program_modal" : "lead_form",
+  });
+}
+
 function escapeHTML(text) {
   return String(text)
     .replaceAll("&", "&amp;")
@@ -171,14 +251,25 @@ async function sendLeadToWebhook(data) {
     };
   }
 
+  let responseData;
   try {
-    return JSON.parse(rawText);
-  } catch (error) {
+    responseData = JSON.parse(rawText);
+  } catch {
     return {
       success: true,
       reply: rawText,
     };
   }
+
+  if (
+    responseData &&
+    typeof responseData === "object" &&
+    responseData.success === false
+  ) {
+    throw new Error("Заявка не була прийнята сервером");
+  }
+
+  return responseData;
 }
 
 /* MODAL FORM */
@@ -186,6 +277,8 @@ async function sendLeadToWebhook(data) {
 if (modalForm) {
   modalForm.addEventListener("submit", async (event) => {
     event.preventDefault();
+    if (modalForm.dataset.submitting === "true") return;
+    modalForm.dataset.submitting = "true";
 
     const data = {
       ...getFormData(modalForm),
@@ -198,6 +291,7 @@ if (modalForm) {
 
     try {
       await sendLeadToWebhook(data);
+      pushFormSubmitEvent(modalForm);
 
       setFormStatus(
         modalFormStatus,
@@ -211,6 +305,8 @@ if (modalForm) {
     } catch (error) {
       setFormStatus(modalFormStatus, "Помилка відправки. Спробуйте ще раз.");
       console.error(error);
+    } finally {
+      delete modalForm.dataset.submitting;
     }
   });
 }
@@ -220,6 +316,8 @@ if (modalForm) {
 if (leadForm) {
   leadForm.addEventListener("submit", async (event) => {
     event.preventDefault();
+    if (leadForm.dataset.submitting === "true") return;
+    leadForm.dataset.submitting = "true";
 
     const data = {
       ...getFormData(leadForm),
@@ -232,6 +330,7 @@ if (leadForm) {
 
     try {
       await sendLeadToWebhook(data);
+      pushFormSubmitEvent(leadForm);
 
       setFormStatus(
         leadFormStatus,
@@ -241,6 +340,8 @@ if (leadForm) {
     } catch (error) {
       setFormStatus(leadFormStatus, "Помилка відправки. Спробуйте ще раз.");
       console.error(error);
+    } finally {
+      delete leadForm.dataset.submitting;
     }
   });
 }
