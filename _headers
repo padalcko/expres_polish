@@ -40,6 +40,11 @@
   X-Content-Type-Options: nosniff
   Link: <https://expres-polish.pl/blog-yak-rozpovisty-pro-sebe-polskoyu.html>; rel="canonical", <https://expres-polish.pl/llms.txt>; rel="describedby"
 
+/blog-yak-zapysatysia-do-likaria-v-polshchi.md
+  Content-Type: text/markdown; charset=utf-8
+  X-Content-Type-Options: nosniff
+  Link: <https://expres-polish.pl/blog-yak-zapysatysia-do-likaria-v-polshchi.html>; rel="canonical", <https://expres-polish.pl/llms.txt>; rel="describedby"
+
 /blog.md
   Content-Type: text/markdown; charset=utf-8
   X-Content-Type-Options: nosniff
@@ -87,6 +92,11 @@
   Content-Type: text/markdown; charset=utf-8
   X-Content-Type-Options: nosniff
   Link: <https://expres-polish.pl/ru/blog-kak-rasskazat-o-sebe-na-polskom.html>; rel="canonical", <https://expres-polish.pl/llms.txt>; rel="describedby"
+
+/ru/blog-kak-zapisatsya-k-vrachu-v-polshe.md
+  Content-Type: text/markdown; charset=utf-8
+  X-Content-Type-Options: nosniff
+  Link: <https://expres-polish.pl/ru/blog-kak-zapisatsya-k-vrachu-v-polshe.html>; rel="canonical", <https://expres-polish.pl/llms.txt>; rel="describedby"
 
 /ru/blog-podgotovka-k-b1.md
   Content-Type: text/markdown; charset=utf-8

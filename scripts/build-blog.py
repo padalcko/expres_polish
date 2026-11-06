@@ -10,6 +10,7 @@ from ai_resources import integrate, strip_integration
 ROOT=Path(__file__).resolve().parents[1]
 BASE='https://expres-polish.pl'
 ARTICLES=[
+ {'id': 'doctor', 'badge': 'Тест 🧑\u200d⚕️', 'interactive': True, 'widget': 'doctor', 'created': '2026-11-06', 'uk': {'title': 'Як записатися до лікаря в Польщі: корисні польські фрази та діалоги', 'path': 'blog-yak-zapysatysia-do-likaria-v-polshchi.html', 'seo': 'Як записатися до лікаря в Польщі: фрази та діалоги', 'description': 'Вчимося записуватися до лікаря польською. Корисні слова, діалоги в реєстратурі, NFZ, опис симптомів і тест із 10 запитань.', 'card': 'Вчимося записуватися до лікаря польською. Корисні слова, діалоги в реєстратурі, NFZ, опис симптомів і тест із 10 запитань.', 'category': 'Вивчення мови'}, 'ru': {'title': 'Как записаться к врачу в Польше: полезные польские фразы и диалоги', 'path': 'ru/blog-kak-zapisatsya-k-vrachu-v-polshe.html', 'seo': 'Как записаться к врачу в Польше: фразы и диалоги', 'description': 'Учимся записываться к врачу на польском языке. Полезные слова, диалоги, запись через NFZ, описание симптомов и тест из 10 вопросов.', 'card': 'Учимся записываться к врачу на польском языке. Полезные слова, диалоги, запись через NFZ, описание симптомов и тест из 10 вопросов.', 'category': 'Изучение языка'}},
  {'id': 'holidays', 'badges': {'uk': 'Побут', 'ru': 'Быт'}, 'published': '2026-11-05', 'uk': {'title': 'Польські свята очима українців: традиції, звичаї та особливості життя в Польщі', 'path': 'blog-polski-sviata-ta-tradytsii.html', 'seo': 'Польські свята та традиції | Що варто знати українцям у Польщі', 'description': 'Дізнайтеся про польські свята, Різдво, Великдень, День незалежності, majówkę та інші традиції. Корисні польські слова й поради від Expres Polish.', 'card': 'Польські свята, традиції та корисні фрази для повсякденного життя в Польщі.', 'category': 'Життя в Польщі'}, 'ru': {'title': 'Польские праздники глазами украинцев: традиции, обычаи и особенности жизни в Польше', 'path': 'ru/blog-polskie-prazdniki-i-tradicii.html', 'seo': 'Польские праздники и традиции | Что нужно знать в Польше', 'description': 'Узнайте о польских праздниках, Рождестве, Пасхе, Дне независимости, majówka и других традициях. Полезные польские фразы и советы от Expres Polish.', 'card': 'Польские праздники, традиции и полезные фразы для повседневной жизни в Польше.', 'category': 'Жизнь в Польше'}},
  {'id': 'introduction', 'badge': 'Тест', 'interactive': True, 'created': '2026-11-03', 'uk': {'title': 'Як розповісти про себе польською мовою: фрази, приклади та тест', 'path': 'blog-yak-rozpovisty-pro-sebe-polskoyu.html', 'seo': 'Як розповісти про себе польською мовою: фрази, приклади та тест | Expres Polish', 'description': 'Фрази та приклади самопрезентації польською, типові помилки, тест із 10 запитань і конструктор власної розповіді.', 'card': 'Фрази та приклади самопрезентації польською, типові помилки, тест із 10 запитань і конструктор власної розповіді.', 'category': 'Вивчення мови'}, 'ru': {'title': 'Как рассказать о себе на польском языке: фразы, примеры и тест', 'path': 'ru/blog-kak-rasskazat-o-sebe-na-polskom.html', 'seo': 'Как рассказать о себе на польском языке: фразы, примеры и тест | Expres Polish', 'description': 'Фразы и примеры самопрезентации на польском, типичные ошибки, тест из 10 вопросов и конструктор собственного рассказа.', 'card': 'Фразы и примеры самопрезентации на польском, типичные ошибки, тест из 10 вопросов и конструктор собственного рассказа.', 'category': 'Изучение языка'}},
  {'id': 'films', 'badge': '🔥🔥🔥', 'modified': '2026-10-28', 'ru': {'path': 'ru/blog-polskie-filmy-i-serialy-dlya-izucheniya-yazyka.html', 'title': 'Какие польские фильмы и сериалы смотреть, чтобы быстрее выучить польский язык', 'seo': 'Польские фильмы и сериалы для изучения языка | Expres Polish', 'description': 'Какие фильмы и сериалы помогут выучить польский язык? Подборка для уровней A1, A2 и B1, советы по просмотру и изучению польского с Expres Polish.', 'card': 'Фильмы и сериалы для уровней A1, A2 и B1, советы по просмотру с субтитрами.', 'category': 'Изучение языка'}, 'uk': {'path': 'blog-polski-filmy-ta-serialy-dlya-vyvchennya-movy.html', 'title': 'Які польські фільми та серіали дивитися, щоб швидше вивчити польську мову', 'seo': 'Польські фільми та серіали для вивчення мови | Expres Polish', 'description': 'Які польські фільми та серіали допоможуть вивчити мову? Добірка для рівнів A1, A2 і B1, поради щодо перегляду та навчання від Expres Polish.', 'card': 'Фільми та серіали для рівнів A1, A2 і B1, поради щодо перегляду із субтитрами.', 'category': 'Вивчення мови'}},
@@ -54,7 +55,8 @@ def render(lang, item=None):
   head+=f'<meta property="article:published_time" content="{item["published"]}">\n'
   for k,v in {'card':'summary','title':data['seo'],'description':desc}.items():head+=f'<meta name="twitter:{k}" content="{escape(v,quote=True)}">\n'
  if item and item.get("interactive"):
-  head+='<link rel="stylesheet" href="/styles/learning-widgets.css">\n<script type="module" src="/scripts/introduction.js"></script>\n'
+  widget=item.get('widget','introduction')
+  head+=f'<link rel="stylesheet" href="/styles/learning-widgets.css">\n<script type="module" src="/scripts/{widget}.js"></script>\n'
  head+=ld(schema)
  chrome=source.split('<body',1)[1].split('>',1)[1].split('<main>',1)[0]
  gtm_match=re.match(r'\s*(<!-- Google Tag Manager \(noscript\) -->.*?<!-- End Google Tag Manager \(noscript\) -->)\s*',chrome,re.S)
@@ -105,6 +107,16 @@ def outputs():
  out['sitemap.xml']=sitemap.replace('</urlset>',block+'</urlset>')
  # Stable output on repeated builds.
  out['sitemap.xml']=re.sub(r'\n+  <!-- BLOG START -->','\n  <!-- BLOG START -->',out['sitemap.xml'])
+ # Keep clean aliases for every generated blog page aligned with its canonical.
+ redirects=(ROOT/'_redirects').read_text()
+ rules={line.split()[0]:line.split()[1:] for line in redirects.splitlines() if line.strip() and not line.lstrip().startswith('#')}
+ for name in out:
+  if not name.endswith('.html'):continue
+  alias='/'+name.removesuffix('.html');target='/'+name
+  if alias in rules:
+   if rules[alias]!=[target,'301!']:raise ValueError(f'Conflicting redirect for {alias}')
+  else:redirects=redirects.rstrip()+'\n'+f'{alias} {target} 301!\n'
+ out['_redirects']=redirects
  return out
 if __name__=='__main__':
  stale=[]

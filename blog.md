@@ -10,6 +10,12 @@ Language versions: [uk](https://expres-polish.pl/blog.html), [ru](https://expres
 
 Корисні матеріали про вивчення польської мови, підготовку до іспитів B1 і TELC, сертифікацію та практичне використання польської мови.
 
+## [Як записатися до лікаря в Польщі: корисні польські фрази та діалоги](https://expres-polish.pl/blog-yak-zapysatysia-do-likaria-v-polshchi.html)
+
+Вчимося записуватися до лікаря польською. Корисні слова, діалоги в реєстратурі, NFZ, опис симптомів і тест із 10 запитань.
+
+[Читати статтю](https://expres-polish.pl/blog-yak-zapysatysia-do-likaria-v-polshchi.html)
+
 ## [Польські свята очима українців: традиції, звичаї та особливості життя в Польщі](https://expres-polish.pl/blog-polski-sviata-ta-tradytsii.html)
 
 Польські свята, традиції та корисні фрази для повсякденного життя в Польщі.

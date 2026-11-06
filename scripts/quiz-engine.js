@@ -47,7 +47,7 @@ export function mountQuiz(root, data, lang) {
       root.append(review,errors,button(ui.restart,()=>{state={index:0,answers:{},pending:[]};save();render(true);}));
     } else {
       const q=data.questions[state.index], answered=state.answers[q.id];
-      root.append(el('p',`${state.index+1}/${data.questions.length} · A0–A2`));
+      root.append(el('p',`${state.index+1}/${data.questions.length} · ${data.level || 'A0–A2'}`));
       const form=el('form'); const field=el('fieldset'); field.append(el('legend',q.prompt[lang]));
       if(q.type==='multi_select') field.append(el('p',ui.multi));
       q.options.forEach(o=>{

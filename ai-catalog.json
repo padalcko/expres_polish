@@ -86,6 +86,19 @@
       "content_sha256": "90d827709c8a7f300cbb0da38195bbc0adb8cd006bca80b83070f3ca56bedcea"
     },
     {
+      "url": "https://expres-polish.pl/blog-yak-zapysatysia-do-likaria-v-polshchi.html",
+      "markdown": "https://expres-polish.pl/blog-yak-zapysatysia-do-likaria-v-polshchi.md",
+      "language": "uk",
+      "title": "Як записатися до лікаря в Польщі: корисні польські фрази та діалоги",
+      "description": "Вчимося записуватися до лікаря польською. Корисні слова, діалоги в реєстратурі, NFZ, опис симптомів і тест із 10 запитань.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog-yak-zapysatysia-do-likaria-v-polshchi.html",
+        "ru": "https://expres-polish.pl/ru/blog-kak-zapisatsya-k-vrachu-v-polshe.html",
+        "x-default": "https://expres-polish.pl/blog-yak-zapysatysia-do-likaria-v-polshchi.html"
+      },
+      "content_sha256": "a33f74fc176648848bce1fb577a767cf4ec48101d14c2d6e52a38141b632db15"
+    },
+    {
       "url": "https://expres-polish.pl/blog.html",
       "markdown": "https://expres-polish.pl/blog.md",
       "language": "uk",
@@ -96,7 +109,7 @@
         "ru": "https://expres-polish.pl/ru/blog.html",
         "x-default": "https://expres-polish.pl/blog.html"
       },
-      "content_sha256": "700d8a48fb0b941d0f80d97c8329748b2eca70fada0a4c500aa4a6533098f73a"
+      "content_sha256": "45efcb01c6c3dc9560d4551d1792e234e1db564ffad9b346b579972786153ed1"
     },
     {
       "url": "https://expres-polish.pl/derzhavnyi-ispyt-b1.html",
@@ -190,6 +203,19 @@
       "content_sha256": "8c3f34a4061a9f5af5dfd54c01a0ac64a2abae9342a65e10cff7fa5fbfd170f6"
     },
     {
+      "url": "https://expres-polish.pl/ru/blog-kak-zapisatsya-k-vrachu-v-polshe.html",
+      "markdown": "https://expres-polish.pl/ru/blog-kak-zapisatsya-k-vrachu-v-polshe.md",
+      "language": "ru",
+      "title": "Как записаться к врачу в Польше: полезные польские фразы и диалоги",
+      "description": "Учимся записываться к врачу на польском языке. Полезные слова, диалоги, запись через NFZ, описание симптомов и тест из 10 вопросов.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog-yak-zapysatysia-do-likaria-v-polshchi.html",
+        "ru": "https://expres-polish.pl/ru/blog-kak-zapisatsya-k-vrachu-v-polshe.html",
+        "x-default": "https://expres-polish.pl/blog-yak-zapysatysia-do-likaria-v-polshchi.html"
+      },
+      "content_sha256": "0e0cd71838534344eab1fb9da23093f5173bfdbeb4d40161819388de9b425e66"
+    },
+    {
       "url": "https://expres-polish.pl/ru/blog-podgotovka-k-b1.html",
       "markdown": "https://expres-polish.pl/ru/blog-podgotovka-k-b1.md",
       "language": "ru",
@@ -239,7 +265,7 @@
         "ru": "https://expres-polish.pl/ru/blog.html",
         "x-default": "https://expres-polish.pl/blog.html"
       },
-      "content_sha256": "0a9bfb15c2aec3d7d4904104068c8738ecc9bc990748b5170b3a239d80d41427"
+      "content_sha256": "f87e20ef239904be7c6fbffd374d656fe06fd09c35f66cd05bffe15168cfcbc7"
     },
     {
       "url": "https://expres-polish.pl/ru/ekzameny.html",
