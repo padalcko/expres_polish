@@ -35,10 +35,20 @@
   X-Content-Type-Options: nosniff
   Link: <https://expres-polish.pl/blog-polski-sviata-ta-tradytsii.html>; rel="canonical", <https://expres-polish.pl/llms.txt>; rel="describedby"
 
+/blog-polskyi-sleng-i-rozmovni-vyrazy.md
+  Content-Type: text/markdown; charset=utf-8
+  X-Content-Type-Options: nosniff
+  Link: <https://expres-polish.pl/blog-polskyi-sleng-i-rozmovni-vyrazy.html>; rel="canonical", <https://expres-polish.pl/llms.txt>; rel="describedby"
+
 /blog-yak-rozpovisty-pro-sebe-polskoyu.md
   Content-Type: text/markdown; charset=utf-8
   X-Content-Type-Options: nosniff
   Link: <https://expres-polish.pl/blog-yak-rozpovisty-pro-sebe-polskoyu.html>; rel="canonical", <https://expres-polish.pl/llms.txt>; rel="describedby"
+
+/blog-yak-vyvchyty-polsku-movu-vdoma.md
+  Content-Type: text/markdown; charset=utf-8
+  X-Content-Type-Options: nosniff
+  Link: <https://expres-polish.pl/blog-yak-vyvchyty-polsku-movu-vdoma.html>; rel="canonical", <https://expres-polish.pl/llms.txt>; rel="describedby"
 
 /blog-yak-zapysatysia-do-likaria-v-polshchi.md
   Content-Type: text/markdown; charset=utf-8
@@ -93,6 +103,11 @@
   X-Content-Type-Options: nosniff
   Link: <https://expres-polish.pl/ru/blog-kak-rasskazat-o-sebe-na-polskom.html>; rel="canonical", <https://expres-polish.pl/llms.txt>; rel="describedby"
 
+/ru/blog-kak-vyuchit-polskij-yazyk-doma.md
+  Content-Type: text/markdown; charset=utf-8
+  X-Content-Type-Options: nosniff
+  Link: <https://expres-polish.pl/ru/blog-kak-vyuchit-polskij-yazyk-doma.html>; rel="canonical", <https://expres-polish.pl/llms.txt>; rel="describedby"
+
 /ru/blog-kak-zapisatsya-k-vrachu-v-polshe.md
   Content-Type: text/markdown; charset=utf-8
   X-Content-Type-Options: nosniff
@@ -112,6 +127,11 @@
   Content-Type: text/markdown; charset=utf-8
   X-Content-Type-Options: nosniff
   Link: <https://expres-polish.pl/ru/blog-polskie-prazdniki-i-tradicii.html>; rel="canonical", <https://expres-polish.pl/llms.txt>; rel="describedby"
+
+/ru/blog-polskij-sleng-i-razgovornye-vyrazheniya.md
+  Content-Type: text/markdown; charset=utf-8
+  X-Content-Type-Options: nosniff
+  Link: <https://expres-polish.pl/ru/blog-polskij-sleng-i-razgovornye-vyrazheniya.html>; rel="canonical", <https://expres-polish.pl/llms.txt>; rel="describedby"
 
 /ru/blog.md
   Content-Type: text/markdown; charset=utf-8

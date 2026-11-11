@@ -10,6 +10,18 @@ Language versions: [uk](https://expres-polish.pl/blog.html), [ru](https://expres
 
 Полезные материалы об изучении польского языка, подготовке к экзаменам B1 и TELC, сертификации и практическом использовании польского языка.
 
+## [Как самостоятельно выучить польский язык дома и не потерять мотивацию](https://expres-polish.pl/ru/blog-kak-vyuchit-polskij-yazyk-doma.html)
+
+Как самостоятельно выучить польский язык дома? Простой план занятий, полезные привычки, распространённые ошибки и советы школы Expres Polish.
+
+[Читать статью](https://expres-polish.pl/ru/blog-kak-vyuchit-polskij-yazyk-doma.html)
+
+## [Польский сленг: слова и выражения, которые вы услышите в повседневной жизни](https://expres-polish.pl/ru/blog-polskij-sleng-i-razgovornye-vyrazheniya.html)
+
+Популярный польский сленг: spoko, ogarniać, ziomek, sztos, masakra и другие выражения. Значение, перевод и примеры живого польского языка.
+
+[Читать статью](https://expres-polish.pl/ru/blog-polskij-sleng-i-razgovornye-vyrazheniya.html)
+
 ## [Как записаться к врачу в Польше: полезные польские фразы и диалоги](https://expres-polish.pl/ru/blog-kak-zapisatsya-k-vrachu-v-polshe.html)
 
 Учимся записываться к врачу на польском языке. Полезные слова, диалоги, запись через NFZ, описание симптомов и тест из 10 вопросов.

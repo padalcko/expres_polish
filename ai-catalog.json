@@ -73,6 +73,19 @@
       "content_sha256": "3c2a1b918023f8310a4c7b693ba646703af78c20adc083145e19dc80bf0c2f73"
     },
     {
+      "url": "https://expres-polish.pl/blog-polskyi-sleng-i-rozmovni-vyrazy.html",
+      "markdown": "https://expres-polish.pl/blog-polskyi-sleng-i-rozmovni-vyrazy.md",
+      "language": "uk",
+      "title": "Польський сленг: слова та вирази, які ви почуєте в повсякденному житті",
+      "description": "Популярний польський сленг: spoko, ogarniać, ziomek, sztos, masakra та інші вирази. Значення, переклад і приклади живої польської мови.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog-polskyi-sleng-i-rozmovni-vyrazy.html",
+        "ru": "https://expres-polish.pl/ru/blog-polskij-sleng-i-razgovornye-vyrazheniya.html",
+        "x-default": "https://expres-polish.pl/blog-polskyi-sleng-i-rozmovni-vyrazy.html"
+      },
+      "content_sha256": "81bcb7c467c1e29bfa9df5d126efa1a1b46f1d087b2caa9727e5ddcac602b5e1"
+    },
+    {
       "url": "https://expres-polish.pl/blog-yak-rozpovisty-pro-sebe-polskoyu.html",
       "markdown": "https://expres-polish.pl/blog-yak-rozpovisty-pro-sebe-polskoyu.md",
       "language": "uk",
@@ -84,6 +97,19 @@
         "x-default": "https://expres-polish.pl/blog-yak-rozpovisty-pro-sebe-polskoyu.html"
       },
       "content_sha256": "90d827709c8a7f300cbb0da38195bbc0adb8cd006bca80b83070f3ca56bedcea"
+    },
+    {
+      "url": "https://expres-polish.pl/blog-yak-vyvchyty-polsku-movu-vdoma.html",
+      "markdown": "https://expres-polish.pl/blog-yak-vyvchyty-polsku-movu-vdoma.md",
+      "language": "uk",
+      "title": "Як самостійно вивчати польську мову вдома та не втратити мотивацію",
+      "description": "Як самостійно вивчити польську мову вдома? Простий план занять, корисні звички, типові помилки та поради викладачів Expres Polish.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog-yak-vyvchyty-polsku-movu-vdoma.html",
+        "ru": "https://expres-polish.pl/ru/blog-kak-vyuchit-polskij-yazyk-doma.html",
+        "x-default": "https://expres-polish.pl/blog-yak-vyvchyty-polsku-movu-vdoma.html"
+      },
+      "content_sha256": "a5fbf69534c42cee64766418842c191275623657e6cf38c5ee3795ce90850730"
     },
     {
       "url": "https://expres-polish.pl/blog-yak-zapysatysia-do-likaria-v-polshchi.html",
@@ -109,7 +135,7 @@
         "ru": "https://expres-polish.pl/ru/blog.html",
         "x-default": "https://expres-polish.pl/blog.html"
       },
-      "content_sha256": "45efcb01c6c3dc9560d4551d1792e234e1db564ffad9b346b579972786153ed1"
+      "content_sha256": "67e09b86ea4b692e660b7d638f715887feac78c8f587fdf73449de9455c87cfa"
     },
     {
       "url": "https://expres-polish.pl/derzhavnyi-ispyt-b1.html",
@@ -203,6 +229,19 @@
       "content_sha256": "8c3f34a4061a9f5af5dfd54c01a0ac64a2abae9342a65e10cff7fa5fbfd170f6"
     },
     {
+      "url": "https://expres-polish.pl/ru/blog-kak-vyuchit-polskij-yazyk-doma.html",
+      "markdown": "https://expres-polish.pl/ru/blog-kak-vyuchit-polskij-yazyk-doma.md",
+      "language": "ru",
+      "title": "Как самостоятельно выучить польский язык дома и не потерять мотивацию",
+      "description": "Как самостоятельно выучить польский язык дома? Простой план занятий, полезные привычки, распространённые ошибки и советы школы Expres Polish.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog-yak-vyvchyty-polsku-movu-vdoma.html",
+        "ru": "https://expres-polish.pl/ru/blog-kak-vyuchit-polskij-yazyk-doma.html",
+        "x-default": "https://expres-polish.pl/blog-yak-vyvchyty-polsku-movu-vdoma.html"
+      },
+      "content_sha256": "17270e14608e01f4b44a157d9f995d185a7cf8eec553d1c8f439626316e11e8e"
+    },
+    {
       "url": "https://expres-polish.pl/ru/blog-kak-zapisatsya-k-vrachu-v-polshe.html",
       "markdown": "https://expres-polish.pl/ru/blog-kak-zapisatsya-k-vrachu-v-polshe.md",
       "language": "ru",
@@ -255,6 +294,19 @@
       "content_sha256": "18873f8b17ac35670adf6ea1eec013f8bd3080123b4edbfe550bbed272767481"
     },
     {
+      "url": "https://expres-polish.pl/ru/blog-polskij-sleng-i-razgovornye-vyrazheniya.html",
+      "markdown": "https://expres-polish.pl/ru/blog-polskij-sleng-i-razgovornye-vyrazheniya.md",
+      "language": "ru",
+      "title": "Польский сленг: слова и выражения, которые вы услышите в повседневной жизни",
+      "description": "Популярный польский сленг: spoko, ogarniać, ziomek, sztos, masakra и другие выражения. Значение, перевод и примеры живого польского языка.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog-polskyi-sleng-i-rozmovni-vyrazy.html",
+        "ru": "https://expres-polish.pl/ru/blog-polskij-sleng-i-razgovornye-vyrazheniya.html",
+        "x-default": "https://expres-polish.pl/blog-polskyi-sleng-i-rozmovni-vyrazy.html"
+      },
+      "content_sha256": "ddbb2fd4a6a32459a251016c698e5d3476dfafe279a3e8a2c0ca52a08280a55d"
+    },
+    {
       "url": "https://expres-polish.pl/ru/blog.html",
       "markdown": "https://expres-polish.pl/ru/blog.md",
       "language": "ru",
@@ -265,7 +317,7 @@
         "ru": "https://expres-polish.pl/ru/blog.html",
         "x-default": "https://expres-polish.pl/blog.html"
       },
-      "content_sha256": "f87e20ef239904be7c6fbffd374d656fe06fd09c35f66cd05bffe15168cfcbc7"
+      "content_sha256": "a51d98847307e90955b098330eb366d9baac803d25454c8e32d8fa8a613a6b2e"
     },
     {
       "url": "https://expres-polish.pl/ru/ekzameny.html",

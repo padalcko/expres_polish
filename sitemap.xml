@@ -286,6 +286,30 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://expres-polish.pl/blog.html" />
   </url>
   <url>
+    <loc>https://expres-polish.pl/blog-yak-vyvchyty-polsku-movu-vdoma.html</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://expres-polish.pl/blog-yak-vyvchyty-polsku-movu-vdoma.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://expres-polish.pl/ru/blog-kak-vyuchit-polskij-yazyk-doma.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://expres-polish.pl/blog-yak-vyvchyty-polsku-movu-vdoma.html" />
+  </url>
+  <url>
+    <loc>https://expres-polish.pl/ru/blog-kak-vyuchit-polskij-yazyk-doma.html</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://expres-polish.pl/blog-yak-vyvchyty-polsku-movu-vdoma.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://expres-polish.pl/ru/blog-kak-vyuchit-polskij-yazyk-doma.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://expres-polish.pl/blog-yak-vyvchyty-polsku-movu-vdoma.html" />
+  </url>
+  <url>
+    <loc>https://expres-polish.pl/blog-polskyi-sleng-i-rozmovni-vyrazy.html</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://expres-polish.pl/blog-polskyi-sleng-i-rozmovni-vyrazy.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://expres-polish.pl/ru/blog-polskij-sleng-i-razgovornye-vyrazheniya.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://expres-polish.pl/blog-polskyi-sleng-i-rozmovni-vyrazy.html" />
+  </url>
+  <url>
+    <loc>https://expres-polish.pl/ru/blog-polskij-sleng-i-razgovornye-vyrazheniya.html</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://expres-polish.pl/blog-polskyi-sleng-i-rozmovni-vyrazy.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://expres-polish.pl/ru/blog-polskij-sleng-i-razgovornye-vyrazheniya.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://expres-polish.pl/blog-polskyi-sleng-i-rozmovni-vyrazy.html" />
+  </url>
+  <url>
     <loc>https://expres-polish.pl/blog-yak-zapysatysia-do-likaria-v-polshchi.html</loc>
     <xhtml:link rel="alternate" hreflang="uk" href="https://expres-polish.pl/blog-yak-zapysatysia-do-likaria-v-polshchi.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://expres-polish.pl/ru/blog-kak-zapisatsya-k-vrachu-v-polshe.html" />
