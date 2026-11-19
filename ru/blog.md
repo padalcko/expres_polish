@@ -10,6 +10,12 @@ Language versions: [uk](https://expres-polish.pl/blog.html), [ru](https://expres
 
 Полезные материалы об изучении польского языка, подготовке к экзаменам B1 и TELC, сертификации и практическом использовании польского языка.
 
+## [Как общаться в польском ужонде: PESEL, meldunek, документы и полезные фразы](https://expres-polish.pl/ru/blog-kak-obshchatsya-v-uzhonde-na-polskom.html)
+
+Учим польский для посещения ужонда: PESEL, meldunek, документы, заявления, полезные диалоги и тест из 10 вопросов от Expres Polish.
+
+[Читать статью](https://expres-polish.pl/ru/blog-kak-obshchatsya-v-uzhonde-na-polskom.html)
+
 ## [Как самостоятельно выучить польский язык дома и не потерять мотивацию](https://expres-polish.pl/ru/blog-kak-vyuchit-polskij-yazyk-doma.html)
 
 Как самостоятельно выучить польский язык дома? Простой план занятий, полезные привычки, распространённые ошибки и советы школы Expres Polish.

@@ -99,6 +99,19 @@
       "content_sha256": "90d827709c8a7f300cbb0da38195bbc0adb8cd006bca80b83070f3ca56bedcea"
     },
     {
+      "url": "https://expres-polish.pl/blog-yak-spilkuvatysia-v-uzhondi-polskoyu.html",
+      "markdown": "https://expres-polish.pl/blog-yak-spilkuvatysia-v-uzhondi-polskoyu.md",
+      "language": "uk",
+      "title": "Як спілкуватися в ужонді польською: PESEL, meldunek, документи та корисні фрази",
+      "description": "Вчимо польську для візиту до ужонду: PESEL, meldunek, документи, заяви, корисні діалоги та тест із 10 запитань від Expres Polish.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog-yak-spilkuvatysia-v-uzhondi-polskoyu.html",
+        "ru": "https://expres-polish.pl/ru/blog-kak-obshchatsya-v-uzhonde-na-polskom.html",
+        "x-default": "https://expres-polish.pl/blog-yak-spilkuvatysia-v-uzhondi-polskoyu.html"
+      },
+      "content_sha256": "e134167dcb88edfb62b35db2d352206cb5d754fe33d95b5ee854a7d9a8df9e18"
+    },
+    {
       "url": "https://expres-polish.pl/blog-yak-vyvchyty-polsku-movu-vdoma.html",
       "markdown": "https://expres-polish.pl/blog-yak-vyvchyty-polsku-movu-vdoma.md",
       "language": "uk",
@@ -135,7 +148,7 @@
         "ru": "https://expres-polish.pl/ru/blog.html",
         "x-default": "https://expres-polish.pl/blog.html"
       },
-      "content_sha256": "67e09b86ea4b692e660b7d638f715887feac78c8f587fdf73449de9455c87cfa"
+      "content_sha256": "57ccf0b0160f660179b27b2e245a4013941366d4c008c39f92f6468ba1966954"
     },
     {
       "url": "https://expres-polish.pl/derzhavnyi-ispyt-b1.html",
@@ -214,6 +227,19 @@
         "x-default": "https://expres-polish.pl/blog-b1-chy-telc-2026.html"
       },
       "content_sha256": "bd466d1e50266e3dc67b88081afcbb76e6fb57c9f28aba8bc85a9674ddb8afea"
+    },
+    {
+      "url": "https://expres-polish.pl/ru/blog-kak-obshchatsya-v-uzhonde-na-polskom.html",
+      "markdown": "https://expres-polish.pl/ru/blog-kak-obshchatsya-v-uzhonde-na-polskom.md",
+      "language": "ru",
+      "title": "Как общаться в польском ужонде: PESEL, meldunek, документы и полезные фразы",
+      "description": "Учим польский для посещения ужонда: PESEL, meldunek, документы, заявления, полезные диалоги и тест из 10 вопросов от Expres Polish.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog-yak-spilkuvatysia-v-uzhondi-polskoyu.html",
+        "ru": "https://expres-polish.pl/ru/blog-kak-obshchatsya-v-uzhonde-na-polskom.html",
+        "x-default": "https://expres-polish.pl/blog-yak-spilkuvatysia-v-uzhondi-polskoyu.html"
+      },
+      "content_sha256": "e658ec44a83f2182725fa56f9244bf34393766c95642bd960ea9478e64acf355"
     },
     {
       "url": "https://expres-polish.pl/ru/blog-kak-rasskazat-o-sebe-na-polskom.html",
@@ -317,7 +343,7 @@
         "ru": "https://expres-polish.pl/ru/blog.html",
         "x-default": "https://expres-polish.pl/blog.html"
       },
-      "content_sha256": "a51d98847307e90955b098330eb366d9baac803d25454c8e32d8fa8a613a6b2e"
+      "content_sha256": "5be5be09f6861a144ccc70dd6f17063c765ff7b6667774bbd4c297a552840e23"
     },
     {
       "url": "https://expres-polish.pl/ru/ekzameny.html",
