@@ -125,6 +125,19 @@
       "content_sha256": "a5fbf69534c42cee64766418842c191275623657e6cf38c5ee3795ce90850730"
     },
     {
+      "url": "https://expres-polish.pl/blog-yak-zamovyty-yizhu-polskoyu.html",
+      "markdown": "https://expres-polish.pl/blog-yak-zamovyty-yizhu-polskoyu.md",
+      "language": "uk",
+      "title": "Як замовити їжу в ресторані польською: меню, діалоги та корисні фрази",
+      "description": "Вчимося замовляти їжу в Польщі: польські фрази для ресторану, меню, спілкування з офіціантом, оплата рахунку та тест із 10 запитань.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog-yak-zamovyty-yizhu-polskoyu.html",
+        "ru": "https://expres-polish.pl/ru/blog-kak-zakazat-edu-na-polskom.html",
+        "x-default": "https://expres-polish.pl/blog-yak-zamovyty-yizhu-polskoyu.html"
+      },
+      "content_sha256": "0201f7728bf0775879d0651dfff02d97868c2e0b43642860d6535f3c7f1805b5"
+    },
+    {
       "url": "https://expres-polish.pl/blog-yak-zapysatysia-do-likaria-v-polshchi.html",
       "markdown": "https://expres-polish.pl/blog-yak-zapysatysia-do-likaria-v-polshchi.md",
       "language": "uk",
@@ -148,7 +161,7 @@
         "ru": "https://expres-polish.pl/ru/blog.html",
         "x-default": "https://expres-polish.pl/blog.html"
       },
-      "content_sha256": "57ccf0b0160f660179b27b2e245a4013941366d4c008c39f92f6468ba1966954"
+      "content_sha256": "e519c9344fd53650df159dc4bc2bb43c1f796d664d37ab30e5e790c10b6e553f"
     },
     {
       "url": "https://expres-polish.pl/derzhavnyi-ispyt-b1.html",
@@ -268,6 +281,19 @@
       "content_sha256": "17270e14608e01f4b44a157d9f995d185a7cf8eec553d1c8f439626316e11e8e"
     },
     {
+      "url": "https://expres-polish.pl/ru/blog-kak-zakazat-edu-na-polskom.html",
+      "markdown": "https://expres-polish.pl/ru/blog-kak-zakazat-edu-na-polskom.md",
+      "language": "ru",
+      "title": "Как заказать еду в ресторане на польском: меню, диалоги и полезные фразы",
+      "description": "Учимся заказывать еду в Польше: польские фразы для ресторана, меню, общение с официантом, оплата счёта и тест из 10 вопросов.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog-yak-zamovyty-yizhu-polskoyu.html",
+        "ru": "https://expres-polish.pl/ru/blog-kak-zakazat-edu-na-polskom.html",
+        "x-default": "https://expres-polish.pl/blog-yak-zamovyty-yizhu-polskoyu.html"
+      },
+      "content_sha256": "e3c28984d65f3381e332dcb50556a3486c4ef1dd0e34071d5f36811db591fba7"
+    },
+    {
       "url": "https://expres-polish.pl/ru/blog-kak-zapisatsya-k-vrachu-v-polshe.html",
       "markdown": "https://expres-polish.pl/ru/blog-kak-zapisatsya-k-vrachu-v-polshe.md",
       "language": "ru",
@@ -343,7 +369,7 @@
         "ru": "https://expres-polish.pl/ru/blog.html",
         "x-default": "https://expres-polish.pl/blog.html"
       },
-      "content_sha256": "5be5be09f6861a144ccc70dd6f17063c765ff7b6667774bbd4c297a552840e23"
+      "content_sha256": "f586b5cdcfcbc921905096643485e425de3c830426bc9b382adc78ac31210973"
     },
     {
       "url": "https://expres-polish.pl/ru/ekzameny.html",

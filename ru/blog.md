@@ -10,6 +10,12 @@ Language versions: [uk](https://expres-polish.pl/blog.html), [ru](https://expres
 
 Полезные материалы об изучении польского языка, подготовке к экзаменам B1 и TELC, сертификации и практическом использовании польского языка.
 
+## [Как заказать еду в ресторане на польском: меню, диалоги и полезные фразы](https://expres-polish.pl/ru/blog-kak-zakazat-edu-na-polskom.html)
+
+Учимся заказывать еду в Польше: польские фразы для ресторана, меню, общение с официантом, оплата счёта и тест из 10 вопросов.
+
+[Читать статью](https://expres-polish.pl/ru/blog-kak-zakazat-edu-na-polskom.html)
+
 ## [Как общаться в польском ужонде: PESEL, meldunek, документы и полезные фразы](https://expres-polish.pl/ru/blog-kak-obshchatsya-v-uzhonde-na-polskom.html)
 
 Учим польский для посещения ужонда: PESEL, meldunek, документы, заявления, полезные диалоги и тест из 10 вопросов от Expres Polish.
