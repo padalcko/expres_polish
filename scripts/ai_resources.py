@@ -133,7 +133,18 @@ def markdown(p):
     out=f'# {p["title"]}\n\n{label}: {p["canonical"]}\n\nLanguage: {p["lang"]}\n\n'
     out+='Language versions: '+', '.join(f'[{lang}]({url})' for lang,url in p['alternates'].items() if lang!='x-default')+'\n\n'
     out+='> '+p['meta'].get('description','')+'\n\n'
-    return out+clean(render(p['main'],p))+'\n'
+    out += clean(render(p['main'],p))+'\n'
+    if p['path'].name in ('blog-krainy-ta-mista-polskoiu.html','blog-strany-i-goroda-na-polskom.html'):
+        out+='\n'+('Автор і видавець' if p['lang']=='uk' else 'Автор и издатель')+': Expres Polish\n'
+        raw=(ROOT/'scripts/geography-data.js').read_text().removeprefix('export const quizData = ').strip().removesuffix(';')
+        quiz=json.loads(raw); lang=p['lang']
+        out+='\n## '+quiz['title'][lang]+'\n\n'
+        for i,q in enumerate(quiz['questions'],1):
+            out+=f"### {i}. {q['prompt'][lang]}\n\n"
+            out+='\n'.join(f"- {o['id']}. {o['label'][lang]}" for o in q['options'])+'\n\n'
+            label='Правильна відповідь' if lang=='uk' else 'Правильный ответ'
+            out+=label+': '+', '.join(q['correct'])+'. '+q['explanation'][lang]+'\n\n'
+    return out
 
 def outputs():
     pages=discover(); out={}; catalog=[]

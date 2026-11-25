@@ -286,6 +286,18 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://expres-polish.pl/blog.html" />
   </url>
   <url>
+    <loc>https://expres-polish.pl/blog-krainy-ta-mista-polskoiu.html</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://expres-polish.pl/blog-krainy-ta-mista-polskoiu.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://expres-polish.pl/ru/blog-strany-i-goroda-na-polskom.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://expres-polish.pl/blog-krainy-ta-mista-polskoiu.html" />
+  </url>
+  <url>
+    <loc>https://expres-polish.pl/ru/blog-strany-i-goroda-na-polskom.html</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://expres-polish.pl/blog-krainy-ta-mista-polskoiu.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://expres-polish.pl/ru/blog-strany-i-goroda-na-polskom.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://expres-polish.pl/blog-krainy-ta-mista-polskoiu.html" />
+  </url>
+  <url>
     <loc>https://expres-polish.pl/blog-yak-zamovyty-yizhu-polskoyu.html</loc>
     <xhtml:link rel="alternate" hreflang="uk" href="https://expres-polish.pl/blog-yak-zamovyty-yizhu-polskoyu.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://expres-polish.pl/ru/blog-kak-zakazat-edu-na-polskom.html" />

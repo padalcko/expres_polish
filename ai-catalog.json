@@ -34,6 +34,19 @@
       "content_sha256": "0b3b6a2988a0127abb7a90d6f2f6908d2956ac90b5341c12ea14c17c0e97eab7"
     },
     {
+      "url": "https://expres-polish.pl/blog-krainy-ta-mista-polskoiu.html",
+      "markdown": "https://expres-polish.pl/blog-krainy-ta-mista-polskoiu.md",
+      "language": "uk",
+      "title": "Чому Італія польською Włochy, а Німеччина Niemcy? Вивчаємо географічні назви польською мовою",
+      "description": "Вивчайте назви країн і міст польською, правильне відмінювання та прийменники. Таблиці, приклади й тест із 10 запитань від Expres Polish.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog-krainy-ta-mista-polskoiu.html",
+        "ru": "https://expres-polish.pl/ru/blog-strany-i-goroda-na-polskom.html",
+        "x-default": "https://expres-polish.pl/blog-krainy-ta-mista-polskoiu.html"
+      },
+      "content_sha256": "40f27f098493bc1839e1b23a08de42e7acdcbaf6730c9bc0931e42d3a928718e"
+    },
+    {
       "url": "https://expres-polish.pl/blog-pidhotovka-do-b1.html",
       "markdown": "https://expres-polish.pl/blog-pidhotovka-do-b1.md",
       "language": "uk",
@@ -161,7 +174,7 @@
         "ru": "https://expres-polish.pl/ru/blog.html",
         "x-default": "https://expres-polish.pl/blog.html"
       },
-      "content_sha256": "e519c9344fd53650df159dc4bc2bb43c1f796d664d37ab30e5e790c10b6e553f"
+      "content_sha256": "96fb9575218e5879e29db6457b5838f300ff02f42cc575d6af0baaf114c95f77"
     },
     {
       "url": "https://expres-polish.pl/derzhavnyi-ispyt-b1.html",
@@ -359,6 +372,19 @@
       "content_sha256": "ddbb2fd4a6a32459a251016c698e5d3476dfafe279a3e8a2c0ca52a08280a55d"
     },
     {
+      "url": "https://expres-polish.pl/ru/blog-strany-i-goroda-na-polskom.html",
+      "markdown": "https://expres-polish.pl/ru/blog-strany-i-goroda-na-polskom.md",
+      "language": "ru",
+      "title": "Почему Италия по-польски Włochy, а Германия Niemcy? Изучаем географические названия на польском языке",
+      "description": "Названия стран и городов на польском языке, правила склонения, предлоги и примеры. Интерактивный тест из 10 вопросов от Expres Polish.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog-krainy-ta-mista-polskoiu.html",
+        "ru": "https://expres-polish.pl/ru/blog-strany-i-goroda-na-polskom.html",
+        "x-default": "https://expres-polish.pl/blog-krainy-ta-mista-polskoiu.html"
+      },
+      "content_sha256": "7e7c93d46552078447401d03a7cfb31f860477cba66d001ffb4ce4e15d5a4a13"
+    },
+    {
       "url": "https://expres-polish.pl/ru/blog.html",
       "markdown": "https://expres-polish.pl/ru/blog.md",
       "language": "ru",
@@ -369,7 +395,7 @@
         "ru": "https://expres-polish.pl/ru/blog.html",
         "x-default": "https://expres-polish.pl/blog.html"
       },
-      "content_sha256": "f586b5cdcfcbc921905096643485e425de3c830426bc9b382adc78ac31210973"
+      "content_sha256": "79bd899accec73ce166700b42b9906468e9c9e612e8f7b93e3652c5fb32c2376"
     },
     {
       "url": "https://expres-polish.pl/ru/ekzameny.html",

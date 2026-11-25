@@ -25,6 +25,11 @@
   X-Content-Type-Options: nosniff
   Link: <https://expres-polish.pl/blog-b1-chy-telc-2026.html>; rel="canonical", <https://expres-polish.pl/llms.txt>; rel="describedby"
 
+/blog-krainy-ta-mista-polskoiu.md
+  Content-Type: text/markdown; charset=utf-8
+  X-Content-Type-Options: nosniff
+  Link: <https://expres-polish.pl/blog-krainy-ta-mista-polskoiu.html>; rel="canonical", <https://expres-polish.pl/llms.txt>; rel="describedby"
+
 /blog-pidhotovka-do-b1.md
   Content-Type: text/markdown; charset=utf-8
   X-Content-Type-Options: nosniff
@@ -157,6 +162,11 @@
   Content-Type: text/markdown; charset=utf-8
   X-Content-Type-Options: nosniff
   Link: <https://expres-polish.pl/ru/blog-polskij-sleng-i-razgovornye-vyrazheniya.html>; rel="canonical", <https://expres-polish.pl/llms.txt>; rel="describedby"
+
+/ru/blog-strany-i-goroda-na-polskom.md
+  Content-Type: text/markdown; charset=utf-8
+  X-Content-Type-Options: nosniff
+  Link: <https://expres-polish.pl/ru/blog-strany-i-goroda-na-polskom.html>; rel="canonical", <https://expres-polish.pl/llms.txt>; rel="describedby"
 
 /ru/blog.md
   Content-Type: text/markdown; charset=utf-8

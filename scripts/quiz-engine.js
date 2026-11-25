@@ -35,7 +35,7 @@ export function mountQuiz(root, data, lang) {
     const live=el('div'); live.setAttribute('aria-live','polite'); live.setAttribute('aria-atomic','true');
     if(state.index === data.questions.length) {
       const score=data.questions.filter(q=>exact(q,state.answers[q.id])).length;
-      const result=el('p',`${ui.score}: ${score}/${data.questions.length}. ${data.results.find(r=>score<=r.max).text[lang]}`);
+      const result=el('p',`${ui.score}: ${score}/${data.questions.length}${data.showPercent ? ` (${Math.round(score / data.questions.length * 100)}%)` : ""}. ${data.results.find(r=>score<=r.max).text[lang]}`);
       result.setAttribute('role','status'); root.append(result);
       const errors=el('div'); errors.hidden=true;
       data.questions.filter(q=>!exact(q,state.answers[q.id])).forEach(q=>{
