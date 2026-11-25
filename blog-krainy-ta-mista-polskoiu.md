@@ -315,6 +315,8 @@ Niemcy має історично сформовану форму місцево�
 
 - [Курси польської у Вроцлаві та онлайн](https://expres-polish.pl/#programs)
 
+[Фальшиві друзі перекладача: 30 польських слів](https://expres-polish.pl/blog-falshyvi-druzi-perekladacha.html)
+
 Автор і видавець: Expres Polish
 
 ## Країни та міста польською мовою: перевірте свої знання

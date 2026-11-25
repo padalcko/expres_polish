@@ -34,6 +34,19 @@
       "content_sha256": "0b3b6a2988a0127abb7a90d6f2f6908d2956ac90b5341c12ea14c17c0e97eab7"
     },
     {
+      "url": "https://expres-polish.pl/blog-falshyvi-druzi-perekladacha.html",
+      "markdown": "https://expres-polish.pl/blog-falshyvi-druzi-perekladacha.md",
+      "language": "uk",
+      "title": "Фальшиві друзі перекладача: 30 польських слів, які легко зрозуміти неправильно",
+      "description": "30 польських слів, які легко зрозуміти неправильно. Переклади, приклади речень, практичні діалоги та інтерактивний тест від Expres Polish.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog-falshyvi-druzi-perekladacha.html",
+        "ru": "https://expres-polish.pl/ru/blog-lozhnye-druzya-perevodchika.html",
+        "x-default": "https://expres-polish.pl/blog-falshyvi-druzi-perekladacha.html"
+      },
+      "content_sha256": "2f047225bb2ecacd5ae99b1d279289131095f027fed81a3d6ec380f97d95917a"
+    },
+    {
       "url": "https://expres-polish.pl/blog-krainy-ta-mista-polskoiu.html",
       "markdown": "https://expres-polish.pl/blog-krainy-ta-mista-polskoiu.md",
       "language": "uk",
@@ -44,7 +57,7 @@
         "ru": "https://expres-polish.pl/ru/blog-strany-i-goroda-na-polskom.html",
         "x-default": "https://expres-polish.pl/blog-krainy-ta-mista-polskoiu.html"
       },
-      "content_sha256": "40f27f098493bc1839e1b23a08de42e7acdcbaf6730c9bc0931e42d3a928718e"
+      "content_sha256": "f3d8e1e6f63d29a41150c1dd5bac47d6c62e385c72415096e8fa0bba0fe28919"
     },
     {
       "url": "https://expres-polish.pl/blog-pidhotovka-do-b1.html",
@@ -96,7 +109,7 @@
         "ru": "https://expres-polish.pl/ru/blog-polskij-sleng-i-razgovornye-vyrazheniya.html",
         "x-default": "https://expres-polish.pl/blog-polskyi-sleng-i-rozmovni-vyrazy.html"
       },
-      "content_sha256": "81bcb7c467c1e29bfa9df5d126efa1a1b46f1d087b2caa9727e5ddcac602b5e1"
+      "content_sha256": "e3092c4a419866fba8d3dbe75a739bdc27fddabd1f1b69e3a831ffeb27880c33"
     },
     {
       "url": "https://expres-polish.pl/blog-yak-rozpovisty-pro-sebe-polskoyu.html",
@@ -174,7 +187,7 @@
         "ru": "https://expres-polish.pl/ru/blog.html",
         "x-default": "https://expres-polish.pl/blog.html"
       },
-      "content_sha256": "96fb9575218e5879e29db6457b5838f300ff02f42cc575d6af0baaf114c95f77"
+      "content_sha256": "c85d9c8eae2aa0758986d4bba9dad2b65b798c9380e41f4ebdab60bbeb8b2795"
     },
     {
       "url": "https://expres-polish.pl/derzhavnyi-ispyt-b1.html",
@@ -320,6 +333,19 @@
       "content_sha256": "0e0cd71838534344eab1fb9da23093f5173bfdbeb4d40161819388de9b425e66"
     },
     {
+      "url": "https://expres-polish.pl/ru/blog-lozhnye-druzya-perevodchika.html",
+      "markdown": "https://expres-polish.pl/ru/blog-lozhnye-druzya-perevodchika.md",
+      "language": "ru",
+      "title": "Ложные друзья переводчика: 30 польских слов, которые легко понять неправильно",
+      "description": "30 польских слов, которые легко понять неправильно. Переводы, примеры предложений, практические диалоги и интерактивный тест от Expres Polish.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog-falshyvi-druzi-perekladacha.html",
+        "ru": "https://expres-polish.pl/ru/blog-lozhnye-druzya-perevodchika.html",
+        "x-default": "https://expres-polish.pl/blog-falshyvi-druzi-perekladacha.html"
+      },
+      "content_sha256": "08fe7fbc4ce16b566db5c8901f5a8c24b4914e7ab47212530abb236e32b1d1f3"
+    },
+    {
       "url": "https://expres-polish.pl/ru/blog-podgotovka-k-b1.html",
       "markdown": "https://expres-polish.pl/ru/blog-podgotovka-k-b1.md",
       "language": "ru",
@@ -369,7 +395,7 @@
         "ru": "https://expres-polish.pl/ru/blog-polskij-sleng-i-razgovornye-vyrazheniya.html",
         "x-default": "https://expres-polish.pl/blog-polskyi-sleng-i-rozmovni-vyrazy.html"
       },
-      "content_sha256": "ddbb2fd4a6a32459a251016c698e5d3476dfafe279a3e8a2c0ca52a08280a55d"
+      "content_sha256": "cc69d51ef3c98f6499fc199ad6f8366d3a307dce853b79e89f276bcb83dbc571"
     },
     {
       "url": "https://expres-polish.pl/ru/blog-strany-i-goroda-na-polskom.html",
@@ -382,7 +408,7 @@
         "ru": "https://expres-polish.pl/ru/blog-strany-i-goroda-na-polskom.html",
         "x-default": "https://expres-polish.pl/blog-krainy-ta-mista-polskoiu.html"
       },
-      "content_sha256": "7e7c93d46552078447401d03a7cfb31f860477cba66d001ffb4ce4e15d5a4a13"
+      "content_sha256": "b8b832c5610da02d5e9b1cfb0b0ff02d963301bcba99ab08accbd3d558645da6"
     },
     {
       "url": "https://expres-polish.pl/ru/blog.html",
@@ -395,7 +421,7 @@
         "ru": "https://expres-polish.pl/ru/blog.html",
         "x-default": "https://expres-polish.pl/blog.html"
       },
-      "content_sha256": "79bd899accec73ce166700b42b9906468e9c9e612e8f7b93e3652c5fb32c2376"
+      "content_sha256": "e8f2ded9c887d623ff97b9dbbe5ef5d5c6a83f755b7ac75361b6080b5726b246"
     },
     {
       "url": "https://expres-polish.pl/ru/ekzameny.html",

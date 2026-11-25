@@ -315,6 +315,8 @@ Niemcy имеет исторически сложившуюся форму пр�
 
 - [Курсы польского во Вроцлаве и онлайн](https://expres-polish.pl/ru/#programs)
 
+[Ложные друзья переводчика: 30 польских слов](https://expres-polish.pl/ru/blog-lozhnye-druzya-perevodchika.html)
+
 Автор и издатель: Expres Polish
 
 ## Страны и города на польском языке: проверьте свои знания

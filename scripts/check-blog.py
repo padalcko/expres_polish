@@ -43,7 +43,7 @@ for name,expected in blog.outputs().items():
  check('<img' not in main and '<svg' not in main,name+': decorative main image')
  for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>',s,re.S):
   d=json.loads(raw);check(d['@type'] in ['Blog','BlogPosting','BreadcrumbList'],name+': schema type')
-  check(not any(k in d for k in (['aggregateRating'] if 'blog-krainy-ta-mista-polskoiu' in name or 'blog-strany-i-goroda-na-polskom' in name else ['image','author','aggregateRating'])),name+': invented schema fields')
+  check(not any(k in d for k in (['aggregateRating'] if 'blog-krainy-ta-mista-polskoiu' in name or 'blog-strany-i-goroda-na-polskom' in name or 'blog-falshyvi-druzi-perekladacha' in name or 'blog-lozhnye-druzya-perevodchika' in name else ['image','author','aggregateRating'])),name+': invented schema fields')
   if 'datePublished' in d:
    check(any(a.get('published')==d['datePublished'] and a[lang]['path']==name for a in blog.ARTICLES),name+': unapproved publication date')
  if 'filmy' in name:

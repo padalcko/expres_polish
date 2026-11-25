@@ -95,9 +95,9 @@ def discover():
     return pages
 
 SKIP = {'script','style','nav','footer','noscript','form','input','select','textarea','button','svg','iframe'}
-SKIP_CLASSES = {'modal','learning-widget','blog-back','blog-category','blog-badge','blog-breadcrumbs','social-tab','ai-chat'}
+SKIP_CLASSES = {'modal','learning-widget','blog-back','blog-category','blog-breadcrumbs','social-tab','ai-chat'}
 def excluded(n):
-    return n.tag in SKIP or bool(set(n.attrs.get('class','').split()) & SKIP_CLASSES) or n.attrs.get('aria-hidden')=='true' or 'hidden' in n.attrs
+    return n.tag in SKIP or bool(set(n.attrs.get('class','').split()) & SKIP_CLASSES) or (n.has('blog-badge') and n.parent and n.parent.has('blog-card-top')) or n.attrs.get('aria-hidden')=='true' or 'hidden' in n.attrs
 
 def render(n,p):
     if excluded(n) or n.tag=='h1':return ''
@@ -134,9 +134,10 @@ def markdown(p):
     out+='Language versions: '+', '.join(f'[{lang}]({url})' for lang,url in p['alternates'].items() if lang!='x-default')+'\n\n'
     out+='> '+p['meta'].get('description','')+'\n\n'
     out += clean(render(p['main'],p))+'\n'
-    if p['path'].name in ('blog-krainy-ta-mista-polskoiu.html','blog-strany-i-goroda-na-polskom.html'):
+    if p['path'].name in ('blog-krainy-ta-mista-polskoiu.html','blog-strany-i-goroda-na-polskom.html','blog-falshyvi-druzi-perekladacha.html','blog-lozhnye-druzya-perevodchika.html'):
         out+='\n'+('Автор і видавець' if p['lang']=='uk' else 'Автор и издатель')+': Expres Polish\n'
-        raw=(ROOT/'scripts/geography-data.js').read_text().removeprefix('export const quizData = ').strip().removesuffix(';')
+        data_file='false-friends-data.js' if p['path'].name in ('blog-falshyvi-druzi-perekladacha.html','blog-lozhnye-druzya-perevodchika.html') else 'geography-data.js'
+        raw=(ROOT/'scripts'/data_file).read_text().removeprefix('export const quizData = ').strip().removesuffix(';')
         quiz=json.loads(raw); lang=p['lang']
         out+='\n## '+quiz['title'][lang]+'\n\n'
         for i,q in enumerate(quiz['questions'],1):

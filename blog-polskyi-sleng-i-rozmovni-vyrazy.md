@@ -255,3 +255,5 @@ Language versions: [uk](https://expres-polish.pl/blog-polskyi-sleng-i-rozmovni-v
 Але коли ви почнете впізнавати їх у розмовах, фільмах і повсякденних ситуаціях, польська поступово стане набагато зрозумілішою.
 
 А якщо хочете навчитися не лише розуміти, а й упевнено говорити польською, запрошуємо на заняття до Expres Polish.
+
+[Фальшиві друзі перекладача: 30 польських слів](https://expres-polish.pl/blog-falshyvi-druzi-perekladacha.html)
