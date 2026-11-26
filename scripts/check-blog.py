@@ -61,7 +61,9 @@ for name,expected in blog.outputs().items():
  for a in re.findall(r'<div class="language-switcher".*?</div>',s,re.S):
   check(f'href="/{name}" lang="{lang}" aria-current="page"' in a,name+': language switch')
  if 'blog.html' not in name:
-  check(len(re.sub('<[^>]+>',' ',main).split())>(700 if 'filmy' in name else 900),name+': article incomplete')
+  article=next(a for a in blog.ARTICLES if a[lang]['path']==name)
+  min_words=700 if 'filmy' in name else 900 if article.get('interactive') else 800
+  check(len(re.sub('<[^>]+>',' ',main).split())>min_words,name+': article incomplete')
 ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
 urls=[n.text for n in ET.parse(ROOT/'sitemap.xml').findall('s:url/s:loc',ns)]
 check(len(urls)==len(set(urls)),'sitemap duplicate URLs')

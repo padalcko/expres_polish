@@ -81,9 +81,6 @@ def render(lang, item=None):
   for k,v in {"card":"summary","title":data["seo"],"description":desc}.items():head+=f'<meta name="twitter:{k}" content="{escape(v,quote=True)}">\n'
  if item and item.get('updated'):
   schema['dateModified']=item['updated']
-  if item['id']=='gen-z-slang':
-   org={'@type':'Organization','name':'Expres Polish','url':BASE+'/'}
-   schema.update(author=org,publisher=org)
  if item and item.get('published'):
   schema['datePublished']=item['published']
   head+=f'<meta property="article:published_time" content="{item["published"]}">\n'
