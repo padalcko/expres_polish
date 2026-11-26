@@ -24,6 +24,12 @@ Language versions: [uk](https://expres-polish.pl/blog.html), [ru](https://expres
 
 Powodzenia! 🇵🇱
 
+## [Польський молодіжний сленг: 20 слів покоління Z](https://expres-polish.pl/blog-polskyi-molodizhnyi-sleng.html)
+
+Що означають essa, rel, sigma та bambik? Знайомимося з польським молодіжним сленгом і живою мовою покоління Z.
+
+[Читати статтю](https://expres-polish.pl/blog-polskyi-molodizhnyi-sleng.html)
+
 ## [Фальшиві друзі перекладача: 30 польських слів](https://expres-polish.pl/blog-falshyvi-druzi-perekladacha.html)
 
 Чому owoce означає фрукти, pensja — зарплату, а dywan — килим? Вивчайте польські слова, які легко зрозуміти неправильно, та перевірте свої знання за допомогою інтерактивного тесту.

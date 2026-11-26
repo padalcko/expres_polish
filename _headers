@@ -50,6 +50,11 @@
   X-Content-Type-Options: nosniff
   Link: <https://expres-polish.pl/blog-polski-sviata-ta-tradytsii.html>; rel="canonical", <https://expres-polish.pl/llms.txt>; rel="describedby"
 
+/blog-polskyi-molodizhnyi-sleng.md
+  Content-Type: text/markdown; charset=utf-8
+  X-Content-Type-Options: nosniff
+  Link: <https://expres-polish.pl/blog-polskyi-molodizhnyi-sleng.html>; rel="canonical", <https://expres-polish.pl/llms.txt>; rel="describedby"
+
 /blog-polskyi-sleng-i-rozmovni-vyrazy.md
   Content-Type: text/markdown; charset=utf-8
   X-Content-Type-Options: nosniff
@@ -167,6 +172,11 @@
   Content-Type: text/markdown; charset=utf-8
   X-Content-Type-Options: nosniff
   Link: <https://expres-polish.pl/ru/blog-polskie-prazdniki-i-tradicii.html>; rel="canonical", <https://expres-polish.pl/llms.txt>; rel="describedby"
+
+/ru/blog-polskij-molodezhnyj-sleng.md
+  Content-Type: text/markdown; charset=utf-8
+  X-Content-Type-Options: nosniff
+  Link: <https://expres-polish.pl/ru/blog-polskij-molodezhnyj-sleng.html>; rel="canonical", <https://expres-polish.pl/llms.txt>; rel="describedby"
 
 /ru/blog-polskij-sleng-i-razgovornye-vyrazheniya.md
   Content-Type: text/markdown; charset=utf-8

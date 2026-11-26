@@ -99,6 +99,19 @@
       "content_sha256": "3c2a1b918023f8310a4c7b693ba646703af78c20adc083145e19dc80bf0c2f73"
     },
     {
+      "url": "https://expres-polish.pl/blog-polskyi-molodizhnyi-sleng.html",
+      "markdown": "https://expres-polish.pl/blog-polskyi-molodizhnyi-sleng.md",
+      "language": "uk",
+      "title": "Польський молодіжний сленг: як спілкується покоління Z у Польщі",
+      "description": "Що означають essa, rel, sigma, bambik та інші слова польського молодіжного сленгу? 20 виразів із поясненнями, прикладами та перекладом.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog-polskyi-molodizhnyi-sleng.html",
+        "ru": "https://expres-polish.pl/ru/blog-polskij-molodezhnyj-sleng.html",
+        "x-default": "https://expres-polish.pl/blog-polskyi-molodizhnyi-sleng.html"
+      },
+      "content_sha256": "4329063ce272ad7c7638091b69c641312db6604b7ef9364761d1f63a74aa46ea"
+    },
+    {
       "url": "https://expres-polish.pl/blog-polskyi-sleng-i-rozmovni-vyrazy.html",
       "markdown": "https://expres-polish.pl/blog-polskyi-sleng-i-rozmovni-vyrazy.md",
       "language": "uk",
@@ -187,7 +200,7 @@
         "ru": "https://expres-polish.pl/ru/blog.html",
         "x-default": "https://expres-polish.pl/blog.html"
       },
-      "content_sha256": "c85d9c8eae2aa0758986d4bba9dad2b65b798c9380e41f4ebdab60bbeb8b2795"
+      "content_sha256": "e68a1b9ab787c735ef6a6ef82bdcf106359354faa426ed34d11723fc1b6b92f5"
     },
     {
       "url": "https://expres-polish.pl/derzhavnyi-ispyt-b1.html",
@@ -385,6 +398,19 @@
       "content_sha256": "18873f8b17ac35670adf6ea1eec013f8bd3080123b4edbfe550bbed272767481"
     },
     {
+      "url": "https://expres-polish.pl/ru/blog-polskij-molodezhnyj-sleng.html",
+      "markdown": "https://expres-polish.pl/ru/blog-polskij-molodezhnyj-sleng.md",
+      "language": "ru",
+      "title": "Польский молодёжный сленг: как общается поколение Z в Польше",
+      "description": "Что означают essa, rel, sigma, bambik и другие слова польского молодёжного сленга? 20 выражений с объяснениями, примерами и переводом.",
+      "alternates": {
+        "uk": "https://expres-polish.pl/blog-polskyi-molodizhnyi-sleng.html",
+        "ru": "https://expres-polish.pl/ru/blog-polskij-molodezhnyj-sleng.html",
+        "x-default": "https://expres-polish.pl/blog-polskyi-molodizhnyi-sleng.html"
+      },
+      "content_sha256": "2b492581462d20bf38ace6dee1e1a208e874caaa9370ae95d17318265209936c"
+    },
+    {
       "url": "https://expres-polish.pl/ru/blog-polskij-sleng-i-razgovornye-vyrazheniya.html",
       "markdown": "https://expres-polish.pl/ru/blog-polskij-sleng-i-razgovornye-vyrazheniya.md",
       "language": "ru",
@@ -421,7 +447,7 @@
         "ru": "https://expres-polish.pl/ru/blog.html",
         "x-default": "https://expres-polish.pl/blog.html"
       },
-      "content_sha256": "e8f2ded9c887d623ff97b9dbbe5ef5d5c6a83f755b7ac75361b6080b5726b246"
+      "content_sha256": "88998ccbef9ea27acb1f8ad91c144f50287950663c6b694e75625f42f534af04"
     },
     {
       "url": "https://expres-polish.pl/ru/ekzameny.html",
